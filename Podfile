@@ -6,14 +6,10 @@ target 'Screen-Mirroring' do
   use_frameworks!
 
   # Pods for Screen-Mirroring
-
-  target 'Screen-MirroringTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'Screen-MirroringUITests' do
-    # Pods for testing
-  end
-
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'RxDataSources'
+  pod 'R.swift'
+  pod 'SnapKit', '~> 5.7.0'
+  pod 'Adapty', '~> 2.10.4'
 end
