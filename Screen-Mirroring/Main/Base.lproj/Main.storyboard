@@ -11,6 +11,9 @@
         <array key="Inter-Bold.ttf">
             <string>Inter-Bold</string>
         </array>
+        <array key="Inter-Medium.ttf">
+            <string>Inter-Medium</string>
+        </array>
         <array key="Inter-Regular.ttf">
             <string>Inter-Regular</string>
         </array>
@@ -26,12 +29,15 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Screen Mirroring" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X9I-iq-7Po">
                                 <rect key="frame" x="30" y="112" width="262.66666666666669" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="nbT-Bl-B7b"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Inter-Bold" family="Inter" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qy9-lV-tjD">
-                                <rect key="frame" x="345" y="119" width="32" height="32"/>
+                                <rect key="frame" x="345" y="115.66666666666669" width="32" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="Coe-VL-aYd"/>
                                     <constraint firstAttribute="width" constant="32" id="Rhf-yh-LMV"/>
@@ -39,12 +45,11 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="Settings"/>
                                 <connections>
-                                    <action selector="settingsButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xav-yl-j8J"/>
                                     <segue destination="XKT-Lp-soC" kind="show" id="XOD-kG-Fhz"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oEI-hq-Kmp">
-                                <rect key="frame" x="16" y="183" width="361" height="200"/>
+                                <rect key="frame" x="16" y="183" width="361" height="198"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Connect" translatesAutoresizingMaskIntoConstraints="NO" id="JPa-gu-vcG">
                                         <rect key="frame" x="136.66666666666666" y="16" width="88" height="88"/>
@@ -63,16 +68,16 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to connect and choose another device to pair with your iPhone." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A0g-a0-1iG">
-                                        <rect key="frame" x="37" y="142" width="287" height="36"/>
+                                        <rect key="frame" x="37" y="142" width="287" height="34"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="36" id="ZMF-o9-SfI"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="36" id="ZMF-o9-SfI"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="14"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uCE-Vk-kcD">
-                                        <rect key="frame" x="0.0" y="0.0" width="361" height="200"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="198"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain"/>
                                     </button>
@@ -103,7 +108,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="uwa-l4-eHj">
-                                <rect key="frame" x="16" y="407" width="361" height="138"/>
+                                <rect key="frame" x="16" y="405" width="361" height="138"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xnU-3g-7oM">
                                         <rect key="frame" x="0.0" y="0.0" width="172.66666666666666" height="138"/>
@@ -123,7 +128,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="El0-Xt-g6O">
-                                <rect key="frame" x="16" y="561" width="361" height="138"/>
+                                <rect key="frame" x="16" y="559" width="361" height="138"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JhW-jH-CHF">
                                         <rect key="frame" x="0.0" y="0.0" width="172.66666666666666" height="138"/>
@@ -142,31 +147,85 @@
                                     <constraint firstAttribute="height" constant="138" id="Y5S-St-w5w"/>
                                 </constraints>
                             </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ud2-So-cPS">
+                                <rect key="frame" x="16" y="754" width="361" height="56"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to Connect" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rvk-Ra-36k">
+                                        <rect key="frame" x="133.66666666666666" y="18.333333333333371" width="123.66666666666666" height="19.666666666666671"/>
+                                        <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Question" translatesAutoresizingMaskIntoConstraints="NO" id="Sws-eD-zmu">
+                                        <rect key="frame" x="103.66666666666667" y="17" width="22" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="22" id="KPT-OW-Mbp"/>
+                                            <constraint firstAttribute="height" constant="22" id="nWH-Vv-sja"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wff-VP-rHE">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="56"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain"/>
+                                        <connections>
+                                            <action selector="howToAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WRE-6X-3dI"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" name="c1C1C1E"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="wff-VP-rHE" secondAttribute="bottom" id="2ZC-a6-H3G"/>
+                                    <constraint firstItem="Sws-eD-zmu" firstAttribute="centerY" secondItem="ud2-So-cPS" secondAttribute="centerY" id="PrY-iM-uFx"/>
+                                    <constraint firstAttribute="height" constant="56" id="kAb-fq-sqQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="wff-VP-rHE" secondAttribute="trailing" id="l7y-iQ-4Xg"/>
+                                    <constraint firstItem="Rvk-Ra-36k" firstAttribute="leading" secondItem="Sws-eD-zmu" secondAttribute="trailing" constant="8" id="lyx-31-U7N"/>
+                                    <constraint firstItem="Rvk-Ra-36k" firstAttribute="centerY" secondItem="ud2-So-cPS" secondAttribute="centerY" id="mrP-Lh-BEj"/>
+                                    <constraint firstItem="Rvk-Ra-36k" firstAttribute="centerX" secondItem="ud2-So-cPS" secondAttribute="centerX" constant="15" id="nUl-3a-1tj"/>
+                                    <constraint firstItem="wff-VP-rHE" firstAttribute="top" secondItem="ud2-So-cPS" secondAttribute="top" id="pDe-w8-4ac"/>
+                                    <constraint firstItem="wff-VP-rHE" firstAttribute="leading" secondItem="ud2-So-cPS" secondAttribute="leading" id="rmy-QV-F4t"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="qy9-lV-tjD" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="X9I-iq-7Po" secondAttribute="trailing" constant="16" id="20F-n6-fn5"/>
                             <constraint firstItem="uwa-l4-eHj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="29h-Ao-zXn"/>
-                            <constraint firstItem="qy9-lV-tjD" firstAttribute="top" secondItem="X9I-iq-7Po" secondAttribute="bottom" constant="-32" id="40m-RZ-Lah"/>
                             <constraint firstItem="oEI-hq-Kmp" firstAttribute="top" secondItem="X9I-iq-7Po" secondAttribute="bottom" constant="32" id="8VT-dn-mbi"/>
                             <constraint firstItem="El0-Xt-g6O" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="AgJ-VJ-HdG"/>
                             <constraint firstAttribute="trailing" secondItem="El0-Xt-g6O" secondAttribute="trailing" constant="16" id="DDN-cz-fiQ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oEI-hq-Kmp" secondAttribute="trailing" constant="16" id="DsN-te-ql1"/>
+                            <constraint firstItem="ud2-So-cPS" firstAttribute="top" relation="greaterThanOrEqual" secondItem="El0-Xt-g6O" secondAttribute="bottom" constant="16" id="IkT-G2-Ytd"/>
                             <constraint firstItem="X9I-iq-7Po" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="9" id="NX4-f6-LQ3"/>
                             <constraint firstItem="oEI-hq-Kmp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Qz0-dg-HRp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uwa-l4-eHj" secondAttribute="trailing" constant="16" id="YWR-y3-lUn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ud2-So-cPS" secondAttribute="trailing" constant="16" id="b0q-Xf-9kj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qy9-lV-tjD" secondAttribute="trailing" constant="16" id="dkx-69-RLB"/>
+                            <constraint firstItem="ud2-So-cPS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="fIc-56-Pex"/>
+                            <constraint firstItem="qy9-lV-tjD" firstAttribute="centerY" secondItem="X9I-iq-7Po" secondAttribute="centerY" id="pv1-4M-DX3"/>
                             <constraint firstItem="uwa-l4-eHj" firstAttribute="top" secondItem="oEI-hq-Kmp" secondAttribute="bottom" constant="24" id="ri0-Vp-lfn"/>
                             <constraint firstItem="X9I-iq-7Po" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="tZq-3M-IX1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ud2-So-cPS" secondAttribute="bottom" constant="8" id="ubh-jh-RCU"/>
                             <constraint firstItem="El0-Xt-g6O" firstAttribute="top" secondItem="uwa-l4-eHj" secondAttribute="bottom" constant="16" id="utb-fc-Lss"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Lu5-Oj-n7C"/>
+                    <navigationItem key="navigationItem" id="Lu5-Oj-n7C">
+                        <barButtonItem key="backBarButtonItem" title=" " id="q8o-jw-cPE"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="connectBackView" destination="oEI-hq-Kmp" id="Ddv-xN-qov"/>
                         <outlet property="connectButton" destination="uCE-Vk-kcD" id="DnX-Xt-oX7"/>
+                        <outlet property="connectButtonSubtitle" destination="A0g-a0-1iG" id="hNW-y3-k6O"/>
+                        <outlet property="connectButtonTitle" destination="LNP-zm-tSj" id="yjy-nw-0gf"/>
                         <outlet property="filesButton" destination="yox-wN-Wc7" id="a0H-Q4-FEQ"/>
+                        <outlet property="howToBackView" destination="ud2-So-cPS" id="YE0-lo-Uxz"/>
+                        <outlet property="howToButton" destination="wff-VP-rHE" id="d4a-5z-ajx"/>
                         <outlet property="photoButton" destination="vwe-cU-Qx5" id="9Ub-KT-FxW"/>
                         <outlet property="settingsButton" destination="qy9-lV-tjD" id="9HV-vt-m5P"/>
                         <outlet property="videoButton" destination="xnU-3g-7oM" id="T8C-Yg-wVU"/>
@@ -175,9 +234,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1057.2519083969464" y="-34.507042253521128"/>
+            <point key="canvasLocation" x="1052.6717557251909" y="-34.507042253521128"/>
         </scene>
-        <!--Settings View Controller-->
+        <!--Settings-->
         <scene sceneID="yQ7-I5-znS">
             <objects>
                 <viewController storyboardIdentifier="SettingsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="XKT-Lp-soC" customClass="SettingsViewController" customModule="Screen_Mirroring" customModuleProvider="target" sceneMemberID="viewController">
@@ -574,7 +633,7 @@
                             <constraint firstItem="0nP-UO-dOv" firstAttribute="leading" secondItem="4BU-4Z-z55" secondAttribute="leading" constant="16" id="vDx-q5-Y8R"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="yCA-Kv-pxl"/>
+                    <navigationItem key="navigationItem" title="Settings" id="yCA-Kv-pxl"/>
                     <connections>
                         <outlet property="contactUsBackView" destination="IhN-ui-vbU" id="93p-tZ-yXi"/>
                         <outlet property="contactUsButton" destination="Wur-Mo-W87" id="MUq-RM-tRq"/>
@@ -603,6 +662,9 @@
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -621,6 +683,7 @@
         <image name="Files" width="171" height="138"/>
         <image name="Photo" width="171" height="138"/>
         <image name="Privacy" width="28" height="28"/>
+        <image name="Question" width="22" height="22"/>
         <image name="RateUs" width="28" height="28"/>
         <image name="Restore" width="28" height="28"/>
         <image name="Settings" width="32" height="32"/>

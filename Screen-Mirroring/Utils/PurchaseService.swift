@@ -50,7 +50,7 @@ final class PurchaseService: PurchaseServiceProtocol {
     }
     var review: Bool {
         // inAppPaywall?.config.review ?? false
-        false
+        true
     }
     
     private init() { }
