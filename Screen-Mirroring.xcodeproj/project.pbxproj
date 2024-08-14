@@ -21,6 +21,7 @@
 		84342BB72C6B559A003E7EEA /* AppReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84342BB32C6B559A003E7EEA /* AppReview.swift */; };
 		84342BB82C6B559A003E7EEA /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84342BB42C6B559A003E7EEA /* UIViewController.swift */; };
 		84342BB92C6B559A003E7EEA /* UIWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84342BB52C6B559A003E7EEA /* UIWindow.swift */; };
+		84342BBC2C6BAE37003E7EEA /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84342BBA2C6BAE37003E7EEA /* SettingsViewController.swift */; };
 		8451B32B2C666477007DFEF1 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8451B3252C666477007DFEF1 /* SplashScreen.storyboard */; };
 		8451B32C2C666477007DFEF1 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8451B3262C666477007DFEF1 /* SplashScreenViewController.swift */; };
 		8451B32D2C666477007DFEF1 /* OnboardingContentPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8451B3282C666477007DFEF1 /* OnboardingContentPage.swift */; };
@@ -78,6 +79,7 @@
 		84342BB32C6B559A003E7EEA /* AppReview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppReview.swift; sourceTree = "<group>"; };
 		84342BB42C6B559A003E7EEA /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		84342BB52C6B559A003E7EEA /* UIWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIWindow.swift; sourceTree = "<group>"; };
+		84342BBA2C6BAE37003E7EEA /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		8451B3252C666477007DFEF1 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SplashScreen.storyboard; sourceTree = "<group>"; };
 		8451B3262C666477007DFEF1 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
 		8451B3282C666477007DFEF1 /* OnboardingContentPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingContentPage.swift; sourceTree = "<group>"; };
@@ -182,6 +184,14 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		84342BBB2C6BAE37003E7EEA /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				84342BBA2C6BAE37003E7EEA /* SettingsViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		8451B3272C666477007DFEF1 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
@@ -215,7 +225,6 @@
 			isa = PBXGroup;
 			children = (
 				8490DA4F2C66627D00F44433 /* Screen-Mirroring */,
-				84342BA92C6A7BCD003E7EEA /* fonts */,
 				8490DA662C66627F00F44433 /* Screen-MirroringTests */,
 				8490DA702C66627F00F44433 /* Screen-MirroringUITests */,
 				8490DA4E2C66627D00F44433 /* Products */,
@@ -243,12 +252,14 @@
 				8490DA522C66627D00F44433 /* SceneDelegate.swift */,
 				8490DA542C66627D00F44433 /* ViewController.swift */,
 				8490DA562C66627D00F44433 /* Main.storyboard */,
+				84342BBB2C6BAE37003E7EEA /* Settings */,
 				8490DA592C66627E00F44433 /* Assets.xcassets */,
 				8490DA5B2C66627E00F44433 /* LaunchScreen.storyboard */,
 				84342BB62C6B559A003E7EEA /* Extension */,
 				848240A42C666542007C6B9A /* Utils */,
 				8490DA5E2C66627E00F44433 /* Info.plist */,
 				84342B9E2C6A5C01003E7EEA /* R.generated.swift */,
+				84342BA92C6A7BCD003E7EEA /* fonts */,
 			);
 			path = "Screen-Mirroring";
 			sourceTree = "<group>";
@@ -547,6 +558,7 @@
 				84342BB72C6B559A003E7EEA /* AppReview.swift in Sources */,
 				848240AA2C666542007C6B9A /* PurchaseService.swift in Sources */,
 				84342BB92C6B559A003E7EEA /* UIWindow.swift in Sources */,
+				84342BBC2C6BAE37003E7EEA /* SettingsViewController.swift in Sources */,
 				84342BB82C6B559A003E7EEA /* UIViewController.swift in Sources */,
 				8490DA512C66627D00F44433 /* AppDelegate.swift in Sources */,
 				8451B32C2C666477007DFEF1 /* SplashScreenViewController.swift in Sources */,
