@@ -14,11 +14,19 @@ class ActionSheetViewController: UIViewController {
     
     @IBOutlet weak var interfaceBackView: UIView!
     
+    @IBOutlet weak var mainImage: UIImageView!
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var subtitleLabel: UILabel!
+    
     @IBOutlet weak var firstButton: UIButton!
     @IBOutlet weak var cancelButton: UIButton!
     
     // public
-    public var firstAction: (() -> Void) = ({})
+    public var mainImageView: UIImage? = UIImage(named: "")
+    public var titleText: String = ""
+    public var subtitleText: String = ""
+    public var firstAction: (action: () -> Void, image: UIImage?, title: String) = ({}, UIImage(named: ""), "")
     
     // private
     private let disposeBag = DisposeBag()
@@ -30,8 +38,24 @@ class ActionSheetViewController: UIViewController {
         
         background.backgroundColor = UIColor.black.withAlphaComponent(0.0)
         
+        // set image
+        mainImage.image = mainImageView
+        
+        // set title's
+        titleLabel.text = titleText
+        subtitleLabel.text = subtitleText
+        
         // set actions
-        firstActionPrivate = firstAction
+        firstActionPrivate = firstAction.action
+        
+        // set button image
+        firstButton.setImage(firstAction.image, for: .normal)
+        
+        // set tittles
+        firstButton.setTitle(firstAction.title, for: .normal)
+        
+        firstButton.titleEdgeInsets.left = firstAction.image == nil ? 0 : 8
+        firstButton.imageEdgeInsets.right = firstAction.image == nil ? 0 : 8
         
         // handle first action
         firstButton.rx.tap
@@ -65,28 +89,19 @@ class ActionSheetViewController: UIViewController {
         super.viewDidLayoutSubviews()
     }
     
-    @IBAction
-    private func settingsTapped() {
-        firstAction()
-    }
-    
-    @IBAction
-    private func closeCross(_ sender: Any) {
-        hide(action: nil)
-    }
-    
-    @IBAction
-    private func close(_ sender: Any) {
-        hide(action: nil)
-    }
-    
     static func showActionSheet(
-        firstAction: @escaping (() -> Void),
+        mainImage: UIImage?,
+        titleText: String,
+        subtitleText: String,
+        firstAction: (action: () -> Void, image: UIImage?, title: String),
         onViewController: UIViewController? = UIApplication.shared.windows.first(where: { $0.isKeyWindow })?.rootViewController) {
             
             guard let dialog = R.storyboard.actionSheet.actionSheetViewController() else { return }
             
             dialog.modalPresentationStyle = .overFullScreen
+            dialog.mainImageView = mainImage
+            dialog.titleText = titleText
+            dialog.subtitleText = subtitleText
             dialog.firstAction = firstAction
             
             if let delegate = UIApplication.shared.delegate as? AppDelegate,
@@ -106,5 +121,11 @@ class ActionSheetViewController: UIViewController {
     private func action(_ success: Bool = false, action: (() -> Void)?) {
         guard let action = action else { return }
         action()
+    }
+    
+    @IBAction
+    private func close(_ sender: Any) {
+        HapticGenerator.shared.generateImpact()
+        hide(action: nil)
     }
 }

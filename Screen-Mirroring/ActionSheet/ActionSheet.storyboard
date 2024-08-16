@@ -93,9 +93,6 @@
                                                         <integer key="value" value="15"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="settingsTapped" destination="Vov-g6-dxb" eventType="touchUpInside" id="Nie-8B-6oh"/>
-                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZwW-M7-ftJ">
                                                 <rect key="frame" x="0.0" y="74" width="361" height="64"/>
@@ -154,6 +151,9 @@
                         <outlet property="cancelButton" destination="ZwW-M7-ftJ" id="y67-3a-qLY"/>
                         <outlet property="firstButton" destination="MzX-MM-UyK" id="gyN-lf-X8A"/>
                         <outlet property="interfaceBackView" destination="iUU-rB-4TL" id="hwq-bk-mnp"/>
+                        <outlet property="mainImage" destination="Tf9-wd-aOt" id="iS3-Hg-ssI"/>
+                        <outlet property="subtitleLabel" destination="U66-fQ-QLX" id="utv-jt-eIH"/>
+                        <outlet property="titleLabel" destination="yRn-Oy-JKA" id="JkA-Oo-mpg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3vF-Zu-61b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

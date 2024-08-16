@@ -60,11 +60,13 @@ class SettingsViewController: UIViewController, MFMailComposeViewControllerDeleg
     
     @IBAction
     func rateUs() {
+        HapticGenerator.shared.generateImpact()
         AppReview().requestImmediately()
     }
     
     @IBAction
     func shareApp() {
+        HapticGenerator.shared.generateImpact()
         let linkToShare = ["https://itunes.apple.com/app/id6575368844"]
         let activityController = UIActivityViewController(activityItems: linkToShare, applicationActivities: nil)
         self.present(activityController, animated: true, completion: nil)
@@ -72,6 +74,7 @@ class SettingsViewController: UIViewController, MFMailComposeViewControllerDeleg
     
     @IBAction
     func contactUs() {
+        HapticGenerator.shared.generateImpact()
         if MFMailComposeViewController.canSendMail() {
             let mail = MFMailComposeViewController()
             mail.mailComposeDelegate = self
@@ -89,18 +92,21 @@ class SettingsViewController: UIViewController, MFMailComposeViewControllerDeleg
     /// On Onboarding same things
     @IBAction
     private func restoreTapped() {
+        HapticGenerator.shared.generateImpact()
         Task {
-           await PurchaseService.shared.restorePurchases()
+            await PurchaseService.shared.restorePurchases()
         }
     }
     
     @IBAction
     private func privacyTapped() {
+        HapticGenerator.shared.generateImpact()
         loadURLString("https://docs.google.com/document/d/1fMjSzysmWVI2q7reiGkCYcdrf2BlfvYj5isq0_T7X4E/edit?usp=sharing")
     }
     
     @IBAction
     private func termsOfUseTapped() {
+        HapticGenerator.shared.generateImpact()
         loadURLString("https://docs.google.com/document/d/1YOAWrkDnrbQ8CL7emMMg51z8RHlG8ix-8-sDWYNiDug/edit?usp=sharing")
     }
 }

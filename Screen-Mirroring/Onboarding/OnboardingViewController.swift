@@ -305,6 +305,7 @@ final class OnboardingViewController: UIViewController, UIScrollViewDelegate {
     private var scrolledByButton = false
     @objc private func continueButtonTapped() {
         let currentPage = pageControl.currentPage
+        HapticGenerator.shared.generateImpact()
         if currentPage < pages.count - 1 {
             scrolledByButton = true
             let nextPage = CGPoint(x: scrollView.bounds.width * CGFloat(currentPage + 1), y: 0)
@@ -431,6 +432,7 @@ final class OnboardingViewController: UIViewController, UIScrollViewDelegate {
     
     @objc
     private func closeScreen() {
+        HapticGenerator.shared.generateImpact()
         Storage.shared.onboardingShown = true
         completion?()
         dismiss(animated: true)

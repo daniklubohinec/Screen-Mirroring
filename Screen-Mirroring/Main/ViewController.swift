@@ -30,9 +30,21 @@ class ViewController: UIViewController {
     @IBOutlet weak var howToButton: UIButton!
     
     @IBAction func howToAction(_ sender: Any) {
-        ActionSheetViewController.showActionSheet {
-            // openAppSettings()
-        }
+        HapticGenerator.shared.generateImpact()
+        
+        ActionSheetViewController.showActionSheet(
+            mainImage: R.image.device(),
+            titleText: "Please choose the device you wish to connect to.",
+            subtitleText: "Make sure your devices are connected to the same Wi-Fi network.",
+            firstAction: (
+                action: {
+                    //            // openAppSettings()
+                },
+                image: nil,
+                title: "Open AirPlay"
+            
+            )
+        )
     }
     
     override func viewDidLoad() {
