@@ -2,6 +2,18 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Inter-Black.ttf</string>
+		<string>Inter-Bold.ttf</string>
+		<string>Inter-ExtraBold.ttf</string>
+		<string>Inter-ExtraLight.ttf</string>
+		<string>Inter-Light.ttf</string>
+		<string>Inter-Medium.ttf</string>
+		<string>Inter-Regular.ttf</string>
+		<string>Inter-SemiBold.ttf</string>
+		<string>Inter-Thin.ttf</string>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -21,17 +33,17 @@
 			</array>
 		</dict>
 	</dict>
-	<key>UIAppFonts</key>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Please allow access to Photos to upload your room photos.</string>
+	<key>UIUserInterfaceStyle</key>
+	<string>Dark</string>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>Enable local network access to find Cast-enabled devices.</string>
+	<key>UISupportsDocumentBrowser</key>
+	<true/>
+	<key>NSBonjourServices</key>
 	<array>
-		<string>Inter-Black.ttf</string>
-		<string>Inter-Bold.ttf</string>
-		<string>Inter-ExtraBold.ttf</string>
-		<string>Inter-ExtraLight.ttf</string>
-		<string>Inter-Light.ttf</string>
-		<string>Inter-Medium.ttf</string>
-		<string>Inter-Regular.ttf</string>
-		<string>Inter-SemiBold.ttf</string>
-		<string>Inter-Thin.ttf</string>
+		<string>_http._tcp</string>
 	</array>
 </dict>
 </plist>

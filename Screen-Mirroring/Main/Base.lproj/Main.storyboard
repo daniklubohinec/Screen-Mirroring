@@ -115,12 +115,18 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="Video"/>
+                                        <connections>
+                                            <action selector="castVideos" destination="BYZ-38-t0r" eventType="touchUpInside" id="WI8-RV-8xv"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vwe-cU-Qx5">
                                         <rect key="frame" x="188.66666666666663" y="0.0" width="172.33333333333337" height="138"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="Photo"/>
+                                        <connections>
+                                            <action selector="castPhotos" destination="BYZ-38-t0r" eventType="touchUpInside" id="h66-eI-JPb"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -135,12 +141,18 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="Web"/>
+                                        <connections>
+                                            <action selector="castWeb" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sjo-XU-igy"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yox-wN-Wc7">
                                         <rect key="frame" x="188.66666666666663" y="0.0" width="172.33333333333337" height="138"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="Files"/>
+                                        <connections>
+                                            <action selector="openDocuments" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Gq-iM-OnX"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -223,9 +235,11 @@
                         <outlet property="connectButton" destination="uCE-Vk-kcD" id="DnX-Xt-oX7"/>
                         <outlet property="connectButtonSubtitle" destination="A0g-a0-1iG" id="hNW-y3-k6O"/>
                         <outlet property="connectButtonTitle" destination="LNP-zm-tSj" id="yjy-nw-0gf"/>
+                        <outlet property="connectImageView" destination="JPa-gu-vcG" id="iCq-6i-ebQ"/>
                         <outlet property="filesButton" destination="yox-wN-Wc7" id="a0H-Q4-FEQ"/>
                         <outlet property="howToBackView" destination="ud2-So-cPS" id="YE0-lo-Uxz"/>
                         <outlet property="howToButton" destination="wff-VP-rHE" id="d4a-5z-ajx"/>
+                        <outlet property="howToTitle" destination="Rvk-Ra-36k" id="sgu-tV-PQG"/>
                         <outlet property="photoButton" destination="vwe-cU-Qx5" id="9Ub-KT-FxW"/>
                         <outlet property="settingsButton" destination="qy9-lV-tjD" id="9HV-vt-m5P"/>
                         <outlet property="videoButton" destination="xnU-3g-7oM" id="T8C-Yg-wVU"/>

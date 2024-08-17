@@ -1,6 +1,7 @@
 import Foundation
 import UIKit
 import Photos
+import AVFoundation
 
 extension UIColor {
     func hexStringFromColor() -> String? {
@@ -102,5 +103,129 @@ extension UIViewController {
                 completion?()
             })
         }
+    }
+}
+
+func share(
+    text: String,
+    onViewController: UIViewController? = UIApplication.shared.windows.first(where: { $0.isKeyWindow })?.rootViewController
+) {
+    let activityViewController = UIActivityViewController(activityItems: [text], applicationActivities: nil)
+    activityViewController.excludedActivityTypes = [
+        .assignToContact,
+        .addToReadingList
+    ]
+    
+    onViewController?.present(activityViewController, animated: true, completion: nil)
+}
+
+func presentGlobally(controller: UIViewController) {
+    if let root = UIApplication.shared.windows.first(where: { $0.isKeyWindow })?.rootViewController {
+        let presentOn: UIViewController?
+        if root is SplashScreenViewController {
+            presentOn = root.presentedViewController ?? root.children.first
+        } else {
+            presentOn = root
+        }
+        presentOn?.present(controller, animated: true)
+    }
+}
+
+final class AirPlayDeviceUtility {
+    private init() { }
+    static var connected = false
+    
+    static func getCurrentAirPlayDevice() -> String? {
+        let audioSession = AVAudioSession.sharedInstance()
+        let currentRoute = audioSession.currentRoute
+        for output in currentRoute.outputs {
+            if output.portType == AVAudioSession.Port.airPlay {
+                return output.portName
+            }
+        }
+
+        return nil
+    }
+    
+    static func startMonitoringAirPlayChanges(callback: @escaping (String?) -> Void) {
+        NotificationCenter.default.addObserver(forName: AVAudioSession.routeChangeNotification, object: nil, queue: .main) { notification in
+            guard let userInfo = notification.userInfo,
+                  let reasonValue = userInfo[AVAudioSessionRouteChangeReasonKey] as? UInt,
+                  let reason = AVAudioSession.RouteChangeReason(rawValue: reasonValue) else {
+                return
+            }
+            
+            switch reason {
+            case .newDeviceAvailable, .oldDeviceUnavailable, .override:
+                // The route has changed, so check for the current AirPlay device
+                let currentDevice = getCurrentAirPlayDevice()
+                connected = currentDevice != nil
+                callback(currentDevice)
+                if !isScreenMirroringActive() {
+                    
+                }
+            default:
+                break
+            }
+        }
+    }
+    
+    static func stopMonitoringAirPlayChanges() {
+        NotificationCenter.default.removeObserver(self, name: AVAudioSession.routeChangeNotification, object: nil)
+    }
+}
+
+func isScreenMirroringActive() -> Bool {
+    let sessions = UIApplication.shared.openSessions
+    for session in sessions {
+        if let screen = (session.scene as? UIWindowScene)?.screen, screen.mirrored != nil {
+            return true
+        }
+    }
+    return false
+}
+
+import SwiftUI
+struct UIViewPreview<View: UIView>: UIViewRepresentable {
+    let view: View
+
+    init(_ builder: @escaping () -> View) {
+        view = builder()
+    }
+
+    // MARK: - UIViewRepresentable
+
+    func makeUIView(context: Context) -> UIView {
+        return view
+    }
+
+    func updateUIView(_ view: UIView, context: Context) {
+        view.setContentHuggingPriority(.defaultHigh, for: .horizontal)
+        view.setContentHuggingPriority(.defaultHigh, for: .vertical)
+    }
+}
+struct UIViewControllerPreview<ViewController: UIViewController>: UIViewControllerRepresentable {
+    let viewController: ViewController
+
+    init(_ builder: @escaping () -> ViewController) {
+        viewController = builder()
+    }
+
+    // MARK: - UIViewControllerRepresentable
+
+    func makeUIViewController(context: Context) -> ViewController {
+        viewController
+    }
+
+    func updateUIViewController(_ uiViewController: ViewController, context: UIViewControllerRepresentableContext<UIViewControllerPreview<ViewController>>) {
+        return
+    }
+}
+
+func previewWithNavigationController(_ webViewController: UIViewController) -> some View {
+    UIViewControllerPreview {
+        let n = UINavigationController()
+        n.pushViewController(webViewController, animated: true)
+        return n
     }
 }

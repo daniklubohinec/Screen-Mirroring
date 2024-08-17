@@ -42,8 +42,15 @@
 		8490DA742C66627F00F44433 /* Screen_MirroringUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8490DA732C66627F00F44433 /* Screen_MirroringUITestsLaunchTests.swift */; };
 		84BE632D2C6D232B00E8587B /* ActionSheet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84BE632A2C6D232B00E8587B /* ActionSheet.storyboard */; };
 		84BE632E2C6D232B00E8587B /* ActionSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BE632B2C6D232B00E8587B /* ActionSheetViewController.swift */; };
-		972F5D9100DCE5464F834241 /* Pods_Screen_MirroringTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9F62BCD22B2FAB789A7899 /* Pods_Screen_MirroringTests.framework */; };
-		FBAC51680FE8601776032D93 /* Pods_Screen_Mirroring_Screen_MirroringUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C263BBD794EBDDCE5535C2AD /* Pods_Screen_Mirroring_Screen_MirroringUITests.framework */; };
+		F315038D2C70892200C0B13A /* AlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F315038C2C70892200C0B13A /* AlbumsViewController.swift */; };
+		F315038F2C70894500C0B13A /* MediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F315038E2C70894500C0B13A /* MediaViewController.swift */; };
+		F31503912C708A3100C0B13A /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31503902C708A3100C0B13A /* PhotosViewController.swift */; };
+		F31503932C709E7300C0B13A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31503922C709E7300C0B13A /* BaseViewController.swift */; };
+		F31503952C70A54F00C0B13A /* NetworkPermissionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31503942C70A54F00C0B13A /* NetworkPermissionHelper.swift */; };
+		F31503992C70AC3300C0B13A /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31503982C70AC3300C0B13A /* WebViewController.swift */; };
+		F315039C2C70B4E300C0B13A /* DocumentsViewerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F315039B2C70B4E300C0B13A /* DocumentsViewerController.swift */; };
+		F315039F2C70D56600C0B13A /* TipsSheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F315039E2C70D56600C0B13A /* TipsSheetController.swift */; };
+		F31503A12C70DAEF00C0B13A /* Tips.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F31503A02C70DAEF00C0B13A /* Tips.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,8 +71,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		20F64CC888A015F990425D6B /* Pods-Screen-MirroringTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Screen-MirroringTests.debug.xcconfig"; path = "Target Support Files/Pods-Screen-MirroringTests/Pods-Screen-MirroringTests.debug.xcconfig"; sourceTree = "<group>"; };
-		265E0C9BBABF39C6B7CE841E /* Pods-Screen-Mirroring-Screen-MirroringUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Screen-Mirroring-Screen-MirroringUITests.release.xcconfig"; path = "Target Support Files/Pods-Screen-Mirroring-Screen-MirroringUITests/Pods-Screen-Mirroring-Screen-MirroringUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4698CBBA80A4ECA4A9DDA41C /* Pods_Screen_Mirroring.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Screen_Mirroring.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56C4B292A9BB4252A8DF1113 /* Pods-Screen-Mirroring.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Screen-Mirroring.debug.xcconfig"; path = "Target Support Files/Pods-Screen-Mirroring/Pods-Screen-Mirroring.debug.xcconfig"; sourceTree = "<group>"; };
 		6E5BEDFB942C220B9FADC2E8 /* Pods-Screen-Mirroring.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Screen-Mirroring.release.xcconfig"; path = "Target Support Files/Pods-Screen-Mirroring/Pods-Screen-Mirroring.release.xcconfig"; sourceTree = "<group>"; };
@@ -107,10 +112,15 @@
 		8490DA732C66627F00F44433 /* Screen_MirroringUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen_MirroringUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		84BE632A2C6D232B00E8587B /* ActionSheet.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ActionSheet.storyboard; sourceTree = "<group>"; };
 		84BE632B2C6D232B00E8587B /* ActionSheetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionSheetViewController.swift; sourceTree = "<group>"; };
-		8E82EAAB6B5EBDC7170BD243 /* Pods-Screen-MirroringTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Screen-MirroringTests.release.xcconfig"; path = "Target Support Files/Pods-Screen-MirroringTests/Pods-Screen-MirroringTests.release.xcconfig"; sourceTree = "<group>"; };
-		A15A6CC700CB7AFD2C644F87 /* Pods-Screen-Mirroring-Screen-MirroringUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Screen-Mirroring-Screen-MirroringUITests.debug.xcconfig"; path = "Target Support Files/Pods-Screen-Mirroring-Screen-MirroringUITests/Pods-Screen-Mirroring-Screen-MirroringUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		C263BBD794EBDDCE5535C2AD /* Pods_Screen_Mirroring_Screen_MirroringUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Screen_Mirroring_Screen_MirroringUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB9F62BCD22B2FAB789A7899 /* Pods_Screen_MirroringTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Screen_MirroringTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F315038C2C70892200C0B13A /* AlbumsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsViewController.swift; sourceTree = "<group>"; };
+		F315038E2C70894500C0B13A /* MediaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaViewController.swift; sourceTree = "<group>"; };
+		F31503902C708A3100C0B13A /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		F31503922C709E7300C0B13A /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		F31503942C70A54F00C0B13A /* NetworkPermissionHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkPermissionHelper.swift; sourceTree = "<group>"; };
+		F31503982C70AC3300C0B13A /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		F315039B2C70B4E300C0B13A /* DocumentsViewerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsViewerController.swift; sourceTree = "<group>"; };
+		F315039E2C70D56600C0B13A /* TipsSheetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsSheetController.swift; sourceTree = "<group>"; };
+		F31503A02C70DAEF00C0B13A /* Tips.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tips.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +136,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				972F5D9100DCE5464F834241 /* Pods_Screen_MirroringTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,7 +143,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBAC51680FE8601776032D93 /* Pods_Screen_Mirroring_Screen_MirroringUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,8 +153,6 @@
 			isa = PBXGroup;
 			children = (
 				4698CBBA80A4ECA4A9DDA41C /* Pods_Screen_Mirroring.framework */,
-				C263BBD794EBDDCE5535C2AD /* Pods_Screen_Mirroring_Screen_MirroringUITests.framework */,
-				FB9F62BCD22B2FAB789A7899 /* Pods_Screen_MirroringTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -156,10 +162,6 @@
 			children = (
 				56C4B292A9BB4252A8DF1113 /* Pods-Screen-Mirroring.debug.xcconfig */,
 				6E5BEDFB942C220B9FADC2E8 /* Pods-Screen-Mirroring.release.xcconfig */,
-				A15A6CC700CB7AFD2C644F87 /* Pods-Screen-Mirroring-Screen-MirroringUITests.debug.xcconfig */,
-				265E0C9BBABF39C6B7CE841E /* Pods-Screen-Mirroring-Screen-MirroringUITests.release.xcconfig */,
-				20F64CC888A015F990425D6B /* Pods-Screen-MirroringTests.debug.xcconfig */,
-				8E82EAAB6B5EBDC7170BD243 /* Pods-Screen-MirroringTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -220,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				8482409E2C666542007C6B9A /* AuthorizationStatus.swift */,
+				F31503942C70A54F00C0B13A /* NetworkPermissionHelper.swift */,
 				8482409F2C666542007C6B9A /* Helpers.swift */,
 				848240A02C666542007C6B9A /* PurchaseService.swift */,
 				848240A32C666542007C6B9A /* Storage.swift */,
@@ -253,9 +256,13 @@
 		8490DA4F2C66627D00F44433 /* Screen-Mirroring */ = {
 			isa = PBXGroup;
 			children = (
+				F315039D2C70D55600C0B13A /* Tips */,
 				8490DA502C66627D00F44433 /* AppDelegate.swift */,
 				8490DA522C66627D00F44433 /* SceneDelegate.swift */,
 				8451B32A2C666477007DFEF1 /* Onboarding */,
+				F315038B2C70890C00C0B13A /* GalleryPicker */,
+				F315039A2C70B40D00C0B13A /* DocumentPicker */,
+				F31503972C70AC1E00C0B13A /* WebMirror */,
 				8451B3272C666477007DFEF1 /* Splash */,
 				84E0B7102C6D1F2600DFEC74 /* Main */,
 				84342BBB2C6BAE37003E7EEA /* Settings */,
@@ -306,6 +313,42 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
+		F315038B2C70890C00C0B13A /* GalleryPicker */ = {
+			isa = PBXGroup;
+			children = (
+				F315038C2C70892200C0B13A /* AlbumsViewController.swift */,
+				F315038E2C70894500C0B13A /* MediaViewController.swift */,
+				F31503902C708A3100C0B13A /* PhotosViewController.swift */,
+				F31503922C709E7300C0B13A /* BaseViewController.swift */,
+			);
+			path = GalleryPicker;
+			sourceTree = "<group>";
+		};
+		F31503972C70AC1E00C0B13A /* WebMirror */ = {
+			isa = PBXGroup;
+			children = (
+				F31503982C70AC3300C0B13A /* WebViewController.swift */,
+			);
+			path = WebMirror;
+			sourceTree = "<group>";
+		};
+		F315039A2C70B40D00C0B13A /* DocumentPicker */ = {
+			isa = PBXGroup;
+			children = (
+				F315039B2C70B4E300C0B13A /* DocumentsViewerController.swift */,
+			);
+			path = DocumentPicker;
+			sourceTree = "<group>";
+		};
+		F315039D2C70D55600C0B13A /* Tips */ = {
+			isa = PBXGroup;
+			children = (
+				F315039E2C70D56600C0B13A /* TipsSheetController.swift */,
+				F31503A02C70DAEF00C0B13A /* Tips.storyboard */,
+			);
+			path = Tips;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -333,7 +376,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8490DA7A2C66627F00F44433 /* Build configuration list for PBXNativeTarget "Screen-MirroringTests" */;
 			buildPhases = (
-				64B546CD8C9A07BA0D865EDE /* [CP] Check Pods Manifest.lock */,
 				8490DA5F2C66627F00F44433 /* Sources */,
 				8490DA602C66627F00F44433 /* Frameworks */,
 				8490DA612C66627F00F44433 /* Resources */,
@@ -352,11 +394,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8490DA7D2C66627F00F44433 /* Build configuration list for PBXNativeTarget "Screen-MirroringUITests" */;
 			buildPhases = (
-				1E8B2960A21336454B762A52 /* [CP] Check Pods Manifest.lock */,
 				8490DA692C66627F00F44433 /* Sources */,
 				8490DA6A2C66627F00F44433 /* Frameworks */,
 				8490DA6B2C66627F00F44433 /* Resources */,
-				9FEE3CED8E51FD7A12F3B701 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -422,6 +462,7 @@
 				84342BAE2C6A7BCD003E7EEA /* Inter-Light.ttf in Resources */,
 				8490DA5A2C66627E00F44433 /* Assets.xcassets in Resources */,
 				8451B32B2C666477007DFEF1 /* SplashScreen.storyboard in Resources */,
+				F31503A12C70DAEF00C0B13A /* Tips.storyboard in Resources */,
 				84342BAD2C6A7BCD003E7EEA /* Inter-ExtraLight.ttf in Resources */,
 				84342BAC2C6A7BCD003E7EEA /* Inter-ExtraBold.ttf in Resources */,
 				84342BAA2C6A7BCD003E7EEA /* Inter-Black.ttf in Resources */,
@@ -450,28 +491,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1E8B2960A21336454B762A52 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Screen-Mirroring-Screen-MirroringUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		2838CED2DE7A6E264562D96D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -488,28 +507,6 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Screen-Mirroring-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		64B546CD8C9A07BA0D865EDE /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Screen-MirroringTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -552,23 +549,6 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
 		};
-		9FEE3CED8E51FD7A12F3B701 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Screen-Mirroring-Screen-MirroringUITests/Pods-Screen-Mirroring-Screen-MirroringUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Screen-Mirroring-Screen-MirroringUITests/Pods-Screen-Mirroring-Screen-MirroringUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Screen-Mirroring-Screen-MirroringUITests/Pods-Screen-Mirroring-Screen-MirroringUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -578,21 +558,29 @@
 			files = (
 				84BE632E2C6D232B00E8587B /* ActionSheetViewController.swift in Sources */,
 				8490DA552C66627D00F44433 /* ViewController.swift in Sources */,
+				F315039C2C70B4E300C0B13A /* DocumentsViewerController.swift in Sources */,
+				F315038D2C70892200C0B13A /* AlbumsViewController.swift in Sources */,
+				F31503952C70A54F00C0B13A /* NetworkPermissionHelper.swift in Sources */,
 				848240AD2C666542007C6B9A /* Storage.swift in Sources */,
 				8451B32E2C666477007DFEF1 /* OnboardingViewController.swift in Sources */,
+				F31503932C709E7300C0B13A /* BaseViewController.swift in Sources */,
 				8451B32D2C666477007DFEF1 /* OnboardingContentPage.swift in Sources */,
 				848240A92C666542007C6B9A /* Helpers.swift in Sources */,
 				84342BB72C6B559A003E7EEA /* AppReview.swift in Sources */,
 				848240AA2C666542007C6B9A /* PurchaseService.swift in Sources */,
+				F31503912C708A3100C0B13A /* PhotosViewController.swift in Sources */,
 				84342BB92C6B559A003E7EEA /* UIWindow.swift in Sources */,
 				84342BBC2C6BAE37003E7EEA /* SettingsViewController.swift in Sources */,
+				F31503992C70AC3300C0B13A /* WebViewController.swift in Sources */,
 				84342BB82C6B559A003E7EEA /* UIViewController.swift in Sources */,
 				8490DA512C66627D00F44433 /* AppDelegate.swift in Sources */,
 				8451B32C2C666477007DFEF1 /* SplashScreenViewController.swift in Sources */,
 				8490DA532C66627D00F44433 /* SceneDelegate.swift in Sources */,
 				84342B9F2C6A5C01003E7EEA /* R.generated.swift in Sources */,
 				844CF87F2C6D2B01007CE780 /* Haptic.swift in Sources */,
+				F315039F2C70D56600C0B13A /* TipsSheetController.swift in Sources */,
 				848240A82C666542007C6B9A /* AuthorizationStatus.swift in Sources */,
+				F315038F2C70894500C0B13A /* MediaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -827,7 +815,6 @@
 		};
 		8490DA7B2C66627F00F44433 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 20F64CC888A015F990425D6B /* Pods-Screen-MirroringTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -847,7 +834,6 @@
 		};
 		8490DA7C2C66627F00F44433 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8E82EAAB6B5EBDC7170BD243 /* Pods-Screen-MirroringTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -867,7 +853,6 @@
 		};
 		8490DA7E2C66627F00F44433 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A15A6CC700CB7AFD2C644F87 /* Pods-Screen-Mirroring-Screen-MirroringUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -885,7 +870,6 @@
 		};
 		8490DA7F2C66627F00F44433 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 265E0C9BBABF39C6B7CE841E /* Pods-Screen-Mirroring-Screen-MirroringUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
