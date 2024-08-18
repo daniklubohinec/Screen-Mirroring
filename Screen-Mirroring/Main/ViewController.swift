@@ -116,7 +116,7 @@ class ViewController: UIViewController {
                         action: { [weak self] in
                             self?.routeView.showAirplayView()
                         },
-                        image: nil,
+                        image: R.image.airPlay(),
                         title: "Open AirPlay"
                     
                     )

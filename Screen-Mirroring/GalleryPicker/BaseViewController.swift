@@ -55,7 +55,7 @@ final class CustomAirPlayWrapper: UIView {
     let routePickerView = AVRoutePickerView()
     private lazy var button: UIButton = {
         let button = UIButton()
-        button.setImage(R.image.airplay(), for: .normal)
+        button.setImage(R.image.airPlay(), for: .normal)
         button.addTarget(self, action: #selector(viewTapped), for: .touchUpInside)
         return button
     }()
