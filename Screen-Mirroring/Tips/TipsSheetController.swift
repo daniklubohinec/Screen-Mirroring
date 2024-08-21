@@ -49,8 +49,14 @@ final class TipsSheetController: UIViewController {
     
     var tips: TipsType?
     
+    // public
+    public var tipsType: TipsType = .disconnect
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tips = tipsType
+        
         if let tips {
             switch tips {
             case .lastStep:
@@ -73,12 +79,33 @@ final class TipsSheetController: UIViewController {
                 howToLabel.text = "How to Disconnect"
             }
         }
-        
-        okButton.rx.tap
-            .subscribe(onNext: { [weak self] in
-                HapticGenerator.shared.generateImpact()
-                self?.dismiss(animated: true)
-            })
-            .disposed(by: disposeBag)
+    }
+    
+    static func showActionSheet(
+        tipsType: TipsType,
+        onViewController: UIViewController? = UIApplication.shared.windows.first(where: { $0.isKeyWindow })?.rootViewController) {
+            
+            guard let dialog = R.storyboard.tips.tipsVC() else { return }
+            
+            dialog.modalPresentationStyle = .overFullScreen
+            dialog.tipsType = tipsType
+            
+            if let delegate = UIApplication.shared.delegate as? AppDelegate,
+               let _ = delegate.window?.topViewController() as? TipsSheetController { } else {
+                   onViewController?.topViewController().present(dialog, animated: true)
+               }
+        }
+    
+    
+    @IBAction func okButtonAction(_ sender: Any) {
+        hide(action: nil)
+    }
+    
+    private func hide(_ success: Bool = false, action: (() -> Void)?) {
+        modalTransitionStyle = .crossDissolve
+        self.dismiss(animated: true, completion: {
+            guard let action = action else { return }
+            action()
+        })
     }
 }

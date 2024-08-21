@@ -67,7 +67,7 @@ class SettingsViewController: UIViewController, MFMailComposeViewControllerDeleg
     @IBAction
     func shareApp() {
         HapticGenerator.shared.generateImpact()
-        let linkToShare = ["https://itunes.apple.com/app/id6575368844"]
+        let linkToShare = ["https://itunes.apple.com/app/id"]
         let activityController = UIActivityViewController(activityItems: linkToShare, applicationActivities: nil)
         self.present(activityController, animated: true, completion: nil)
     }
@@ -78,7 +78,7 @@ class SettingsViewController: UIViewController, MFMailComposeViewControllerDeleg
         if MFMailComposeViewController.canSendMail() {
             let mail = MFMailComposeViewController()
             mail.mailComposeDelegate = self
-            mail.setToRecipients(["gytdGraBlais45@hotmail.com"])
+            mail.setToRecipients(["biaginiuberto@gmail.com"])
             present(mail, animated: true)
         } else {
             let alert = UIAlertController(title: "Error", message: "Device is not able to send an email", preferredStyle: .alert)
@@ -101,12 +101,12 @@ class SettingsViewController: UIViewController, MFMailComposeViewControllerDeleg
     @IBAction
     private func privacyTapped() {
         HapticGenerator.shared.generateImpact()
-        loadURLString("https://docs.google.com/document/d/1fMjSzysmWVI2q7reiGkCYcdrf2BlfvYj5isq0_T7X4E/edit?usp=sharing")
+        loadURLString("https://docs.google.com/document/d/1XWGMkuhwJndeEZbz1PzPgXvCBicTj9hMSVmQ6UmklOA/edit")
     }
     
     @IBAction
     private func termsOfUseTapped() {
         HapticGenerator.shared.generateImpact()
-        loadURLString("https://docs.google.com/document/d/1YOAWrkDnrbQ8CL7emMMg51z8RHlG8ix-8-sDWYNiDug/edit?usp=sharing")
+        loadURLString("https://docs.google.com/document/d/1PpzLeabieTxRZz6yfQ_8ijMKmOi2vmPFKwxr0ZQiOfA/edit")
     }
 }

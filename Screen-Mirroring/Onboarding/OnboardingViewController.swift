@@ -439,7 +439,7 @@ final class OnboardingViewController: UIViewController, UIScrollViewDelegate {
     }
     
     @objc private func termsOfUseTapped() {
-        // loadURLString("https://docs.google.com/document/d/1YOAWrkDnrbQ8CL7emMMg51z8RHlG8ix-8-sDWYNiDug/edit?usp=sharing")
+        loadURLString("https://docs.google.com/document/d/1PpzLeabieTxRZz6yfQ_8ijMKmOi2vmPFKwxr0ZQiOfA/edit")
     }
     
     @objc private func restoreTapped() {
@@ -449,7 +449,7 @@ final class OnboardingViewController: UIViewController, UIScrollViewDelegate {
     }
     
     @objc private func privacyTapped() {
-        // loadURLString("https://docs.google.com/document/d/1fMjSzysmWVI2q7reiGkCYcdrf2BlfvYj5isq0_T7X4E/edit?usp=sharing")
+        loadURLString("https://docs.google.com/document/d/1XWGMkuhwJndeEZbz1PzPgXvCBicTj9hMSVmQ6UmklOA/edit")
     }
     
 }

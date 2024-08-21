@@ -57,12 +57,9 @@ class ViewController: UIViewController {
                         .filter { $0 }
                         .subscribe(on: MainScheduler.asyncInstance)
                         .subscribe(onNext: { [weak self] _ in
-                            guard let tip = R.storyboard.tips.tipsVC() else { return }
                             HapticGenerator.shared.generateImpact()
-                            tip.tips = .lastStep
-                            tip.modalPresentationStyle = .overFullScreen
-
-                            presentGlobally(controller: tip)
+                            
+                            TipsSheetController.showActionSheet(tipsType: .lastStep)
                             self?.lastStepBag = DisposeBag()
                         })
                         .disposed(by: lastStepBag)
@@ -118,7 +115,7 @@ class ViewController: UIViewController {
                         },
                         image: R.image.airPlay(),
                         title: "Open AirPlay"
-                    
+                        
                     )
                 )
             }
@@ -133,7 +130,7 @@ class ViewController: UIViewController {
                     },
                     image: nil,
                     title: "Turn on Wi-Fi"
-                
+                    
                 )
             )
         }
@@ -141,18 +138,7 @@ class ViewController: UIViewController {
     
     @IBAction func howToAction(_ sender: Any) {
         HapticGenerator.shared.generateImpact()
-        
-        if connected {
-            guard let tip = R.storyboard.tips.tipsVC() else { return }
-            tip.tips = .disconnect
-            tip.modalPresentationStyle = .overFullScreen
-            present(tip, animated: false)
-        } else {
-            guard let tip = R.storyboard.tips.tipsVC() else { return }
-            tip.tips = .connect
-            tip.modalPresentationStyle = .overFullScreen
-            present(tip, animated: false)
-        }
+        TipsSheetController.showActionSheet(tipsType: connected ? .disconnect : .connect)
     }
     
     @IBAction
@@ -171,7 +157,7 @@ class ViewController: UIViewController {
         let controller = WebViewController()
         navigationController?.pushViewController(controller, animated: true)
     }
-
+    
     @IBAction
     private func openDocuments() {
         HapticGenerator.shared.generateImpact()
