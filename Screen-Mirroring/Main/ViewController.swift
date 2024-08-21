@@ -113,7 +113,7 @@ class ViewController: UIViewController {
                         action: { [weak self] in
                             self?.routeView.showAirplayView()
                         },
-                        image: R.image.airPlay(),
+                        image: R.image.airplay(),
                         title: "Open AirPlay"
                         
                     )
@@ -154,43 +154,55 @@ class ViewController: UIViewController {
     @IBAction
     private func castWeb() {
         HapticGenerator.shared.generateImpact()
-        let controller = WebViewController()
-        navigationController?.pushViewController(controller, animated: true)
+        if PurchaseService.shared.hasPremium {
+            let controller = WebViewController()
+            navigationController?.pushViewController(controller, animated: true)
+        } else {
+            showPaywall(presenting: self)
+        }
     }
     
     @IBAction
     private func openDocuments() {
         HapticGenerator.shared.generateImpact()
-        let vc = DocumentsPickerController(forOpeningContentTypes: [.pdf, .image, .video, .text, .data, .content, .compositeContent])
-        vc.didPickDocument = { [weak self] in
-            let controller = DocumentViewController(url: $0)
-            self?.navigationController?.pushViewController(controller, animated: true)
+        if PurchaseService.shared.hasPremium {
+            let vc = DocumentsPickerController(forOpeningContentTypes: [.pdf, .image, .video, .text, .data, .content, .compositeContent])
+            vc.didPickDocument = { [weak self] in
+                let controller = DocumentViewController(url: $0)
+                self?.navigationController?.pushViewController(controller, animated: true)
+            }
+            present(vc, animated: true)
+        } else {
+            showPaywall(presenting: self)
         }
-        present(vc, animated: true)
     }
     
     private func cast(mediaType: MediaType) {
         HapticGenerator.shared.generateImpact()
-        PHPhotoLibrary.requestAuthorization { [weak self] status in
-            DispatchQueue.main.async {
-                if status == .authorized {
-                    let vc = AlbumViewController(mediaType: mediaType)
-                    self?.navigationController?.pushViewController(vc, animated: true)
-                } else {
-                    ActionSheetViewController.showActionSheet(
-                        mainImage: R.image.gallery(),
-                        titleText: "Allow access to your Photos",
-                        subtitleText: "To cast media, allow the app to access Photos in your iPhone Settings.",
-                        firstAction: (
-                            action: {
-                                BaseViewController.openAppSettings()
-                            },
-                            image: nil,
-                            title: "Go to Settings"
+        if PurchaseService.shared.hasPremium {
+            PHPhotoLibrary.requestAuthorization { [weak self] status in
+                DispatchQueue.main.async {
+                    if status == .authorized {
+                        let vc = AlbumViewController(mediaType: mediaType)
+                        self?.navigationController?.pushViewController(vc, animated: true)
+                    } else {
+                        ActionSheetViewController.showActionSheet(
+                            mainImage: R.image.gallery(),
+                            titleText: "Allow access to your Photos",
+                            subtitleText: "To cast media, allow the app to access Photos in your iPhone Settings.",
+                            firstAction: (
+                                action: {
+                                    BaseViewController.openAppSettings()
+                                },
+                                image: nil,
+                                title: "Go to Settings"
+                            )
                         )
-                    )
+                    }
                 }
             }
+        } else {
+            showPaywall(presenting: self)
         }
     }
 }

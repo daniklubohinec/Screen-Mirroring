@@ -81,7 +81,7 @@ final class DocumentViewController: BaseViewController, QLPreviewControllerDataS
                         action: { [weak self] in
                             self?.openAirplayMenu()
                         },
-                        image: R.image.airPlay(),
+                        image: R.image.airplay(),
                         title: "Open AirPlay"
                     
                     )
