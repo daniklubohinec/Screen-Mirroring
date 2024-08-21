@@ -35,7 +35,7 @@ enum PurchaseInfo {
     var key: String {
         switch self {
         case .onboardingInapp:
-            return "onboarding_inapp_paywall"
+            return "onboarding_paywall"
         }
     }
 }
@@ -57,7 +57,7 @@ final class PurchaseService: PurchaseServiceProtocol {
 
     func configure() {
         Adapty.delegate = self
-        Adapty.activate("public_live_aPb8sTad.pyLXf0o2Ho9Ue3e0RPib")
+        Adapty.activate("public_live_nzL8dCDq.Tj0UtmUHTeqmkSxGSeW6")
         Task {
             await checkPurchases()
             await getPaywalls()

@@ -190,6 +190,7 @@ final class OnboardingViewController: UIViewController, UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        view.backgroundColor = .black
         setupScrollView()
         setupPageControl()
         setupContinueButton()
