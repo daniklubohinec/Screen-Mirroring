@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Screen-Mirroring
 //
-//  Created by Danik Lubohinec on 9.08.24.
+//  Created by Liver Pauler on 08.01.24.
 //
 
 import UIKit

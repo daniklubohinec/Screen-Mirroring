@@ -29,7 +29,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pdB-U2-Pfl">
                                                 <rect key="frame" x="0.0" y="0.0" width="393" height="369"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LastStep" translatesAutoresizingMaskIntoConstraints="NO" id="bCb-yn-eTb">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="connectFromSettingsLastStep" translatesAutoresizingMaskIntoConstraints="NO" id="bCb-yn-eTb">
                                                         <rect key="frame" x="0.0" y="50" width="393" height="319"/>
                                                     </imageView>
                                                 </subviews>
@@ -75,7 +75,7 @@
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hZm-If-EC1">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="187" height="230"/>
                                                                                 <subviews>
-                                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DisconnectStep1" translatesAutoresizingMaskIntoConstraints="NO" id="RCL-uw-mal">
+                                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="disconnectFromAirPlayStep1" translatesAutoresizingMaskIntoConstraints="NO" id="RCL-uw-mal">
                                                                                         <rect key="frame" x="16" y="0.0" width="171" height="230"/>
                                                                                         <constraints>
                                                                                             <constraint firstAttribute="width" constant="171" id="WK8-Jj-01B"/>
@@ -93,7 +93,7 @@
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G5T-bC-HUk">
                                                                                 <rect key="frame" x="206" y="0.0" width="187" height="230"/>
                                                                                 <subviews>
-                                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DisconnectStep2" translatesAutoresizingMaskIntoConstraints="NO" id="u3C-bT-9Y0">
+                                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="disconnectFromAirPlayStep2" translatesAutoresizingMaskIntoConstraints="NO" id="u3C-bT-9Y0">
                                                                                         <rect key="frame" x="0.0" y="0.0" width="171" height="230"/>
                                                                                         <constraints>
                                                                                             <constraint firstAttribute="width" constant="171" id="tp9-pI-8bc"/>
@@ -131,7 +131,7 @@
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yGQ-Ec-gPh">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="187" height="230"/>
                                                                                 <subviews>
-                                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ConnectStep1" translatesAutoresizingMaskIntoConstraints="NO" id="Bmt-PD-EJ3">
+                                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="сonnectToAirPlayStep1" translatesAutoresizingMaskIntoConstraints="NO" id="Bmt-PD-EJ3">
                                                                                         <rect key="frame" x="16" y="0.0" width="171" height="230"/>
                                                                                         <constraints>
                                                                                             <constraint firstAttribute="width" constant="171" id="c8c-dn-eJ8"/>
@@ -149,7 +149,7 @@
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fcj-4g-Uep">
                                                                                 <rect key="frame" x="206" y="0.0" width="187" height="230"/>
                                                                                 <subviews>
-                                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ConnectStep2" translatesAutoresizingMaskIntoConstraints="NO" id="WzG-cK-yhp">
+                                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="сonnectToAirPlayStep2" translatesAutoresizingMaskIntoConstraints="NO" id="WzG-cK-yhp">
                                                                                         <rect key="frame" x="0.0" y="0.0" width="171" height="230"/>
                                                                                         <constraints>
                                                                                             <constraint firstAttribute="width" constant="171" id="xvO-8X-EJO"/>
@@ -187,7 +187,7 @@
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XCk-JG-o10">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="187" height="230"/>
                                                                                 <subviews>
-                                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ConnectStep3" translatesAutoresizingMaskIntoConstraints="NO" id="oTO-Fi-hdM">
+                                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="сonnectToAirPlayStep3" translatesAutoresizingMaskIntoConstraints="NO" id="oTO-Fi-hdM">
                                                                                         <rect key="frame" x="16" y="0.0" width="171" height="230"/>
                                                                                         <constraints>
                                                                                             <constraint firstAttribute="width" constant="171" id="bWB-fq-t75"/>
@@ -205,7 +205,7 @@
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Irb-0L-Qbn">
                                                                                 <rect key="frame" x="206" y="0.0" width="187" height="230"/>
                                                                                 <subviews>
-                                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ConnectStep4" translatesAutoresizingMaskIntoConstraints="NO" id="MTv-qW-7y2">
+                                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="сonnectToAirPlayStep4" translatesAutoresizingMaskIntoConstraints="NO" id="MTv-qW-7y2">
                                                                                         <rect key="frame" x="0.0" y="0.0" width="171" height="230"/>
                                                                                         <constraints>
                                                                                             <constraint firstAttribute="width" constant="171" id="QRo-Sc-DjM"/>
@@ -340,13 +340,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ConnectStep1" width="171" height="230"/>
-        <image name="ConnectStep2" width="171" height="230"/>
-        <image name="ConnectStep3" width="171" height="230"/>
-        <image name="ConnectStep4" width="171" height="230"/>
-        <image name="DisconnectStep1" width="171" height="230"/>
-        <image name="DisconnectStep2" width="171" height="230"/>
-        <image name="LastStep" width="278" height="369"/>
+        <image name="connectFromSettingsLastStep" width="278" height="369"/>
+        <image name="disconnectFromAirPlayStep1" width="171" height="230"/>
+        <image name="disconnectFromAirPlayStep2" width="171" height="230"/>
+        <image name="сonnectToAirPlayStep1" width="171" height="230"/>
+        <image name="сonnectToAirPlayStep2" width="171" height="230"/>
+        <image name="сonnectToAirPlayStep3" width="171" height="230"/>
+        <image name="сonnectToAirPlayStep4" width="171" height="230"/>
         <namedColor name="c1C1C1E">
             <color red="0.10980392156862745" green="0.10980392156862745" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

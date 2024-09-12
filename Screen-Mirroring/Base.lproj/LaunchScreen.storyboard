@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppLogo" translatesAutoresizingMaskIntoConstraints="NO" id="BsQ-BI-GTP">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreenAppLogo" translatesAutoresizingMaskIntoConstraints="NO" id="BsQ-BI-GTP">
                                 <rect key="frame" x="131.66666666666666" y="361" width="129.99999999999997" height="130"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="130" id="Dyn-2f-Vpp"/>
@@ -37,6 +37,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="AppLogo" width="130" height="130"/>
+        <image name="LaunchScreenAppLogo" width="1024" height="1024"/>
     </resources>
 </document>

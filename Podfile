@@ -11,5 +11,4 @@ target 'Screen-Mirroring' do
   pod 'RxDataSources'
   pod 'R.swift'
   pod 'SnapKit', '~> 5.7.0'
-  pod 'Adapty', '~> 2.10.4'
 end

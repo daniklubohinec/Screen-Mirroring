@@ -77,12 +77,6 @@ extension UIView {
     }
 }
 
-func showPaywall(presenting: UIViewController) {
-    let vc = OnboardingViewController(pages: [.fourthScreen])
-    vc.modalPresentationStyle = .fullScreen
-    presenting.present(vc, animated: true)
-}
-
 func openAppSettings() {
     if let url = URL(string: UIApplication.openSettingsURLString) {
         if UIApplication.shared.canOpenURL(url) {
@@ -122,7 +116,7 @@ func share(
 func presentGlobally(controller: UIViewController) {
     if let root = UIApplication.shared.windows.first(where: { $0.isKeyWindow })?.rootViewController {
         let presentOn: UIViewController?
-        if root is SplashScreenViewController {
+        if root is FirstViewController {
             presentOn = root.presentedViewController ?? root.children.first
         } else {
             presentOn = root

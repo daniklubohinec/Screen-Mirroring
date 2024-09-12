@@ -1,8 +1,8 @@
 //
 //  AppReview.swift
-//  QR-Reader
+//  Screen-Mirroring
 //
-//  Created by Danik Lubohinec on 27.07.24.
+//  Created by Liver Pauler on 08.01.24.
 //
 
 import Foundation
@@ -12,7 +12,7 @@ public class AppReview {
     
     public let minLaunches: Int
     public let minDays: Int
-
+    
     public init(minLaunches: Int = 0, minDays: Int = 0) {
         self.minLaunches = minLaunches
         self.minDays = minDays
@@ -65,7 +65,7 @@ public class AppReview {
         (lastReviewDate == nil || daysAfterLastReview >= 125) &&
         lastReviewVersion != version
     }
-
+    
     @discardableResult
     public func requestIfNeeded() -> Bool {
         if firstLaunchDate == nil { firstLaunchDate = Date() }
@@ -83,7 +83,7 @@ public class AppReview {
     
     private func request() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            #if os(iOS)
+#if os(iOS)
             if #available(iOS 14.0, *) {
                 if let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
                     SKStoreReviewController.requestReview(in: scene)
@@ -91,9 +91,9 @@ public class AppReview {
             } else {
                 SKStoreReviewController.requestReview()
             }
-            #else
+#else
             SKStoreReviewController.requestReview()
-            #endif
+#endif
         }
     }
     

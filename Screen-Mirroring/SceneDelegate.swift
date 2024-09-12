@@ -2,11 +2,10 @@
 //  SceneDelegate.swift
 //  Screen-Mirroring
 //
-//  Created by Danik Lubohinec on 9.08.24.
+//  Created by Liver Pauler on 08.01.24.
 //
 
 import UIKit
-import Adapty
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -17,13 +16,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let windowScene = (scene as? UIWindowScene) else { return }
-        
-        window = UIWindow(windowScene: windowScene)
-        let splashScreenViewController = R.storyboard.splashScreen.instantiateInitialViewController()
-        window?.rootViewController = splashScreenViewController
-        window?.makeKeyAndVisible()
-        PurchaseService.shared.configure()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -46,22 +38,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func sceneWillEnterForeground(_ scene: UIScene) {
         // Called as the scene transitions from the background to the foreground.
         // Use this method to undo the changes made on entering the background.
-        if enteredInBackground {
-            defer { enteredInBackground = false }
-            guard !PurchaseService.shared.hasPremium else {
-                return
-            }
-            if let root = UIApplication.shared.windows.first(where: { $0.isKeyWindow })?.rootViewController {
-                let presentOn: UIViewController?
-                if root is SplashScreenViewController {
-                    presentOn = root.presentedViewController ?? root.children.first
-                } else {
-                    presentOn = root
-                }
-                guard let presentOn else { return }
-                showPaywall(presenting: presentOn)
-            }
-        }
+        
     }
 
     func sceneDidEnterBackground(_ scene: UIScene) {

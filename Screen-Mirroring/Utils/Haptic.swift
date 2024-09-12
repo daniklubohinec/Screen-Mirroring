@@ -15,6 +15,5 @@ final class HapticGenerator: ImpactGenerator {
     }
     
     // MARK: Fileprivate
-    
     fileprivate let impact = UIImpactFeedbackGenerator(style: .light)
 }

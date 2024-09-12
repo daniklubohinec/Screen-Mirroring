@@ -29,7 +29,7 @@ public class NetworkPermissionHelper {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
         }
     }
-
+    
     func requestLocalNetworkPermission(completion: @escaping ((Bool) -> Void)) {
         let parameters = NWParameters.tcp
         let browser = NWBrowser(for: .bonjour(type: "_http._tcp", domain: nil), using: parameters)

@@ -73,23 +73,23 @@ final class DocumentViewController: BaseViewController, QLPreviewControllerDataS
     private func checkConnection() {
         if NetworkPermissionHelper.shared.isConnectedToWiFi() {
             if !AirPlayDeviceUtility.connected {
-                ActionSheetViewController.showActionSheet(
-                    mainImage: R.image.device(),
+                BottomSheetTipsPermitViewController.showActionSheet(
+                    mainImage: R.image.deviceMirroringSheetMainImage(),
                     titleText: "Please choose the device you wish to connect to.",
                     subtitleText: "Make sure your devices are connected to the same Wi-Fi network.",
                     firstAction: (
                         action: { [weak self] in
                             self?.openAirplayMenu()
                         },
-                        image: R.image.airPlay(),
+                        image: R.image.openAirPlaySheetButtonImage(),
                         title: "Open AirPlay"
                     
                     )
                 )
             }
         } else {
-            ActionSheetViewController.showActionSheet(
-                mainImage: R.image.homeWifi(),
+            BottomSheetTipsPermitViewController.showActionSheet(
+                mainImage: R.image.notConnectedToInternetImage(),
                 titleText: "Your iPhone is not connected to a Wi-Fi network",
                 subtitleText: "Make sure your iPhone is on the same Wi-Fi network as the Cast-enabled device.",
                 firstAction: (

@@ -2,7 +2,7 @@
 //  SettingsViewController.swift
 //  QR-Reader
 //
-//  Created by Danik Lubohinec on 13.07.24.
+//  Created by Liver Pauler on 08.01.24.
 //
 
 import UIKit
@@ -56,6 +56,9 @@ class SettingsViewController: UIViewController, MFMailComposeViewControllerDeleg
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(false, animated: true)
+        navigationItem.largeTitleDisplayMode = .never
+        navigationController?.navigationBar.isTranslucent = false
+        navigationController?.navigationBar.barTintColor = UIColor.black
     }
     
     @IBAction
@@ -93,9 +96,6 @@ class SettingsViewController: UIViewController, MFMailComposeViewControllerDeleg
     @IBAction
     private func restoreTapped() {
         HapticGenerator.shared.generateImpact()
-        Task {
-            await PurchaseService.shared.restorePurchases()
-        }
     }
     
     @IBAction
