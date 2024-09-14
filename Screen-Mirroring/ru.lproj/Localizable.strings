@@ -1,0 +1,144 @@
+/* Screen-Mirroring.xcodeproj/project.pbxproj */
+"CPU_Check_and_Mirroring" = "Проверка ЦП и зеркалирование";
+"Local_Network_Usage_Description" = "Включите доступ к локальной сети для поиска устройств с поддержкой Cast.";
+"Photo_Library_Usage_Description" = "Пожалуйста, предоставьте доступ к Фото для загрузки изображений вашей комнаты.";
+
+/* Screen-Mirroring/First/Base.lproj/First.storyboard */
+"Screen_Mirroring" = "Зеркалирование экрана";
+"Button" = "Кнопка";
+"How_To_Connect" = "Как подключиться";
+"Feedback" = "Обратная связь";
+"Mini_Game" = "Мини-игра";
+"Files" = "Файлы";
+"Photo" = "Фото";
+"Video" = "Видео";
+"Web" = "Веб";
+
+/* Screen-Mirroring/BottomSheetPermit/ActionSheet.storyboard */
+"Same_WiFi_Network_Message" = "Убедитесь, что ваши устройства подключены к одной сети Wi-Fi.";
+
+/* Screen-Mirroring/TicTacToe/TicTacToeViewController.swift */
+"New_Game" = "Новая игра";
+"Cancel" = "Отмена";
+"You_Win" = "Вы выиграли!";
+"Congratulations" = "Поздравляем!";
+"You_Won_The_Game" = "Вы выиграли игру!";
+"You_Lose" = "Вы проиграли!";
+"Game_Over" = "Игра окончена";
+"Better_Luck_Next_Time" = "Удачи в следующий раз!";
+"Its_A_Draw" = "Ничья!";
+"Its_A_Tie" = "Ничья";
+"Game_Ended_In_Draw" = "Игра закончилась вничью.";
+"Game_Has_Ended" = "Игра закончилась.";
+
+/* Screen-Mirroring/TicTacToe/TicTacToeViewModel.swift */
+"Your_Turn" = "Ваш ход";
+"AI_Is_Thinking" = "ИИ думает...";
+
+/* Screen-Mirroring/FirstViewController.swift */
+"Welcome_Title" = "Добро пожаловать";
+"First_View_Controller_Message" = "Это первый контроллер просмотра";
+
+/* Screen-Mirroring/SettingsViewController.swift */
+"Settings_Title" = "Настройки";
+"Settings_Message" = "Настройте свои предпочтения здесь";
+
+/* Screen-Mirroring/MediaViewController.swift */
+"Media_Title" = "Медиа";
+"Media_Message" = "Просмотрите свои медиафайлы";
+
+/* Screen-Mirroring/PhotosViewController.swift */
+"Photos_Title" = "Фотографии";
+"Photos_Message" = "Просмотрите свою галерею фотографий";
+
+/* Screen-Mirroring/WebViewController.swift */
+"Web_Title" = "Веб";
+"Web_Message" = "Просмотр веб-страниц";
+
+/* Screen-Mirroring/DocumentsViewerController.swift */
+"Documents_Title" = "Документы";
+"Documents_Message" = "Просмотр ваших документов";
+
+/* Screen-Mirroring/TipsSheetController.swift */
+"Tips_Title" = "Советы";
+"Tips_Message" = "Вот несколько советов";
+
+/* Screen-Mirroring/BottomSheetTipsPermitViewController.swift */
+"Permission_Required_Title" = "Требуется разрешение";
+"Permission_Required_Message" = "Пожалуйста, предоставьте необходимые разрешения";
+
+/* Screen-Mirroring/NetworkConnection.swift */
+"Network_Connection_Failed" = "Сбой подключения к сети";
+
+/* Screen-Mirroring/AuthorizationStatus.swift */
+"Authorization_Status_Updated" = "Статус авторизации обновлен";
+
+/* Screen-Mirroring/Helpers.swift */
+"Helper_Function_Executed" = "Вспомогательная функция выполнена";
+
+/* Screen-Mirroring/AppDelegate.swift */
+"App_Launched_Successfully" = "Приложение успешно запущено";
+
+/* Screen-Mirroring/SceneDelegate.swift */
+"Scene_Delegate_Called" = "Вызван делегат сцены";
+
+/* Screen-Mirroring/AlbumsViewController.swift */
+"Albums_Title" = "Альбомы";
+"Albums_Message" = "Просмотр ваших альбомов";
+
+/* Screen-Mirroring/NetworkPermissionHelper.swift */
+"Network_Permission_Granted" = "Разрешение на использование сети предоставлено";
+
+/* FirstViewController.swift */
+"Active" = "Активный";
+"How_To_Disconnect" = "Как отключиться";
+"Tap_To_Connect" = "Нажмите, чтобы подключиться";
+"Tap_To_Connect_And_Choose_Device" = "Нажмите, чтобы подключиться и выбрать другое устройство для сопряжения с вашим iPhone.";
+"Open_AirPlay" = "Открыть AirPlay";
+"Not_Connected_To_WiFi" = "Ваш iPhone не подключен к сети Wi-Fi";
+"Same_WiFi_Network_Message" = "Убедитесь, что ваш iPhone находится в той же сети Wi-Fi, что и устройство с поддержкой Cast.";
+"Turn_On_WiFi" = "Включите Wi-Fi";
+"Allow_Access_To_Photos" = "Разрешите доступ к вашим фотографиям";
+"Allow_Photos_Access_Message" = "Чтобы транслировать медиа, разрешите приложению доступ к Фото в настройках вашего iPhone.";
+"Go_To_Settings" = "Перейти к настройкам";
+"Choose_Device" = "Пожалуйста, выберите устройство, к которому вы хотите подключиться.";
+"Same_WiFi_Network" = "Убедитесь, что ваши устройства подключены к одной сети Wi-Fi.";
+"CPU_Usage" = "Использование ЦП показывает, сколько мощности процессора используется приложениями и системными задачами. Высокое использование может замедлить производительность и разрядить батарею, тогда как низкое использование указывает на эффективную работу.";
+
+/* TipsSheetController.swift */
+"How_To_Connect" = "Как подключиться";
+"How_To_Disconnect" = "Как отключиться";
+
+/* AlbumsViewController.swift */
+"Photo_Mirroring" = "Зеркалирование фото";
+"Video_Mirroring" = "Зеркалирование видео";
+
+/* MediaViewController.swift */
+"Photo_Mirroring" = "Зеркалирование фото";
+"Video_Mirroring" = "Зеркалирование видео";
+
+/* DocumentsViewerController.swift */
+"Document_Mirroring" = "Зеркалирование документов";
+"Choose_Device" = "Пожалуйста, выберите устройство, к которому вы хотите подключиться.";
+"Same_WiFi_Network_Message" = "Убедитесь, что ваши устройства подключены к одной сети Wi-Fi.";
+"Open_AirPlay" = "Открыть AirPlay";
+"Not_Connected_To_WiFi" = "Ваш iPhone не подключен к сети Wi-Fi";
+"Same_WiFi_Network_Message" = "Убедитесь, что ваш iPhone находится в той же сети Wi-Fi, что и устройство с поддержкой Cast.";
+"Turn_On_WiFi" = "Включите Wi-Fi";
+
+/* WebViewController.swift */
+"Web_Mirroring" = "Зеркалирование веб-страниц";
+
+/* SettingsViewController.swift */
+"Error" = "Ошибка";
+"Close" = "Закрыть";
+"Email_Invalid" = "Устройство не может отправить электронное письмо";
+"Rate_Us" = "Оцените нас";
+"Share_App" = "Поделиться приложением";
+"Privacy_Policy" = "Политика конфиденциальности";
+"Terms_Of_Use" = "Условия использования";
+"Contact_Us" = "Свяжитесь с нами";
+"Mini_Game" = "Мини-игра";
+"Social" = "Социальные сети";
+"Feedback" = "Обратная связь";
+"Settings_Title" = "Настройки";

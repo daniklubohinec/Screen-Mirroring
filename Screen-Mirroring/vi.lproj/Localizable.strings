@@ -1,0 +1,150 @@
+/* Screen-Mirroring.xcodeproj/project.pbxproj */
+"CPU_Check_and_Mirroring" = "Kiểm tra CPU và Phản chiếu";
+"Local_Network_Usage_Description" = "Bật quyền truy cập vào mạng nội bộ để tìm thiết bị hỗ trợ Cast.";
+"Photo_Library_Usage_Description" = "Vui lòng cho phép truy cập vào Ảnh để tải lên ảnh phòng của bạn.";
+
+/* Screen-Mirroring/First/Base.lproj/First.storyboard */
+"Screen_Mirroring" = "Phản chiếu màn hình";
+"Button" = "Nút";
+"How_To_Connect" = "Cách kết nối";
+"Feedback" = "Phản hồi";
+"Mini_Game" = "Trò chơi nhỏ";
+"Files" = "Tệp";
+"Photo" = "Ảnh";
+"Video" = "Video";
+"Web" = "Web";
+
+/* Screen-Mirroring/BottomSheetPermit/ActionSheet.storyboard */
+"Same_WiFi_Network_Message" = "Hãy đảm bảo rằng các thiết bị của bạn được kết nối với cùng một mạng Wi-Fi.";
+
+/* Screen-Mirroring/TicTacToe/TicTacToeViewController.swift */
+"New_Game" = "Trò chơi mới";
+"Cancel" = "Hủy";
+"You_Win" = "Bạn thắng!";
+"Congratulations" = "Chúc mừng!";
+"You_Won_The_Game" = "Bạn đã thắng trò chơi!";
+"You_Lose" = "Bạn thua!";
+"Game_Over" = "Trò chơi kết thúc";
+"Better_Luck_Next_Time" = "Chúc may mắn lần sau!";
+"Its_A_Draw" = "Hòa!";
+"Its_A_Tie" = "Hòa";
+"Game_Ended_In_Draw" = "Trò chơi kết thúc với kết quả hòa.";
+"Game_Has_Ended" = "Trò chơi đã kết thúc.";
+
+/* Screen-Mirroring/TicTacToe/TicTacToeViewModel.swift */
+"Your_Turn" = "Đến lượt bạn";
+"AI_Is_Thinking" = "AI đang suy nghĩ...";
+
+/* Screen-Mirroring/FirstViewController.swift */
+"Welcome_Title" = "Chào mừng";
+"First_View_Controller_Message" = "Đây là bộ điều khiển hiển thị đầu tiên";
+
+/* Screen-Mirroring/SettingsViewController.swift */
+"Settings_Title" = "Cài đặt";
+"Settings_Message" = "Điều chỉnh các tùy chọn của bạn ở đây";
+
+/* Screen-Mirroring/MediaViewController.swift */
+"Media_Title" = "Phương tiện";
+"Media_Message" = "Duyệt các tệp phương tiện của bạn";
+
+/* Screen-Mirroring/PhotosViewController.swift */
+"Photos_Title" = "Ảnh";
+"Photos_Message" = "Xem thư viện ảnh của bạn";
+
+/* Screen-Mirroring/WebViewController.swift */
+"Web_Title" = "Web";
+"Web_Message" = "Duyệt web";
+
+/* Screen-Mirroring/DocumentsViewerController.swift */
+"Documents_Title" = "Tài liệu";
+"Documents_Message" = "Xem các tài liệu của bạn";
+
+/* Screen-Mirroring/TipsSheetController.swift */
+"Tips_Title" = "Mẹo";
+"Tips_Message" = "Dưới đây là một số mẹo";
+
+/* Screen-Mirroring/BottomSheetTipsPermitViewController.swift */
+"Permission_Required_Title" = "Yêu cầu quyền";
+"Permission_Required_Message" = "Vui lòng cấp các quyền cần thiết";
+
+/* Screen-Mirroring/NetworkConnection.swift */
+"Network_Connection_Failed" = "Kết nối mạng thất bại";
+
+/* Screen-Mirroring/AuthorizationStatus.swift */
+"Authorization_Status_Updated" = "Trạng thái ủy quyền đã được cập nhật";
+
+/* Screen-Mirroring/Helpers.swift */
+"Helper_Function_Executed" = "Hàm trợ giúp đã được thực thi";
+
+/* Screen-Mirroring/AppDelegate.swift */
+"App_Launched_Successfully" = "Ứng dụng khởi động thành công";
+
+/* Screen-Mirroring/SceneDelegate.swift */
+"Scene_Delegate_Called" = "Trình ủy quyền cảnh đã được gọi";
+
+/* Screen-Mirroring/AlbumsViewController.swift */
+"Albums_Title" = "Album";
+"Albums_Message" = "Duyệt album của bạn";
+
+/* Screen-Mirroring/NetworkPermissionHelper.swift */
+"Network_Permission_Granted" = "Quyền mạng đã được cấp";
+
+/* Screen-Mirroring/Debug.swift */
+"Debugging_Mode_Enabled" = "Chế độ gỡ lỗi đã được bật";
+
+/* Screen-Mirroring/Release.swift */
+"Release_Mode_Enabled" = "Chế độ phát hành đã được bật";
+
+/* FirstViewController.swift */
+"Active" = "Hoạt động";
+"How_To_Disconnect" = "Cách ngắt kết nối";
+"Tap_To_Connect" = "Nhấn để kết nối";
+"Tap_To_Connect_And_Choose_Device" = "Nhấn để kết nối và chọn một thiết bị khác để ghép nối với iPhone của bạn.";
+"Open_AirPlay" = "Mở AirPlay";
+"Not_Connected_To_WiFi" = "iPhone của bạn không được kết nối với mạng Wi-Fi";
+"Same_WiFi_Network_Message" = "Hãy đảm bảo rằng iPhone của bạn được kết nối với cùng mạng Wi-Fi với thiết bị hỗ trợ Cast.";
+"Turn_On_WiFi" = "Bật Wi-Fi";
+"Allow_Access_To_Photos" = "Cho phép truy cập ảnh của bạn";
+"Allow_Photos_Access_Message" = "Để truyền phương tiện, cho phép ứng dụng truy cập Ảnh trong Cài đặt iPhone của bạn.";
+"Go_To_Settings" = "Đi tới Cài đặt";
+"Choose_Device" = "Vui lòng chọn thiết bị bạn muốn kết nối.";
+"Same_WiFi_Network" = "Hãy đảm bảo rằng các thiết bị của bạn được kết nối với cùng một mạng Wi-Fi.";
+"CPU_Usage" = "Sử dụng CPU cho biết mức độ sử dụng sức mạnh của bộ xử lý bởi các ứng dụng và tác vụ hệ thống. Mức sử dụng cao có thể làm chậm hiệu suất và làm hao pin, trong khi mức sử dụng thấp cho thấy hoạt động hiệu quả.";
+
+/* TipsSheetController.swift */
+"How_To_Connect" = "Cách kết nối";
+"How_To_Disconnect" = "Cách ngắt kết nối";
+
+/* AlbumsViewController.swift */
+"Photo_Mirroring" = "Phản chiếu ảnh";
+"Video_Mirroring" = "Phản chiếu video";
+
+/* MediaViewController.swift */
+"Photo_Mirroring" = "Phản chiếu ảnh";
+"Video_Mirroring" = "Phản chiếu video";
+
+/* DocumentsViewerController.swift */
+"Document_Mirroring" = "Phản chiếu tài liệu";
+"Choose_Device" = "Vui lòng chọn thiết bị bạn muốn kết nối.";
+"Same_WiFi_Network_Message" = "Hãy đảm bảo rằng các thiết bị của bạn được kết nối với cùng một mạng Wi-Fi.";
+"Open_AirPlay" = "Mở AirPlay";
+"Not_Connected_To_WiFi" = "iPhone của bạn không được kết nối với mạng Wi-Fi";
+"Same_WiFi_Network_Message" = "Hãy đảm bảo rằng iPhone của bạn được kết nối với cùng mạng Wi-Fi với thiết bị hỗ trợ Cast.";
+"Turn_On_WiFi" = "Bật Wi-Fi";
+
+/* WebViewController.swift */
+"Web_Mirroring" = "Phản chiếu web";
+
+/* SettingsViewController.swift */
+"Error" = "Lỗi";
+"Close" = "Đóng";
+"Email_Invalid" = "Thiết bị không thể gửi email";
+"Rate_Us" = "Đánh giá chúng tôi";
+"Share_App" = "Chia sẻ ứng dụng";
+"Privacy_Policy" = "Chính sách bảo mật";
+"Terms_Of_Use" = "Điều khoản sử dụng";
+"Contact_Us" = "Liên hệ với chúng tôi";
+"Mini_Game" = "Trò chơi nhỏ";
+"Social" = "Xã hội";
+"Feedback" = "Phản hồi";
+"Settings_Title" = "Cài đặt";

@@ -20,8 +20,16 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var connectButton: UIButton!
     
     @IBOutlet weak var connectImageView: UIImageView!
-    @IBOutlet weak var connectButtonTitle: UILabel!
-    @IBOutlet weak var connectButtonSubtitle: UILabel!
+    @IBOutlet weak var connectButtonTitle: UILabel! {
+        didSet {
+            connectButtonTitle.text = R.string.localizable.tap_To_Connect()
+        }
+    }
+    @IBOutlet weak var connectButtonSubtitle: UILabel! {
+        didSet {
+            connectButtonSubtitle.text = R.string.localizable.tap_To_Connect_And_Choose_Device()
+        }
+    }
     
     @IBOutlet weak var videoButton: UIButton!
     @IBOutlet weak var photoButton: UIButton!
@@ -30,7 +38,11 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var filesButton: UIButton!
     
     @IBOutlet weak var howToBackView: UIView!
-    @IBOutlet weak var howToTitle: UILabel!
+    @IBOutlet weak var howToTitle: UILabel! {
+        didSet {
+            howToTitle.text = R.string.localizable.how_To_Connect()
+        }
+    }
     @IBOutlet weak var howToButton: UIButton!
     
     @IBOutlet weak var typeOfMirroringCollectionView: UICollectionView!
@@ -67,6 +79,7 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var usageOfCPUDescritptionLabel: UILabel! {
         didSet {
             usageOfCPUDescritptionLabel.font = R.font.interRegular(size: 15)
+            usageOfCPUDescritptionLabel.text = R.string.localizable.cpu_Usage()
         }
     }
     
@@ -91,11 +104,11 @@ class FirstViewController: UIViewController {
         AirPlayDeviceUtility.startMonitoringAirPlayChanges { [weak self] device in
             guard let self else { return }
             if let device = device {
-                connectButtonTitle.text = "Active"
+                connectButtonTitle.text = R.string.localizable.active()
                 connectButtonSubtitle.text = device
                 connectBackView.backgroundColor = R.color.cBF5AF2()
                 connectImageView.image = R.image.mirroringConnectionStatusPink()
-                howToTitle.text = "How to Disconnect"
+                howToTitle.text = R.string.localizable.how_To_Disconnect()
                 connected = true
                 if !isScreenMirroringActive() {
                     BaseViewController.routeDismissed
@@ -111,11 +124,11 @@ class FirstViewController: UIViewController {
                         .disposed(by: lastStepBag)
                 }
             } else {
-                connectButtonTitle.text = "Tap to connect"
-                connectButtonSubtitle.text = "Tap to connect and choose another device to pair with your iPhone."
+                connectButtonTitle.text = R.string.localizable.tap_To_Connect()
+                connectButtonSubtitle.text = R.string.localizable.tap_To_Connect_And_Choose_Device()
                 connectBackView.backgroundColor = R.color.accentColor()
                 connectImageView.image = R.image.mirroringConnectionStatus()
-                howToTitle.text = "How to Connect"
+                howToTitle.text = R.string.localizable.how_To_Connect()
                 connected = false
             }
         }
@@ -196,14 +209,14 @@ class FirstViewController: UIViewController {
             } else {
                 BottomSheetTipsPermitViewController.showActionSheet(
                     mainImage: R.image.deviceMirroringSheetMainImage(),
-                    titleText: "Please choose the device you wish to connect to.",
-                    subtitleText: "Make sure your devices are connected to the same Wi-Fi network.",
+                    titleText: R.string.localizable.choose_Device(),
+                    subtitleText: R.string.localizable.same_WiFi_Network(),
                     firstAction: (
                         action: { [weak self] in
                             self?.routeView.showAirplayView()
                         },
                         image: R.image.openAirPlaySheetButtonImage(),
-                        title: "Open AirPlay"
+                        title: R.string.localizable.open_AirPlay()
                         
                     )
                 )
@@ -211,14 +224,14 @@ class FirstViewController: UIViewController {
         } else {
             BottomSheetTipsPermitViewController.showActionSheet(
                 mainImage: R.image.notConnectedToInternetImage(),
-                titleText: "Your iPhone is not connected to a Wi-Fi network",
-                subtitleText: "Make sure your iPhone is on the same Wi-Fi network as the Cast-enabled device.",
+                titleText: R.string.localizable.not_Connected_To_WiFi(),
+                subtitleText: R.string.localizable.same_WiFi_Network_Message(),
                 firstAction: (
                     action: {
                         NetworkPermissionHelper.shared.openWiFiSettings()
                     },
                     image: nil,
-                    title: "Turn on Wi-Fi"
+                    title: R.string.localizable.turn_On_WiFi()
                     
                 )
             )
@@ -268,14 +281,14 @@ class FirstViewController: UIViewController {
                 } else {
                     BottomSheetTipsPermitViewController.showActionSheet(
                         mainImage: R.image.accessPermitionSheetImage(),
-                        titleText: "Allow access to your Photos",
-                        subtitleText: "To cast media, allow the app to access Photos in your iPhone Settings.",
+                        titleText: R.string.localizable.allow_Access_To_Photos(),
+                        subtitleText: R.string.localizable.allow_Photos_Access_Message(),
                         firstAction: (
                             action: {
                                 BaseViewController.openAppSettings()
                             },
                             image: nil,
-                            title: "Go to Settings"
+                            title: R.string.localizable.go_To_Settings()
                         )
                     )
                 }

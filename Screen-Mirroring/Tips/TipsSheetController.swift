@@ -68,7 +68,7 @@ final class TipsSheetController: UIViewController {
                 lastStepImageContainer.isHidden = true
                 howToDisconnectView.isHidden = true
                 howToContainerView.isHidden = false
-                howToLabel.text = "How to Connect"
+                howToLabel.text = R.string.localizable.how_To_Connect()
             case .disconnect:
                 lastStepContainer.isHidden = true
                 lastStepImageContainer.isHidden = true
@@ -76,7 +76,7 @@ final class TipsSheetController: UIViewController {
                 howToConnectSecondView.isHidden = true
                 howToDisconnectView.isHidden = false
                 howToContainerView.isHidden = false
-                howToLabel.text = "How to Disconnect"
+                howToLabel.text = R.string.localizable.how_To_Disconnect()
             }
         }
     }

@@ -1,20 +1,6 @@
 import UIKit
 import QuickLook
 
-final class DocumentsPickerController: UIDocumentPickerViewController {
-    var didPickDocument: ((URL) -> Void)?
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.delegate = self
-    }
-}
-extension DocumentsPickerController: UIDocumentPickerDelegate {
-    func documentPicker(_ controller: UIDocumentPickerViewController, didPickDocumentsAt urls: [URL]) {
-        guard let url = urls.first else { return }
-        didPickDocument?(url)
-    }
-}
-
 final class DocumentViewController: BaseViewController, QLPreviewControllerDataSource {
 
     private let documentURL: URL
@@ -33,7 +19,7 @@ final class DocumentViewController: BaseViewController, QLPreviewControllerDataS
     override func viewDidLoad() {
         super.viewDidLoad()
         // Customize your navigation bar here
-        self.title = "Document Mirroring"
+        self.title = R.string.localizable.document_Mirroring()
         
         // Configure the preview controller
         previewController.dataSource = self
@@ -75,14 +61,14 @@ final class DocumentViewController: BaseViewController, QLPreviewControllerDataS
             if !AirPlayDeviceUtility.connected {
                 BottomSheetTipsPermitViewController.showActionSheet(
                     mainImage: R.image.deviceMirroringSheetMainImage(),
-                    titleText: "Please choose the device you wish to connect to.",
-                    subtitleText: "Make sure your devices are connected to the same Wi-Fi network.",
+                    titleText: R.string.localizable.choose_Device(),
+                    subtitleText: R.string.localizable.same_WiFi_Network_Message(),
                     firstAction: (
                         action: { [weak self] in
                             self?.openAirplayMenu()
                         },
                         image: R.image.openAirPlaySheetButtonImage(),
-                        title: "Open AirPlay"
+                        title: R.string.localizable.open_AirPlay()
                     
                     )
                 )
@@ -90,14 +76,14 @@ final class DocumentViewController: BaseViewController, QLPreviewControllerDataS
         } else {
             BottomSheetTipsPermitViewController.showActionSheet(
                 mainImage: R.image.notConnectedToInternetImage(),
-                titleText: "Your iPhone is not connected to a Wi-Fi network",
-                subtitleText: "Make sure your iPhone is on the same Wi-Fi network as the Cast-enabled device.",
+                titleText: R.string.localizable.not_Connected_To_WiFi(),
+                subtitleText: R.string.localizable.same_WiFi_Network_Message(),
                 firstAction: (
                     action: {
                         NetworkPermissionHelper.shared.openWiFiSettings()
                     },
                     image: nil,
-                    title: "Turn on Wi-Fi"
+                    title: R.string.localizable.turn_On_WiFi()
                 
                 )
             )

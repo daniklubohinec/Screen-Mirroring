@@ -39,7 +39,7 @@ final class AlbumViewController: BaseViewController {
     }
     
     private func setupNavigationBar() {
-        title = mediaType == .photo ? "Photo Mirroring" : "Video Mirroring"
+        title = mediaType == .photo ? R.string.localizable.photo_Mirroring() : R.string.localizable.video_Mirroring()
         navigationController?.setNavigationBarHidden(false, animated: true)
     }
     

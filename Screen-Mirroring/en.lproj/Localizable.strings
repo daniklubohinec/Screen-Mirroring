@@ -1,0 +1,150 @@
+/* Screen-Mirroring.xcodeproj/project.pbxproj */
+"CPU_Check_and_Mirroring" = "CPU Check and Mirroring";
+"Local_Network_Usage_Description" = "Enable local network access to find Cast-enabled devices.";
+"Photo_Library_Usage_Description" = "Please allow access to Photos to upload your room photos.";
+
+/* Screen-Mirroring/First/Base.lproj/First.storyboard */
+"Screen_Mirroring" = "Screen Mirroring";
+"Button" = "Button";
+"How_To_Connect" = "How to Connect";
+"Feedback" = "Feedback";
+"Mini_Game" = "Mini game";
+"Files" = "Files";
+"Photo" = "Photo";
+"Video" = "Video";
+"Web" = "Web";
+
+/* Screen-Mirroring/BottomSheetPermit/ActionSheet.storyboard */
+"Same_WiFi_Network_Message" = "Make sure your devices are connected to the same Wi-Fi network.";
+
+/* Screen-Mirroring/TicTacToe/TicTacToeViewController.swift */
+"New_Game" = "New Game";
+"Cancel" = "Cancel";
+"You_Win" = "You win!";
+"Congratulations" = "Congratulations!";
+"You_Won_The_Game" = "You've won the game!";
+"You_Lose" = "You lose!";
+"Game_Over" = "Game Over";
+"Better_Luck_Next_Time" = "Better luck next time!";
+"Its_A_Draw" = "It's a draw!";
+"Its_A_Tie" = "It's a Tie";
+"Game_Ended_In_Draw" = "The game ended in a draw.";
+"Game_Has_Ended" = "The game has ended.";
+
+/* Screen-Mirroring/TicTacToe/TicTacToeViewModel.swift */
+"Your_Turn" = "Your turn";
+"AI_Is_Thinking" = "AI is thinking...";
+
+/* Screen-Mirroring/FirstViewController.swift */
+"Welcome_Title" = "Welcome";
+"First_View_Controller_Message" = "This is the first view controller";
+
+/* Screen-Mirroring/SettingsViewController.swift */
+"Settings_Title" = "Settings";
+"Settings_Message" = "Adjust your preferences here";
+
+/* Screen-Mirroring/MediaViewController.swift */
+"Media_Title" = "Media";
+"Media_Message" = "Browse your media files";
+
+/* Screen-Mirroring/PhotosViewController.swift */
+"Photos_Title" = "Photos";
+"Photos_Message" = "View your photo gallery";
+
+/* Screen-Mirroring/WebViewController.swift */
+"Web_Title" = "Web";
+"Web_Message" = "Browse the web";
+
+/* Screen-Mirroring/DocumentsViewerController.swift */
+"Documents_Title" = "Documents";
+"Documents_Message" = "View your documents";
+
+/* Screen-Mirroring/TipsSheetController.swift */
+"Tips_Title" = "Tips";
+"Tips_Message" = "Here are some tips";
+
+/* Screen-Mirroring/BottomSheetTipsPermitViewController.swift */
+"Permission_Required_Title" = "Permission Required";
+"Permission_Required_Message" = "Please grant the necessary permissions";
+
+/* Screen-Mirroring/NetworkConnection.swift */
+"Network_Connection_Failed" = "Network connection failed";
+
+/* Screen-Mirroring/AuthorizationStatus.swift */
+"Authorization_Status_Updated" = "Authorization status updated";
+
+/* Screen-Mirroring/Helpers.swift */
+"Helper_Function_Executed" = "Helper function executed";
+
+/* Screen-Mirroring/AppDelegate.swift */
+"App_Launched_Successfully" = "App launched successfully";
+
+/* Screen-Mirroring/SceneDelegate.swift */
+"Scene_Delegate_Called" = "Scene delegate called";
+
+/* Screen-Mirroring/AlbumsViewController.swift */
+"Albums_Title" = "Albums";
+"Albums_Message" = "Browse your albums";
+
+/* Screen-Mirroring/NetworkPermissionHelper.swift */
+"Network_Permission_Granted" = "Network permission granted";
+
+/* Screen-Mirroring/Debug.swift */
+"Debugging_Mode_Enabled" = "Debugging mode enabled";
+
+/* Screen-Mirroring/Release.swift */
+"Release_Mode_Enabled" = "Release mode enabled";
+
+/* FirstViewController.swift */
+"Active" = "Active";
+"How_To_Disconnect" = "How to Disconnect";
+"Tap_To_Connect" = "Tap to connect";
+"Tap_To_Connect_And_Choose_Device" = "Tap to connect and choose another device to pair with your iPhone.";
+"Open_AirPlay" = "Open AirPlay";
+"Not_Connected_To_WiFi" = "Your iPhone is not connected to a Wi-Fi network";
+"Same_WiFi_Network_Message" = "Make sure your iPhone is on the same Wi-Fi network as the Cast-enabled device.";
+"Turn_On_WiFi" = "Turn on Wi-Fi";
+"Allow_Access_To_Photos" = "Allow access to your Photos";
+"Allow_Photos_Access_Message" = "To cast media, allow the app to access Photos in your iPhone Settings.";
+"Go_To_Settings" = "Go to Settings";
+"Choose_Device" = "Please choose the device you wish to connect to.";
+"Same_WiFi_Network" = "Make sure your devices are connected to the same Wi-Fi network.";
+"CPU_Usage" = "CPU usage shows how much of the processor's power is being used by apps and system tasks. High usage can slow performance and drain the battery, while low usage indicates efficient operation.";
+
+/* TipsSheetController.swift */
+"How_To_Connect" = "How to Connect";
+"How_To_Disconnect" = "How to Disconnect";
+
+/* AlbumsViewController.swift */
+"Photo_Mirroring" = "Photo Mirroring";
+"Video_Mirroring" = "Video Mirroring";
+
+/* MediaViewController.swift */
+"Photo_Mirroring" = "Photo Mirroring";
+"Video_Mirroring" = "Video Mirroring";
+
+/* DocumentsViewerController.swift */
+"Document_Mirroring" = "Document Mirroring";
+"Choose_Device" = "Please choose the device you wish to connect to.";
+"Same_WiFi_Network_Message" = "Make sure your devices are connected to the same Wi-Fi network.";
+"Open_AirPlay" = "Open AirPlay";
+"Not_Connected_To_WiFi" = "Your iPhone is not connected to a Wi-Fi network";
+"Same_WiFi_Network_Message" = "Make sure your iPhone is on the same Wi-Fi network as the Cast-enabled device.";
+"Turn_On_WiFi" = "Turn on Wi-Fi";
+
+/* WebViewController.swift */
+"Web_Mirroring" = "Web Mirroring";
+
+/* SettingsViewController.swift */
+"Error" = "Error";
+"Close" = "Close";
+"Email_Invalid" = "Device is not able to send an email";
+"Rate_Us" = "Rate Us";
+"Share_App" = "Share App";
+"Privacy_Policy" = "Privacy Policy";
+"Terms_Of_Use" = "Terms of Use";
+"Contact_Us" = "Contact Us";
+"Mini_Game" = "Mini game";
+"Social" = "Social";
+"Feedback" = "Feedback";
+"Settings_Title" = "Settings";

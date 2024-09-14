@@ -617,37 +617,37 @@
                                 <rect key="frame" x="16" y="282.33333333333331" width="361" height="132"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xIP-2F-o1e">
-                                        <rect key="frame" x="0.0" y="0.0" width="361" height="44"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="33"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="privacyPolicyLinkImage" translatesAutoresizingMaskIntoConstraints="NO" id="foT-c0-wnv">
-                                                <rect key="frame" x="20" y="8" width="28" height="28"/>
+                                                <rect key="frame" x="20" y="2.6666666666666856" width="28" height="28"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="28" id="6Oh-dq-AA6"/>
                                                     <constraint firstAttribute="width" constant="28" id="zsh-Zc-a6c"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Privacy Policy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vr7-jj-qnI">
-                                                <rect key="frame" x="63" y="12.333333333333373" width="105" height="19.666666666666671"/>
+                                                <rect key="frame" x="63" y="6.6666666666666874" width="105" height="19.666666666666671"/>
                                                 <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="16"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="createArrowImage" translatesAutoresizingMaskIntoConstraints="NO" id="0rq-h0-TcV">
-                                                <rect key="frame" x="317" y="10" width="24" height="24"/>
+                                                <rect key="frame" x="317" y="4.6666666666666856" width="24" height="24"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="24" id="cYi-QQ-EWO"/>
                                                     <constraint firstAttribute="height" constant="24" id="lwj-6g-ppM"/>
                                                 </constraints>
                                             </imageView>
                                             <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vIg-A2-0bU">
-                                                <rect key="frame" x="64" y="43.666666666666686" width="297" height="0.3333333333333357"/>
+                                                <rect key="frame" x="64" y="32.666666666666686" width="297" height="0.3333333333333357"/>
                                                 <color key="backgroundColor" name="с8E8E93"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="0.33000000000000002" id="xHj-Q8-y4e"/>
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UqN-Qu-M5w">
-                                                <rect key="frame" x="0.0" y="0.0" width="361" height="43.666666666666664"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="361" height="32.666666666666664"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain"/>
                                                 <connections>
@@ -674,37 +674,37 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2CJ-Xy-M7M">
-                                        <rect key="frame" x="0.0" y="44" width="361" height="44"/>
+                                        <rect key="frame" x="0.0" y="33" width="361" height="33"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="termsOfUseLinkImage" translatesAutoresizingMaskIntoConstraints="NO" id="DMw-at-Hdh">
-                                                <rect key="frame" x="20" y="8" width="28" height="28"/>
+                                                <rect key="frame" x="20" y="2.6666666666666856" width="28" height="28"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="28" id="Y9w-Nb-AGL"/>
                                                     <constraint firstAttribute="height" constant="28" id="odg-vo-pwa"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms of Use" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kdS-TC-6WR">
-                                                <rect key="frame" x="63.000000000000007" y="12.333333333333373" width="100.66666666666669" height="19.666666666666671"/>
+                                                <rect key="frame" x="63.000000000000007" y="6.6666666666666874" width="100.66666666666669" height="19.666666666666671"/>
                                                 <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="16"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="createArrowImage" translatesAutoresizingMaskIntoConstraints="NO" id="aGc-Jn-ec2">
-                                                <rect key="frame" x="317" y="10" width="24" height="24"/>
+                                                <rect key="frame" x="317" y="4.6666666666666856" width="24" height="24"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="24" id="X9H-vr-5xR"/>
                                                     <constraint firstAttribute="width" constant="24" id="dx5-rv-rJF"/>
                                                 </constraints>
                                             </imageView>
                                             <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gdL-Cf-WQP">
-                                                <rect key="frame" x="64" y="43.666666666666686" width="297" height="0.3333333333333357"/>
+                                                <rect key="frame" x="64" y="32.666666666666686" width="297" height="0.3333333333333357"/>
                                                 <color key="backgroundColor" name="с8E8E93"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="0.33000000000000002" id="SEu-aI-Hj0"/>
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jS8-pB-Y7j">
-                                                <rect key="frame" x="0.0" y="0.0" width="361" height="44"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="361" height="33"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain"/>
                                                 <connections>
@@ -731,30 +731,30 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IhN-ui-vbU">
-                                        <rect key="frame" x="0.0" y="88" width="361" height="44"/>
+                                        <rect key="frame" x="0.0" y="66" width="361" height="33"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="contactUsLinkImage" translatesAutoresizingMaskIntoConstraints="NO" id="inq-5I-Yar">
-                                                <rect key="frame" x="20" y="8" width="28" height="28"/>
+                                                <rect key="frame" x="20" y="2.6666666666666856" width="28" height="28"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="28" id="LZs-I2-QCL"/>
                                                     <constraint firstAttribute="width" constant="28" id="p7q-O7-Zkg"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Us" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UPa-Cf-Iva">
-                                                <rect key="frame" x="63" y="12.333333333333373" width="85" height="19.666666666666671"/>
+                                                <rect key="frame" x="63" y="6.6666666666666874" width="85" height="19.666666666666671"/>
                                                 <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="16"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="createArrowImage" translatesAutoresizingMaskIntoConstraints="NO" id="G8G-XH-ZCy">
-                                                <rect key="frame" x="317" y="10" width="24" height="24"/>
+                                                <rect key="frame" x="317" y="4.6666666666666856" width="24" height="24"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="24" id="dkF-6F-biw"/>
                                                     <constraint firstAttribute="height" constant="24" id="ud0-C0-Ysp"/>
                                                 </constraints>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wur-Mo-W87">
-                                                <rect key="frame" x="0.0" y="0.0" width="361" height="44"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="361" height="33"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain"/>
                                                 <connections>
@@ -775,6 +775,64 @@
                                             <constraint firstItem="inq-5I-Yar" firstAttribute="centerY" secondItem="IhN-ui-vbU" secondAttribute="centerY" id="r5i-UM-1JN"/>
                                             <constraint firstItem="inq-5I-Yar" firstAttribute="leading" secondItem="IhN-ui-vbU" secondAttribute="leading" constant="20" id="u1Q-fI-hBL"/>
                                             <constraint firstItem="G8G-XH-ZCy" firstAttribute="centerY" secondItem="IhN-ui-vbU" secondAttribute="centerY" id="zuP-gY-nOS"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ulU-Ix-0fE">
+                                        <rect key="frame" x="0.0" y="99" width="361" height="33"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gamecontroller.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Why-rJ-eV9">
+                                                <rect key="frame" x="20" y="4.3333333333333481" width="28" height="25"/>
+                                                <color key="tintColor" name="с8E8E93"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="28" id="8Db-r4-xno"/>
+                                                    <constraint firstAttribute="height" constant="28" id="sSe-ld-vc2"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mini game" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7RK-Qj-Kqg">
+                                                <rect key="frame" x="63" y="6.6666666666666874" width="78" height="19.666666666666671"/>
+                                                <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="16"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="createArrowImage" translatesAutoresizingMaskIntoConstraints="NO" id="vIH-6q-dkN">
+                                                <rect key="frame" x="317" y="4.6666666666666856" width="24" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="24" id="6kL-U8-lMq"/>
+                                                    <constraint firstAttribute="height" constant="24" id="RDZ-jM-9AF"/>
+                                                </constraints>
+                                            </imageView>
+                                            <view alpha="0.30000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="79K-G5-Oil">
+                                                <rect key="frame" x="64" y="32.666666666666686" width="297" height="0.3333333333333357"/>
+                                                <color key="backgroundColor" name="с8E8E93"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="0.33000000000000002" id="qRm-OY-ptl"/>
+                                                </constraints>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KQi-Me-pn2">
+                                                <rect key="frame" x="0.0" y="0.0" width="361" height="32.666666666666664"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain"/>
+                                                <connections>
+                                                    <action selector="miniGameTapped" destination="XKT-Lp-soC" eventType="touchUpInside" id="0Tb-sg-Fut"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" name="c1C1C1E"/>
+                                        <constraints>
+                                            <constraint firstItem="7RK-Qj-Kqg" firstAttribute="centerY" secondItem="ulU-Ix-0fE" secondAttribute="centerY" id="2YD-L3-tFB"/>
+                                            <constraint firstItem="KQi-Me-pn2" firstAttribute="leading" secondItem="ulU-Ix-0fE" secondAttribute="leading" id="5kt-PC-wOg"/>
+                                            <constraint firstItem="vIH-6q-dkN" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="7RK-Qj-Kqg" secondAttribute="trailing" constant="10" id="A01-Bf-JY0"/>
+                                            <constraint firstAttribute="trailing" secondItem="79K-G5-Oil" secondAttribute="trailing" id="AVd-ao-J8T"/>
+                                            <constraint firstItem="7RK-Qj-Kqg" firstAttribute="leading" secondItem="Why-rJ-eV9" secondAttribute="trailing" constant="15" id="Gyh-9E-rbO"/>
+                                            <constraint firstItem="79K-G5-Oil" firstAttribute="top" secondItem="KQi-Me-pn2" secondAttribute="bottom" id="ICF-4a-gyl"/>
+                                            <constraint firstItem="vIH-6q-dkN" firstAttribute="centerY" secondItem="ulU-Ix-0fE" secondAttribute="centerY" id="LgR-zA-qbz"/>
+                                            <constraint firstAttribute="trailing" secondItem="vIH-6q-dkN" secondAttribute="trailing" constant="20" id="X7i-Pk-HQ3"/>
+                                            <constraint firstAttribute="bottom" secondItem="79K-G5-Oil" secondAttribute="bottom" id="ZvJ-LB-Nkl"/>
+                                            <constraint firstItem="Why-rJ-eV9" firstAttribute="centerY" secondItem="ulU-Ix-0fE" secondAttribute="centerY" id="d7J-Um-g2q"/>
+                                            <constraint firstItem="Why-rJ-eV9" firstAttribute="leading" secondItem="ulU-Ix-0fE" secondAttribute="leading" constant="20" id="fd7-hs-4iW"/>
+                                            <constraint firstItem="KQi-Me-pn2" firstAttribute="top" secondItem="ulU-Ix-0fE" secondAttribute="top" id="kNZ-pM-nfB"/>
+                                            <constraint firstItem="79K-G5-Oil" firstAttribute="leading" secondItem="ulU-Ix-0fE" secondAttribute="leading" constant="64" id="pbr-zq-va0"/>
+                                            <constraint firstAttribute="trailing" secondItem="KQi-Me-pn2" secondAttribute="trailing" id="ymW-4L-Yil"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -816,16 +874,26 @@
                     <connections>
                         <outlet property="contactUsBackView" destination="IhN-ui-vbU" id="93p-tZ-yXi"/>
                         <outlet property="contactUsButton" destination="Wur-Mo-W87" id="MUq-RM-tRq"/>
+                        <outlet property="contactsTitle" destination="UPa-Cf-Iva" id="P1N-Tf-Woh"/>
+                        <outlet property="feedbackTitle" destination="i0g-Ll-2uh" id="BeJ-DH-14k"/>
+                        <outlet property="miniGameBackView" destination="ulU-Ix-0fE" id="EKP-Bb-c9P"/>
+                        <outlet property="miniGameButton" destination="KQi-Me-pn2" id="xDL-mo-UgQ"/>
+                        <outlet property="miniGameTitle" destination="7RK-Qj-Kqg" id="g5i-Zm-Qee"/>
                         <outlet property="privacyBackView" destination="xIP-2F-o1e" id="qGO-9V-Tht"/>
                         <outlet property="privacyButton" destination="UqN-Qu-M5w" id="LQT-TG-ysO"/>
+                        <outlet property="privacyTitle" destination="vr7-jj-qnI" id="a9D-cK-siZ"/>
+                        <outlet property="rateTitle" destination="ssS-0k-5gS" id="xpg-QJ-s9V"/>
                         <outlet property="rateUsBackView" destination="Sw8-e8-OiB" id="JWo-hU-HJF"/>
                         <outlet property="rateUsButton" destination="QH2-QP-Buu" id="rRO-F9-cBw"/>
                         <outlet property="restoreBackView" destination="0nP-UO-dOv" id="5hJ-B6-I8v"/>
                         <outlet property="restoreButton" destination="BNo-Um-lZW" id="vGC-KE-2GJ"/>
                         <outlet property="shareAppBackView" destination="IrJ-mw-qWv" id="a3B-03-8z5"/>
                         <outlet property="shareAppButton" destination="WlC-6X-h1O" id="ZF4-zZ-g4W"/>
+                        <outlet property="shareTitle" destination="OHh-LQ-c9I" id="WZ4-1o-faV"/>
+                        <outlet property="socialTitle" destination="cjn-Is-Qy5" id="ST2-LQ-sCK"/>
                         <outlet property="termsBackView" destination="2CJ-Xy-M7M" id="lAN-Zj-XXk"/>
                         <outlet property="termsButton" destination="jS8-pB-Y7j" id="M3r-ot-JDV"/>
+                        <outlet property="termsTitle" destination="kdS-TC-6WR" id="ZYy-rW-tpR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kRs-E3-I9K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -864,6 +932,7 @@
         <image name="cpuUsageAnimationImage" width="390" height="175"/>
         <image name="createArrowImage" width="24" height="24"/>
         <image name="filesMirroringImage" width="199" height="205"/>
+        <image name="gamecontroller.fill" catalog="system" width="128" height="79"/>
         <image name="goToSettingsButton" width="32" height="32"/>
         <image name="mirroringConnectionStatus" width="88" height="88"/>
         <image name="photoMirroringImage" width="199" height="205"/>

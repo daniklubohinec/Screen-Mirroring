@@ -60,7 +60,7 @@ final class MediaViewController: BaseViewController {
         super.viewDidLoad()
         setupViews()
         loadMedia()
-        title = mediaType == .photo ? "Photo Mirroring" : "Video Mirroring"
+        title = mediaType == .photo ? R.string.localizable.photo_Mirroring() : R.string.localizable.video_Mirroring()
     }
 
     private func setupViews() {

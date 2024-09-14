@@ -13,28 +13,70 @@ class SettingsViewController: UIViewController, MFMailComposeViewControllerDeleg
     
     @IBOutlet weak var rateUsBackView: UIView!
     @IBOutlet weak var rateUsButton: UIButton!
+    @IBOutlet weak var rateTitle: UILabel! {
+        didSet {
+            rateTitle.text = R.string.localizable.rate_Us()
+        }
+    }
     
     @IBOutlet weak var shareAppBackView: UIView!
     @IBOutlet weak var shareAppButton: UIButton!
-    
+    @IBOutlet weak var shareTitle: UILabel! {
+        didSet {
+            shareTitle.text = R.string.localizable.share_App()
+        }
+    }
+
     @IBOutlet weak var contactUsBackView: UIView!
     @IBOutlet weak var contactUsButton: UIButton!
-    
+    @IBOutlet weak var contactsTitle: UILabel! {
+        didSet {
+            contactsTitle.text = R.string.localizable.contact_Us()
+        }
+    }
+
     @IBOutlet weak var restoreBackView: UIView!
     @IBOutlet weak var restoreButton: UIButton!
-    
+
     @IBOutlet weak var privacyBackView: UIView!
     @IBOutlet weak var privacyButton: UIButton!
-    
+    @IBOutlet weak var privacyTitle: UILabel! {
+        didSet {
+            privacyTitle.text = R.string.localizable.privacy_Policy()
+        }
+    }
+
     @IBOutlet weak var termsBackView: UIView!
     @IBOutlet weak var termsButton: UIButton!
-    
+    @IBOutlet weak var termsTitle: UILabel! {
+        didSet {
+            termsTitle.text = R.string.localizable.terms_Of_Use()
+        }
+    }
+
+    @IBOutlet weak var miniGameBackView: UIView!
+    @IBOutlet weak var miniGameButton: UIButton!
+    @IBOutlet weak var miniGameTitle: UILabel! {
+        didSet {
+            miniGameTitle.text = R.string.localizable.mini_Game()
+        }
+    }
+    @IBOutlet weak var socialTitle: UILabel! {
+        didSet {
+            socialTitle.text = R.string.localizable.social()
+        }
+    }
+    @IBOutlet weak var feedbackTitle: UILabel! {
+        didSet {
+            feedbackTitle.text = R.string.localizable.feedback()
+        }
+    }
+
     let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
+        title = R.string.localizable.settings_Title()
         animateButtonViews()
     }
     
@@ -44,13 +86,18 @@ class SettingsViewController: UIViewController, MFMailComposeViewControllerDeleg
     }
     
     func animateButtonViews() {
-        animateButtonView(rateUsButton, rateUsBackView, disposeBag)
-        animateButtonView(shareAppButton, shareAppBackView, disposeBag)
-        animateButtonView(contactUsButton, contactUsBackView, disposeBag)
+        let buttons: [(UIButton, UIView)] = [
+            (rateUsButton, rateUsBackView),
+            (shareAppButton, shareAppBackView),
+            (contactUsButton, contactUsBackView),
+            (restoreButton, restoreBackView),
+            (privacyButton, privacyBackView),
+            (termsButton, termsBackView)
+        ]
         
-        animateButtonView(restoreButton, restoreBackView, disposeBag)
-        animateButtonView(privacyButton, privacyBackView, disposeBag)
-        animateButtonView(termsButton, termsBackView, disposeBag)
+        buttons.forEach { button, backView in
+            animateButtonView(button, backView, disposeBag)
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -84,8 +131,8 @@ class SettingsViewController: UIViewController, MFMailComposeViewControllerDeleg
             mail.setToRecipients(["biaginiuberto@gmail.com"])
             present(mail, animated: true)
         } else {
-            let alert = UIAlertController(title: "Error", message: "Device is not able to send an email", preferredStyle: .alert)
-            let cancel = UIAlertAction(title: "Close", style: .cancel)
+            let alert = UIAlertController(title: R.string.localizable.error(), message: R.string.localizable.email_Invalid(), preferredStyle: .alert)
+            let cancel = UIAlertAction(title: R.string.localizable.cancel(), style: .cancel)
             alert.addAction(cancel)
             present(alert, animated: true)
         }
@@ -108,5 +155,12 @@ class SettingsViewController: UIViewController, MFMailComposeViewControllerDeleg
     private func termsOfUseTapped() {
         HapticGenerator.shared.generateImpact()
         loadURLString("https://docs.google.com/document/d/1PpzLeabieTxRZz6yfQ_8ijMKmOi2vmPFKwxr0ZQiOfA/edit")
+    }
+    
+    @IBAction
+    private func miniGameTapped() {
+        HapticGenerator.shared.generateImpact()
+        let ticTacToeVC = TicTacToeViewController()
+        present(ticTacToeVC, animated: true, completion: nil)
     }
 }

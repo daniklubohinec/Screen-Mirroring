@@ -23,7 +23,7 @@ final class PhotosViewController: BaseViewController, UICollectionViewDataSource
         view.backgroundColor = .black
         setupCollectionView()
         fetchMedia()
-        title = mediaType == .photo ? "Photo Mirroring" : "Video Mirroring"
+        title = mediaType == .photo ? R.string.localizable.photo_Mirroring() : R.string.localizable.video_Mirroring()
     }
     
     private func setupCollectionView() {
