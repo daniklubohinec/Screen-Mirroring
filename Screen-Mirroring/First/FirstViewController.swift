@@ -83,7 +83,6 @@ class FirstViewController: UIViewController {
         }
     }
     
-    
     private var connected = false
     private let routeView = AVRoutePickerView()
     private var lastStepBag = DisposeBag()

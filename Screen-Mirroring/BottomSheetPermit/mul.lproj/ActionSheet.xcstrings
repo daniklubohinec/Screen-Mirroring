@@ -1,0 +1,54 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "MzX-MM-UyK.normalTitle" : {
+      "comment" : "Class = \"UIButton\"; normalTitle = \"Open AirPlay\"; ObjectID = \"MzX-MM-UyK\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Open AirPlay"
+          }
+        }
+      }
+    },
+    "U66-fQ-QLX.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Make sure your devices are connected to the same Wi-Fi network.\"; ObjectID = \"U66-fQ-QLX\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Make sure your devices are connected to the same Wi-Fi network."
+          }
+        }
+      }
+    },
+    "yRn-Oy-JKA.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Please choose the device you wish to connect to.\"; ObjectID = \"yRn-Oy-JKA\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Please choose the device you wish to connect to."
+          }
+        }
+      }
+    },
+    "ZwW-M7-ftJ.normalTitle" : {
+      "comment" : "Class = \"UIButton\"; normalTitle = \"Cancel\"; ObjectID = \"ZwW-M7-ftJ\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Cancel"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

@@ -1,0 +1,12 @@
+
+/* Class = "UIButton"; normalTitle = "Open AirPlay"; ObjectID = "MzX-MM-UyK"; */
+"MzX-MM-UyK.normalTitle" = "Mở AirPlay";
+
+/* Class = "UILabel"; text = "Make sure your devices are connected to the same Wi-Fi network."; ObjectID = "U66-fQ-QLX"; */
+"U66-fQ-QLX.text" = "Đảm bảo rằng các thiết bị của bạn được kết nối với cùng một mạng Wi-Fi.";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "ZwW-M7-ftJ"; */
+"ZwW-M7-ftJ.normalTitle" = "Hủy bỏ";
+
+/* Class = "UILabel"; text = "Please choose the device you wish to connect to."; ObjectID = "yRn-Oy-JKA"; */
+"yRn-Oy-JKA.text" = "Vui lòng chọn thiết bị bạn muốn kết nối.";
