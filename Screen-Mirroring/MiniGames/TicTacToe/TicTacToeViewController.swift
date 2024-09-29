@@ -24,6 +24,11 @@ final class TicTacToeViewController: UIViewController {
         let button = UIButton(type: .system)
         button.setTitle(R.string.localizable.new_Game.callAsFunction(), for: .normal)
         button.addTarget(self, action: #selector(newGameTapped), for: .touchUpInside)
+        button.titleLabel?.font = R.font.interMedium(size: 16)
+        button.titleLabel?.tintColor = .white
+        button.backgroundColor = R.color.c1C1C1E()
+        button.layer.cornerRadius = 16
+        button.layer.masksToBounds = false
         return button
     }()
     
@@ -34,7 +39,7 @@ final class TicTacToeViewController: UIViewController {
     }
     
     private func setupUI() {
-        view.backgroundColor = .white
+        view.backgroundColor = .black
         
         view.addSubview(gameBoard)
         view.addSubview(statusLabel)
@@ -51,8 +56,10 @@ final class TicTacToeViewController: UIViewController {
         }
         
         newGameButton.snp.makeConstraints { make in
-            make.top.equalTo(statusLabel.snp.bottom).offset(20)
-            make.centerX.equalToSuperview()
+            make.top.equalTo(statusLabel.snp.bottom).offset(60)
+            make.leading.equalTo(view.snp.leading).offset(20)
+            make.trailing.equalTo(view.snp.trailing).offset(-20)
+            make.height.equalTo(56)
         }
         
         for i in 0..<3 {
@@ -63,7 +70,9 @@ final class TicTacToeViewController: UIViewController {
             
             for j in 0..<3 {
                 let button = UIButton()
-                button.backgroundColor = .lightGray
+                button.layer.cornerRadius = 16
+                button.layer.masksToBounds = false
+                button.backgroundColor = R.color.accentColor()
                 button.setTitle("", for: .normal)
                 button.titleLabel?.font = UIFont.systemFont(ofSize: 40, weight: .bold)
                 button.tag = i * 3 + j
