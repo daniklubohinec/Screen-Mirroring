@@ -54,12 +54,19 @@
 		F315039C2C70B4E300C0B13A /* DocumentsViewerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F315039B2C70B4E300C0B13A /* DocumentsViewerController.swift */; };
 		F315039F2C70D56600C0B13A /* TipsSheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F315039E2C70D56600C0B13A /* TipsSheetController.swift */; };
 		F31503A12C70DAEF00C0B13A /* Tips.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F31503A02C70DAEF00C0B13A /* Tips.storyboard */; };
+		F31CE0622CA9471400E9365C /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31CE0612CA9471400E9365C /* TabBarViewController.swift */; };
+		F31CE0642CA94BB600E9365C /* TVControlManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31CE0632CA94BB600E9365C /* TVControlManager.swift */; };
+		F31CE0692CA9507000E9365C /* BonjourScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31CE0682CA9507000E9365C /* BonjourScanner.swift */; };
+		F31CE06B2CA952AE00E9365C /* TVSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31CE06A2CA952AE00E9365C /* TVSelectionView.swift */; };
+		F31CE06D2CA9599100E9365C /* WebSocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31CE06C2CA9599100E9365C /* WebSocketService.swift */; };
 		F343A64A2C958160000258EE /* TicTacToeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F343A6492C958160000258EE /* TicTacToeViewController.swift */; };
 		F343A64D2C9583D0000258EE /* TicTacToeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F343A64C2C9583D0000258EE /* TicTacToeModel.swift */; };
 		F343A64F2C9583E4000258EE /* TicTacToeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F343A64E2C9583E4000258EE /* TicTacToeViewModel.swift */; };
 		F343A6572C9587D2000258EE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F343A6552C9587D2000258EE /* Localizable.strings */; };
 		F343A65D2C959464000258EE /* DocumentPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F343A65C2C959464000258EE /* DocumentPickerController.swift */; };
 		F343A65F2C95948D000258EE /* CustomToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F343A65E2C95948D000258EE /* CustomToolbarView.swift */; };
+		F3BBB0122CA93D730067106C /* TVControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBB0112CA93D6E0067106C /* TVControlView.swift */; };
+		F3BBB0142CA941F50067106C /* TVControlViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBB0132CA941F00067106C /* TVControlViewWrapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +140,11 @@
 		F315039B2C70B4E300C0B13A /* DocumentsViewerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsViewerController.swift; sourceTree = "<group>"; };
 		F315039E2C70D56600C0B13A /* TipsSheetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsSheetController.swift; sourceTree = "<group>"; };
 		F31503A02C70DAEF00C0B13A /* Tips.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tips.storyboard; sourceTree = "<group>"; };
+		F31CE0612CA9471400E9365C /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		F31CE0632CA94BB600E9365C /* TVControlManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVControlManager.swift; sourceTree = "<group>"; };
+		F31CE0682CA9507000E9365C /* BonjourScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonjourScanner.swift; sourceTree = "<group>"; };
+		F31CE06A2CA952AE00E9365C /* TVSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVSelectionView.swift; sourceTree = "<group>"; };
+		F31CE06C2CA9599100E9365C /* WebSocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketService.swift; sourceTree = "<group>"; };
 		F343A6492C958160000258EE /* TicTacToeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeViewController.swift; sourceTree = "<group>"; };
 		F343A64C2C9583D0000258EE /* TicTacToeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeModel.swift; sourceTree = "<group>"; };
 		F343A64E2C9583E4000258EE /* TicTacToeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeViewModel.swift; sourceTree = "<group>"; };
@@ -143,6 +155,8 @@
 		F343A65B2C9593DB000258EE /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F343A65C2C959464000258EE /* DocumentPickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentPickerController.swift; sourceTree = "<group>"; };
 		F343A65E2C95948D000258EE /* CustomToolbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomToolbarView.swift; sourceTree = "<group>"; };
+		F3BBB0112CA93D6E0067106C /* TVControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVControlView.swift; sourceTree = "<group>"; };
+		F3BBB0132CA941F00067106C /* TVControlViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVControlViewWrapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -282,6 +296,7 @@
 		8490DA4F2C66627D00F44433 /* Screen-Mirroring */ = {
 			isa = PBXGroup;
 			children = (
+				F3BBB0102CA93D620067106C /* TVControl */,
 				F343A6482C95814E000258EE /* MiniGames */,
 				84E0B7102C6D1F2600DFEC74 /* First */,
 				F315039D2C70D55600C0B13A /* Tips */,
@@ -327,6 +342,7 @@
 				8490DA542C66627D00F44433 /* FirstViewController.swift */,
 				84579FB32C78DC3B0082E363 /* CastCollectionViewExtension.swift */,
 				8490DA562C66627D00F44433 /* First.storyboard */,
+				F31CE0612CA9471400E9365C /* TabBarViewController.swift */,
 				84579FB22C78DBF80082E363 /* CastCollectionCell */,
 			);
 			path = First;
@@ -370,6 +386,15 @@
 			path = Tips;
 			sourceTree = "<group>";
 		};
+		F31CE0652CA9505700E9365C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F31CE0682CA9507000E9365C /* BonjourScanner.swift */,
+				F31CE06C2CA9599100E9365C /* WebSocketService.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		F343A6482C95814E000258EE /* MiniGames */ = {
 			isa = PBXGroup;
 			children = (
@@ -386,6 +411,18 @@
 				F343A6492C958160000258EE /* TicTacToeViewController.swift */,
 			);
 			path = TicTacToe;
+			sourceTree = "<group>";
+		};
+		F3BBB0102CA93D620067106C /* TVControl */ = {
+			isa = PBXGroup;
+			children = (
+				F31CE0652CA9505700E9365C /* Core */,
+				F3BBB0112CA93D6E0067106C /* TVControlView.swift */,
+				F31CE06A2CA952AE00E9365C /* TVSelectionView.swift */,
+				F3BBB0132CA941F00067106C /* TVControlViewWrapper.swift */,
+				F31CE0632CA94BB600E9365C /* TVControlManager.swift */,
+			);
+			path = TVControl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -605,9 +642,12 @@
 				F315038D2C70892200C0B13A /* AlbumsViewController.swift in Sources */,
 				F31503952C70A54F00C0B13A /* NetworkPermissionHelper.swift in Sources */,
 				84579FAB2C78C5DC0082E363 /* PhotoCastCollectionViewCell.swift in Sources */,
+				F3BBB0122CA93D730067106C /* TVControlView.swift in Sources */,
 				F31503932C709E7300C0B13A /* BaseViewController.swift in Sources */,
 				F343A65F2C95948D000258EE /* CustomToolbarView.swift in Sources */,
 				84579FB92C78DF630082E363 /* BottomSheetTipsPermitViewController.swift in Sources */,
+				F31CE0622CA9471400E9365C /* TabBarViewController.swift in Sources */,
+				F31CE06B2CA952AE00E9365C /* TVSelectionView.swift in Sources */,
 				F343A65D2C959464000258EE /* DocumentPickerController.swift in Sources */,
 				848240A92C666542007C6B9A /* Helpers.swift in Sources */,
 				84342BB72C6B559A003E7EEA /* AppReview.swift in Sources */,
@@ -622,15 +662,19 @@
 				840AA79E2C90730400EA65A4 /* UIWindow+Additions.swift in Sources */,
 				84342B9F2C6A5C01003E7EEA /* R.generated.swift in Sources */,
 				844CF87F2C6D2B01007CE780 /* Haptic.swift in Sources */,
+				F3BBB0142CA941F50067106C /* TVControlViewWrapper.swift in Sources */,
 				84579FB42C78DC3B0082E363 /* CastCollectionViewExtension.swift in Sources */,
 				F315039F2C70D56600C0B13A /* TipsSheetController.swift in Sources */,
+				F31CE06D2CA9599100E9365C /* WebSocketService.swift in Sources */,
 				84579FA92C78C5A00082E363 /* VideoCastCollectionViewCell.swift in Sources */,
 				846FCA202C78E61100B198B0 /* UIDevice.swift in Sources */,
 				846FCA172C78E61100B198B0 /* UIButton.swift in Sources */,
+				F31CE0692CA9507000E9365C /* BonjourScanner.swift in Sources */,
 				848240A82C666542007C6B9A /* AuthorizationStatus.swift in Sources */,
 				84579FAD2C78C5E50082E363 /* WebCastCollectionViewCell.swift in Sources */,
 				F343A64A2C958160000258EE /* TicTacToeViewController.swift in Sources */,
 				F315038F2C70894500C0B13A /* MediaViewController.swift in Sources */,
+				F31CE0642CA94BB600E9365C /* TVControlManager.swift in Sources */,
 				84579FAF2C78C5F40082E363 /* FilesCastCollectionViewCell.swift in Sources */,
 				F343A64F2C9583E4000258EE /* TicTacToeViewModel.swift in Sources */,
 			);

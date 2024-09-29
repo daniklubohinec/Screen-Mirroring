@@ -4,7 +4,8 @@
 <dict>
 	<key>NSBonjourServices</key>
 	<array>
-		<string>_http._tcp</string>
+		<string>_http._tcp.</string>
+		<string>_airplay._tcp.</string>
 	</array>
 	<key>UIAppFonts</key>
 	<array>
@@ -36,6 +37,11 @@
 				</dict>
 			</array>
 		</dict>
+	</dict>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
 	</dict>
 </dict>
 </plist>

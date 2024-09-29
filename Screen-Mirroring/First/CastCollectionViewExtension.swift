@@ -14,23 +14,22 @@ extension FirstViewController: UICollectionViewDelegate, UICollectionViewDataSou
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cellVideoCast = typeOfMirroringCollectionView.dequeueReusableCell(withReuseIdentifier: R.reuseIdentifier.videoCastId.identifier, for: indexPath) as? VideoCastCollectionViewCell
-        else { return UICollectionViewCell.init() }
-        guard let cellPhotoCast = typeOfMirroringCollectionView.dequeueReusableCell(withReuseIdentifier: R.reuseIdentifier.photoCastId.identifier, for: indexPath) as? PhotoCastCollectionViewCell
-        else { return UICollectionViewCell.init() }
-        guard let cellWebCast = typeOfMirroringCollectionView.dequeueReusableCell(withReuseIdentifier: R.reuseIdentifier.webCastId.identifier, for: indexPath) as? WebCastCollectionViewCell
-        else { return UICollectionViewCell.init() }
-        guard let cellFilesCast = typeOfMirroringCollectionView.dequeueReusableCell(withReuseIdentifier: R.reuseIdentifier.filesCastId.identifier, for: indexPath) as? FilesCastCollectionViewCell
-        else { return UICollectionViewCell.init() }
-        
         switch indexPath.row {
         case 0:
+            guard let cellVideoCast = typeOfMirroringCollectionView.dequeueReusableCell(withReuseIdentifier: R.reuseIdentifier.videoCastId.identifier, for: indexPath) as? VideoCastCollectionViewCell
+            else { return UICollectionViewCell.init() }
             return cellVideoCast
         case 1:
+            guard let cellPhotoCast = typeOfMirroringCollectionView.dequeueReusableCell(withReuseIdentifier: R.reuseIdentifier.photoCastId.identifier, for: indexPath) as? PhotoCastCollectionViewCell
+            else { return UICollectionViewCell.init() }
             return cellPhotoCast
         case 2:
+            guard let cellWebCast = typeOfMirroringCollectionView.dequeueReusableCell(withReuseIdentifier: R.reuseIdentifier.webCastId.identifier, for: indexPath) as? WebCastCollectionViewCell
+            else { return UICollectionViewCell.init() }
             return cellWebCast
         case 3:
+            guard let cellFilesCast = typeOfMirroringCollectionView.dequeueReusableCell(withReuseIdentifier: R.reuseIdentifier.filesCastId.identifier, for: indexPath) as? FilesCastCollectionViewCell
+            else { return UICollectionViewCell.init() }
             return cellFilesCast
         default:
             return UICollectionViewCell()
