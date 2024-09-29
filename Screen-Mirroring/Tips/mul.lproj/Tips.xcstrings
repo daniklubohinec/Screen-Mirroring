@@ -1,0 +1,54 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "3QK-Bo-ZuV.normalTitle" : {
+      "comment" : "Class = \"UIButton\"; normalTitle = \"OK\"; ObjectID = \"3QK-Bo-ZuV\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "OK"
+          }
+        }
+      }
+    },
+    "8q6-u7-CdI.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Last Step\"; ObjectID = \"8q6-u7-CdI\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Last Step"
+          }
+        }
+      }
+    },
+    "D9N-G5-ChB.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Label\"; ObjectID = \"D9N-G5-ChB\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Label"
+          }
+        }
+      }
+    },
+    "wXw-gh-ODh.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Open the Control Center and select the Screen Mirroring option.\"; ObjectID = \"wXw-gh-ODh\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Open the Control Center and select the Screen Mirroring option."
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

@@ -1,0 +1,12 @@
+
+/* Class = "UIButton"; normalTitle = "OK"; ObjectID = "3QK-Bo-ZuV"; */
+"3QK-Bo-ZuV.normalTitle" = "OK";
+
+/* Class = "UILabel"; text = "Last Step"; ObjectID = "8q6-u7-CdI"; */
+"8q6-u7-CdI.text" = "Bước cuối cùng";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "D9N-G5-ChB"; */
+"D9N-G5-ChB.text" = "Label";
+
+/* Class = "UILabel"; text = "Open the Control Center and select the Screen Mirroring option."; ObjectID = "wXw-gh-ODh"; */
+"wXw-gh-ODh.text" = "Mở Center контроля và chọn tùy chọn Screen Mirroring.";
