@@ -1,5 +1,5 @@
 PODS:
-  - Adapty (3.0.3)
+  - Adapty (3.0.0)
   - Differentiator (5.0.0)
   - R.swift (7.3.2)
   - RxCocoa (6.7.0):
@@ -34,7 +34,7 @@ SPEC REPOS:
     - SnapKit
 
 SPEC CHECKSUMS:
-  Adapty: 1e48516a56a5a888875091c326593d6bb2d4e177
+  Adapty: cb80232226cc18d2a9d2de6883732b7043e2d09e
   Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
   R.swift: 0af0d882f49f03711415cb4e5215daa977d8a480
   RxCocoa: fb0aefb9e7229c8ab057acde714136d19117f102

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1114D6286E7794CC27609F26 /* Pods_TVRemoteApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 225393B8AC1F9843AB1C19B4 /* Pods_TVRemoteApp.framework */; };
 		840AA79E2C90730400EA65A4 /* UIWindow+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840AA79D2C90730400EA65A4 /* UIWindow+Additions.swift */; };
 		842FC3EC2C97085300CAB045 /* ActionSheet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842FC3EB2C97085300CAB045 /* ActionSheet.storyboard */; };
 		84342B9F2C6A5C01003E7EEA /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84342B9E2C6A5C01003E7EEA /* R.generated.swift */; };
@@ -46,6 +45,7 @@
 		8490DA682C66627F00F44433 /* Screen_MirroringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8490DA672C66627F00F44433 /* Screen_MirroringTests.swift */; };
 		8490DA722C66627F00F44433 /* Screen_MirroringUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8490DA712C66627F00F44433 /* Screen_MirroringUITests.swift */; };
 		8490DA742C66627F00F44433 /* Screen_MirroringUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8490DA732C66627F00F44433 /* Screen_MirroringUITestsLaunchTests.swift */; };
+		901F3FB990630F4DDA2D2ED8 /* Pods_TVRemoteApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 047585A891DFF3C7B3F7C063 /* Pods_TVRemoteApp.framework */; };
 		F315038D2C70892200C0B13A /* AlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F315038C2C70892200C0B13A /* AlbumsViewController.swift */; };
 		F315038F2C70894500C0B13A /* MediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F315038E2C70894500C0B13A /* MediaViewController.swift */; };
 		F31503912C708A3100C0B13A /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31503902C708A3100C0B13A /* PhotosViewController.swift */; };
@@ -93,8 +93,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		225393B8AC1F9843AB1C19B4 /* Pods_TVRemoteApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVRemoteApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6FF69BAF7081028848D75D49 /* Pods-TVRemoteApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVRemoteApp.release.xcconfig"; path = "Target Support Files/Pods-TVRemoteApp/Pods-TVRemoteApp.release.xcconfig"; sourceTree = "<group>"; };
+		047585A891DFF3C7B3F7C063 /* Pods_TVRemoteApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVRemoteApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70E1A52582780BD823A1B051 /* Pods-TVRemoteApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVRemoteApp.debug.xcconfig"; path = "Target Support Files/Pods-TVRemoteApp/Pods-TVRemoteApp.debug.xcconfig"; sourceTree = "<group>"; };
 		840AA79D2C90730400EA65A4 /* UIWindow+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWindow+Additions.swift"; sourceTree = "<group>"; };
 		842FC3E72C97084400CAB045 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Tips.strings; sourceTree = "<group>"; };
 		842FC3E92C97084600CAB045 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Tips.strings; sourceTree = "<group>"; };
@@ -149,7 +149,7 @@
 		8490DA6D2C66627F00F44433 /* TVRemoteAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVRemoteAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8490DA712C66627F00F44433 /* Screen_MirroringUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen_MirroringUITests.swift; sourceTree = "<group>"; };
 		8490DA732C66627F00F44433 /* Screen_MirroringUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen_MirroringUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		E19CE2DAA6F1EAD243EB0FFD /* Pods-TVRemoteApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVRemoteApp.debug.xcconfig"; path = "Target Support Files/Pods-TVRemoteApp/Pods-TVRemoteApp.debug.xcconfig"; sourceTree = "<group>"; };
+		D8AEBD29608BEB4BB1791C7B /* Pods-TVRemoteApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVRemoteApp.release.xcconfig"; path = "Target Support Files/Pods-TVRemoteApp/Pods-TVRemoteApp.release.xcconfig"; sourceTree = "<group>"; };
 		F315038C2C70892200C0B13A /* AlbumsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsViewController.swift; sourceTree = "<group>"; };
 		F315038E2C70894500C0B13A /* MediaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaViewController.swift; sourceTree = "<group>"; };
 		F31503902C708A3100C0B13A /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
@@ -188,7 +188,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1114D6286E7794CC27609F26 /* Pods_TVRemoteApp.framework in Frameworks */,
+				901F3FB990630F4DDA2D2ED8 /* Pods_TVRemoteApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,21 +209,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		005D89DB52FDA7F0B567D7B4 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				225393B8AC1F9843AB1C19B4 /* Pods_TVRemoteApp.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		295A5CF219DA0D9C466A1260 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E19CE2DAA6F1EAD243EB0FFD /* Pods-TVRemoteApp.debug.xcconfig */,
-				6FF69BAF7081028848D75D49 /* Pods-TVRemoteApp.release.xcconfig */,
+				70E1A52582780BD823A1B051 /* Pods-TVRemoteApp.debug.xcconfig */,
+				D8AEBD29608BEB4BB1791C7B /* Pods-TVRemoteApp.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		4CA324538CB67B7E349ABF82 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				047585A891DFF3C7B3F7C063 /* Pods_TVRemoteApp.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		84342BA92C6A7BCD003E7EEA /* fonts */ = {
@@ -305,7 +305,7 @@
 				8490DA702C66627F00F44433 /* TVRemoteAppUITests */,
 				8490DA4E2C66627D00F44433 /* Products */,
 				295A5CF219DA0D9C466A1260 /* Pods */,
-				005D89DB52FDA7F0B567D7B4 /* Frameworks */,
+				4CA324538CB67B7E349ABF82 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -322,16 +322,16 @@
 		8490DA4F2C66627D00F44433 /* TVRemoteApp */ = {
 			isa = PBXGroup;
 			children = (
-				F372FAB62CAFD12B0014B6EA /* Onboarding */,
 				F372FAB92CAFD12B0014B6EA /* Splash */,
+				F372FAB62CAFD12B0014B6EA /* Onboarding */,
 				F3BBB0102CA93D620067106C /* TVControl */,
-				F343A6482C95814E000258EE /* MiniGames */,
 				84E0B7102C6D1F2600DFEC74 /* First */,
 				F315039D2C70D55600C0B13A /* Tips */,
 				F315038B2C70890C00C0B13A /* GalleryPicker */,
 				F315039A2C70B40D00C0B13A /* DocumentPicker */,
 				F31503972C70AC1E00C0B13A /* WebMirror */,
 				84342BBB2C6BAE37003E7EEA /* Settings */,
+				F343A6482C95814E000258EE /* MiniGames */,
 				84579FB72C78DF630082E363 /* BottomSheetPermit */,
 				8490DA502C66627D00F44433 /* AppDelegate.swift */,
 				8490DA522C66627D00F44433 /* SceneDelegate.swift */,
@@ -478,12 +478,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8490DA772C66627F00F44433 /* Build configuration list for PBXNativeTarget "TVRemoteApp" */;
 			buildPhases = (
-				2838CED2DE7A6E264562D96D /* [CP] Check Pods Manifest.lock */,
+				CEDA46B8D706A101544CDDA3 /* [CP] Check Pods Manifest.lock */,
 				84342B9D2C6A5BAE003E7EEA /* ShellScript */,
 				8490DA492C66627D00F44433 /* Sources */,
 				8490DA4A2C66627D00F44433 /* Frameworks */,
 				8490DA4B2C66627D00F44433 /* Resources */,
-				757E95F809A45AF3B36FA3C7 /* [CP] Embed Pods Frameworks */,
+				43F537910D122942F08D6358 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -538,7 +538,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1540;
-				LastUpgradeCheck = 1540;
+				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					8490DA4C2C66627D00F44433 = {
 						CreatedOnToolsVersion = 15.4;
@@ -618,29 +618,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2838CED2DE7A6E264562D96D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TVRemoteApp-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		757E95F809A45AF3B36FA3C7 /* [CP] Embed Pods Frameworks */ = {
+		43F537910D122942F08D6358 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -675,6 +653,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
+		CEDA46B8D706A101544CDDA3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TVRemoteApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -947,7 +947,7 @@
 		};
 		8490DA782C66627F00F44433 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E19CE2DAA6F1EAD243EB0FFD /* Pods-TVRemoteApp.debug.xcconfig */;
+			baseConfigurationReference = 70E1A52582780BD823A1B051 /* Pods-TVRemoteApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -958,15 +958,18 @@
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TVRemoteApp/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "CPU Check and Mirroring";
+				INFOPLIST_KEY_CFBundleDisplayName = "TV Remote";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Enable local network access to find Cast-enabled devices.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Please allow access to Photos to upload your room photos.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = First;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportsDocumentBrowser = YES;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -982,7 +985,7 @@
 		};
 		8490DA792C66627F00F44433 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6FF69BAF7081028848D75D49 /* Pods-TVRemoteApp.release.xcconfig */;
+			baseConfigurationReference = D8AEBD29608BEB4BB1791C7B /* Pods-TVRemoteApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -993,15 +996,18 @@
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TVRemoteApp/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "CPU Check and Mirroring";
+				INFOPLIST_KEY_CFBundleDisplayName = "TV Remote";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Enable local network access to find Cast-enabled devices.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Please allow access to Photos to upload your room photos.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = First;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportsDocumentBrowser = YES;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1018,7 +1024,6 @@
 		8490DA7B2C66627F00F44433 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1037,7 +1042,6 @@
 		8490DA7C2C66627F00F44433 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1056,7 +1060,6 @@
 		8490DA7E2C66627F00F44433 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1073,7 +1076,6 @@
 		8490DA7F2C66627F00F44433 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
