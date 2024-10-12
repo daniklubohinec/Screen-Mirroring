@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		840AA79E2C90730400EA65A4 /* UIWindow+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840AA79D2C90730400EA65A4 /* UIWindow+Additions.swift */; };
 		842FC3EC2C97085300CAB045 /* ActionSheet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842FC3EB2C97085300CAB045 /* ActionSheet.storyboard */; };
-		84342B9F2C6A5C01003E7EEA /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84342B9E2C6A5C01003E7EEA /* R.generated.swift */; };
 		84342BAA2C6A7BCD003E7EEA /* Inter-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84342BA02C6A7BCD003E7EEA /* Inter-Black.ttf */; };
 		84342BAB2C6A7BCD003E7EEA /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84342BA12C6A7BCD003E7EEA /* Inter-Bold.ttf */; };
 		84342BAC2C6A7BCD003E7EEA /* Inter-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84342BA22C6A7BCD003E7EEA /* Inter-ExtraBold.ttf */; };
@@ -35,17 +34,36 @@
 		846FCA182C78E61100B198B0 /* NetworkConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846FCA032C78E61100B198B0 /* NetworkConnection.swift */; };
 		846FCA202C78E61100B198B0 /* UIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846FCA0B2C78E61100B198B0 /* UIDevice.swift */; };
 		848240A82C666542007C6B9A /* AuthorizationStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8482409E2C666542007C6B9A /* AuthorizationStatus.swift */; };
-		848240A92C666542007C6B9A /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8482409F2C666542007C6B9A /* Helpers.swift */; };
+		848240A92C666542007C6B9A /* CommonHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8482409F2C666542007C6B9A /* CommonHelpers.swift */; };
 		8490DA512C66627D00F44433 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8490DA502C66627D00F44433 /* AppDelegate.swift */; };
 		8490DA532C66627D00F44433 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8490DA522C66627D00F44433 /* SceneDelegate.swift */; };
 		8490DA552C66627D00F44433 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8490DA542C66627D00F44433 /* FirstViewController.swift */; };
 		8490DA582C66627D00F44433 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8490DA572C66627D00F44433 /* Base */; };
 		8490DA5A2C66627E00F44433 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8490DA592C66627E00F44433 /* Assets.xcassets */; };
 		8490DA5D2C66627E00F44433 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8490DA5C2C66627E00F44433 /* Base */; };
-		8490DA682C66627F00F44433 /* Screen_MirroringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8490DA672C66627F00F44433 /* Screen_MirroringTests.swift */; };
-		8490DA722C66627F00F44433 /* Screen_MirroringUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8490DA712C66627F00F44433 /* Screen_MirroringUITests.swift */; };
-		8490DA742C66627F00F44433 /* Screen_MirroringUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8490DA732C66627F00F44433 /* Screen_MirroringUITestsLaunchTests.swift */; };
-		901F3FB990630F4DDA2D2ED8 /* Pods_TVRemoteApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 047585A891DFF3C7B3F7C063 /* Pods_TVRemoteApp.framework */; };
+		F304E7CC2CBA69E7004ACCB1 /* AdaptyConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304E7CB2CBA69E7004ACCB1 /* AdaptyConfig.swift */; };
+		F304E7CF2CBA6A55004ACCB1 /* SubscriptionOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304E7CE2CBA6A55004ACCB1 /* SubscriptionOptionView.swift */; };
+		F304E7D12CBA6A68004ACCB1 /* OnboardingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304E7D02CBA6A68004ACCB1 /* OnboardingPageView.swift */; };
+		F304E7D32CBA6ADF004ACCB1 /* ConnectBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304E7D22CBA6ADF004ACCB1 /* ConnectBlock.swift */; };
+		F304E7D52CBA6AFB004ACCB1 /* PowerSettingsBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304E7D42CBA6AFB004ACCB1 /* PowerSettingsBlock.swift */; };
+		F304E7D82CBA6B19004ACCB1 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304E7D72CBA6B19004ACCB1 /* Models.swift */; };
+		F304E7DA2CBA6B30004ACCB1 /* NavButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304E7D92CBA6B30004ACCB1 /* NavButton.swift */; };
+		F304E7DC2CBA6B42004ACCB1 /* MediaButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304E7DB2CBA6B42004ACCB1 /* MediaButton.swift */; };
+		F304E7DE2CBA6B5A004ACCB1 /* ChannelVolumeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304E7DD2CBA6B5A004ACCB1 /* ChannelVolumeButton.swift */; };
+		F304E7E02CBA6B6B004ACCB1 /* AdditionalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304E7DF2CBA6B6B004ACCB1 /* AdditionalButton.swift */; };
+		F304E7E22CBA6BA8004ACCB1 /* ThreeDButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304E7E12CBA6BA8004ACCB1 /* ThreeDButtonStyle.swift */; };
+		F304E7E42CBA6E63004ACCB1 /* TVRemoteAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304E7E32CBA6E63004ACCB1 /* TVRemoteAppTests.swift */; };
+		F304E7E72CBA6E7B004ACCB1 /* TVRemoteAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304E7E52CBA6E71004ACCB1 /* TVRemoteAppUITests.swift */; };
+		F304E7E82CBA6E7F004ACCB1 /* TVRemoteAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304E7E62CBA6E71004ACCB1 /* TVRemoteAppUITestsLaunchTests.swift */; };
+		F304E7EB2CBA6ED2004ACCB1 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = F304E7EA2CBA6ED2004ACCB1 /* RxBlocking */; };
+		F304E7ED2CBA6ED2004ACCB1 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = F304E7EC2CBA6ED2004ACCB1 /* RxCocoa */; };
+		F304E7EF2CBA6ED2004ACCB1 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = F304E7EE2CBA6ED2004ACCB1 /* RxRelay */; };
+		F304E7F12CBA6ED2004ACCB1 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F304E7F02CBA6ED2004ACCB1 /* RxSwift */; };
+		F304E7F42CBA6F1D004ACCB1 /* Differentiator in Frameworks */ = {isa = PBXBuildFile; productRef = F304E7F32CBA6F1D004ACCB1 /* Differentiator */; };
+		F304E7F62CBA6F1D004ACCB1 /* RxDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = F304E7F52CBA6F1D004ACCB1 /* RxDataSources */; };
+		F304E7F92CBA6F54004ACCB1 /* RswiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = F304E7F82CBA6F54004ACCB1 /* RswiftLibrary */; };
+		F304E7FE2CBA6F8B004ACCB1 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F304E7FD2CBA6F8B004ACCB1 /* SnapKit */; };
+		F304E8012CBA6FBC004ACCB1 /* Adapty in Frameworks */ = {isa = PBXBuildFile; productRef = F304E8002CBA6FBC004ACCB1 /* Adapty */; };
 		F315038D2C70892200C0B13A /* AlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F315038C2C70892200C0B13A /* AlbumsViewController.swift */; };
 		F315038F2C70894500C0B13A /* MediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F315038E2C70894500C0B13A /* MediaViewController.swift */; };
 		F31503912C708A3100C0B13A /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31503902C708A3100C0B13A /* PhotosViewController.swift */; };
@@ -65,7 +83,7 @@
 		F372FAAC2CAFCDDB0014B6EA /* TVControlManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F372FAAA2CAFCDDB0014B6EA /* TVControlManager.swift */; };
 		F372FAAD2CAFCDDB0014B6EA /* TVSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F372FAAB2CAFCDDB0014B6EA /* TVSelectionView.swift */; };
 		F372FAAF2CAFCDEF0014B6EA /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F372FAAE2CAFCDEF0014B6EA /* TabBarViewController.swift */; };
-		F372FAB22CAFCF2E0014B6EA /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F372FAB02CAFCF2E0014B6EA /* Storage.swift */; };
+		F372FAB22CAFCF2E0014B6EA /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F372FAB02CAFCF2E0014B6EA /* UserDefaultsService.swift */; };
 		F372FAB32CAFCF2E0014B6EA /* PurchaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F372FAB12CAFCF2E0014B6EA /* PurchaseService.swift */; };
 		F372FABA2CAFD12B0014B6EA /* OnboardingContentPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F372FAB42CAFD12B0014B6EA /* OnboardingContentPage.swift */; };
 		F372FABB2CAFD12B0014B6EA /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F372FAB52CAFD12B0014B6EA /* OnboardingViewController.swift */; };
@@ -93,8 +111,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		047585A891DFF3C7B3F7C063 /* Pods_TVRemoteApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVRemoteApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		70E1A52582780BD823A1B051 /* Pods-TVRemoteApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVRemoteApp.debug.xcconfig"; path = "Target Support Files/Pods-TVRemoteApp/Pods-TVRemoteApp.debug.xcconfig"; sourceTree = "<group>"; };
 		840AA79D2C90730400EA65A4 /* UIWindow+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWindow+Additions.swift"; sourceTree = "<group>"; };
 		842FC3E72C97084400CAB045 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Tips.strings; sourceTree = "<group>"; };
 		842FC3E92C97084600CAB045 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Tips.strings; sourceTree = "<group>"; };
@@ -135,7 +151,7 @@
 		846FCA032C78E61100B198B0 /* NetworkConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConnection.swift; sourceTree = "<group>"; };
 		846FCA0B2C78E61100B198B0 /* UIDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDevice.swift; sourceTree = "<group>"; };
 		8482409E2C666542007C6B9A /* AuthorizationStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationStatus.swift; sourceTree = "<group>"; };
-		8482409F2C666542007C6B9A /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		8482409F2C666542007C6B9A /* CommonHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonHelpers.swift; sourceTree = "<group>"; };
 		8490DA4D2C66627D00F44433 /* TVRemoteApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVRemoteApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8490DA502C66627D00F44433 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8490DA522C66627D00F44433 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -145,11 +161,21 @@
 		8490DA5C2C66627E00F44433 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8490DA5E2C66627E00F44433 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8490DA632C66627F00F44433 /* TVRemoteAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVRemoteAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8490DA672C66627F00F44433 /* Screen_MirroringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen_MirroringTests.swift; sourceTree = "<group>"; };
 		8490DA6D2C66627F00F44433 /* TVRemoteAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVRemoteAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8490DA712C66627F00F44433 /* Screen_MirroringUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen_MirroringUITests.swift; sourceTree = "<group>"; };
-		8490DA732C66627F00F44433 /* Screen_MirroringUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen_MirroringUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		D8AEBD29608BEB4BB1791C7B /* Pods-TVRemoteApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVRemoteApp.release.xcconfig"; path = "Target Support Files/Pods-TVRemoteApp/Pods-TVRemoteApp.release.xcconfig"; sourceTree = "<group>"; };
+		F304E7CB2CBA69E7004ACCB1 /* AdaptyConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptyConfig.swift; sourceTree = "<group>"; };
+		F304E7CE2CBA6A55004ACCB1 /* SubscriptionOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionOptionView.swift; sourceTree = "<group>"; };
+		F304E7D02CBA6A68004ACCB1 /* OnboardingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageView.swift; sourceTree = "<group>"; };
+		F304E7D22CBA6ADF004ACCB1 /* ConnectBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectBlock.swift; sourceTree = "<group>"; };
+		F304E7D42CBA6AFB004ACCB1 /* PowerSettingsBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerSettingsBlock.swift; sourceTree = "<group>"; };
+		F304E7D72CBA6B19004ACCB1 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		F304E7D92CBA6B30004ACCB1 /* NavButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavButton.swift; sourceTree = "<group>"; };
+		F304E7DB2CBA6B42004ACCB1 /* MediaButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaButton.swift; sourceTree = "<group>"; };
+		F304E7DD2CBA6B5A004ACCB1 /* ChannelVolumeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVolumeButton.swift; sourceTree = "<group>"; };
+		F304E7DF2CBA6B6B004ACCB1 /* AdditionalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalButton.swift; sourceTree = "<group>"; };
+		F304E7E12CBA6BA8004ACCB1 /* ThreeDButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeDButtonStyle.swift; sourceTree = "<group>"; };
+		F304E7E32CBA6E63004ACCB1 /* TVRemoteAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVRemoteAppTests.swift; sourceTree = "<group>"; };
+		F304E7E52CBA6E71004ACCB1 /* TVRemoteAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVRemoteAppUITests.swift; sourceTree = "<group>"; };
+		F304E7E62CBA6E71004ACCB1 /* TVRemoteAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVRemoteAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F315038C2C70892200C0B13A /* AlbumsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsViewController.swift; sourceTree = "<group>"; };
 		F315038E2C70894500C0B13A /* MediaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaViewController.swift; sourceTree = "<group>"; };
 		F31503902C708A3100C0B13A /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
@@ -173,7 +199,7 @@
 		F372FAAA2CAFCDDB0014B6EA /* TVControlManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVControlManager.swift; sourceTree = "<group>"; };
 		F372FAAB2CAFCDDB0014B6EA /* TVSelectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVSelectionView.swift; sourceTree = "<group>"; };
 		F372FAAE2CAFCDEF0014B6EA /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
-		F372FAB02CAFCF2E0014B6EA /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		F372FAB02CAFCF2E0014B6EA /* UserDefaultsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
 		F372FAB12CAFCF2E0014B6EA /* PurchaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseService.swift; sourceTree = "<group>"; };
 		F372FAB42CAFD12B0014B6EA /* OnboardingContentPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingContentPage.swift; sourceTree = "<group>"; };
 		F372FAB52CAFD12B0014B6EA /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
@@ -188,7 +214,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				901F3FB990630F4DDA2D2ED8 /* Pods_TVRemoteApp.framework in Frameworks */,
+				F304E7ED2CBA6ED2004ACCB1 /* RxCocoa in Frameworks */,
+				F304E7F92CBA6F54004ACCB1 /* RswiftLibrary in Frameworks */,
+				F304E7F12CBA6ED2004ACCB1 /* RxSwift in Frameworks */,
+				F304E7EF2CBA6ED2004ACCB1 /* RxRelay in Frameworks */,
+				F304E8012CBA6FBC004ACCB1 /* Adapty in Frameworks */,
+				F304E7F62CBA6F1D004ACCB1 /* RxDataSources in Frameworks */,
+				F304E7FE2CBA6F8B004ACCB1 /* SnapKit in Frameworks */,
+				F304E7F42CBA6F1D004ACCB1 /* Differentiator in Frameworks */,
+				F304E7EB2CBA6ED2004ACCB1 /* RxBlocking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,23 +243,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		295A5CF219DA0D9C466A1260 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				70E1A52582780BD823A1B051 /* Pods-TVRemoteApp.debug.xcconfig */,
-				D8AEBD29608BEB4BB1791C7B /* Pods-TVRemoteApp.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		4CA324538CB67B7E349ABF82 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				047585A891DFF3C7B3F7C063 /* Pods_TVRemoteApp.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		84342BA92C6A7BCD003E7EEA /* fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -289,10 +306,10 @@
 			children = (
 				8482409E2C666542007C6B9A /* AuthorizationStatus.swift */,
 				F31503942C70A54F00C0B13A /* NetworkPermissionHelper.swift */,
-				8482409F2C666542007C6B9A /* Helpers.swift */,
+				8482409F2C666542007C6B9A /* CommonHelpers.swift */,
 				844CF87E2C6D2B01007CE780 /* Haptic.swift */,
-				F372FAB12CAFCF2E0014B6EA /* PurchaseService.swift */,
-				F372FAB02CAFCF2E0014B6EA /* Storage.swift */,
+				F304E7CD2CBA69FC004ACCB1 /* Purchases */,
+				F372FAB02CAFCF2E0014B6EA /* UserDefaultsService.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -304,8 +321,6 @@
 				8490DA662C66627F00F44433 /* TVRemoteAppTests */,
 				8490DA702C66627F00F44433 /* TVRemoteAppUITests */,
 				8490DA4E2C66627D00F44433 /* Products */,
-				295A5CF219DA0D9C466A1260 /* Pods */,
-				4CA324538CB67B7E349ABF82 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -350,7 +365,7 @@
 		8490DA662C66627F00F44433 /* TVRemoteAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				8490DA672C66627F00F44433 /* Screen_MirroringTests.swift */,
+				F304E7E32CBA6E63004ACCB1 /* TVRemoteAppTests.swift */,
 			);
 			path = TVRemoteAppTests;
 			sourceTree = "<group>";
@@ -358,8 +373,8 @@
 		8490DA702C66627F00F44433 /* TVRemoteAppUITests */ = {
 			isa = PBXGroup;
 			children = (
-				8490DA712C66627F00F44433 /* Screen_MirroringUITests.swift */,
-				8490DA732C66627F00F44433 /* Screen_MirroringUITestsLaunchTests.swift */,
+				F304E7E52CBA6E71004ACCB1 /* TVRemoteAppUITests.swift */,
+				F304E7E62CBA6E71004ACCB1 /* TVRemoteAppUITestsLaunchTests.swift */,
 			);
 			path = TVRemoteAppUITests;
 			sourceTree = "<group>";
@@ -374,6 +389,31 @@
 				84579FB22C78DBF80082E363 /* CastCollectionCell */,
 			);
 			path = First;
+			sourceTree = "<group>";
+		};
+		F304E7CD2CBA69FC004ACCB1 /* Purchases */ = {
+			isa = PBXGroup;
+			children = (
+				F304E7CB2CBA69E7004ACCB1 /* AdaptyConfig.swift */,
+				F372FAB12CAFCF2E0014B6EA /* PurchaseService.swift */,
+			);
+			path = Purchases;
+			sourceTree = "<group>";
+		};
+		F304E7D62CBA6B06004ACCB1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F3BBB0112CA93D6E0067106C /* TVControlView.swift */,
+				F304E7E12CBA6BA8004ACCB1 /* ThreeDButtonStyle.swift */,
+				F304E7DF2CBA6B6B004ACCB1 /* AdditionalButton.swift */,
+				F304E7DD2CBA6B5A004ACCB1 /* ChannelVolumeButton.swift */,
+				F304E7DB2CBA6B42004ACCB1 /* MediaButton.swift */,
+				F304E7D92CBA6B30004ACCB1 /* NavButton.swift */,
+				F304E7D72CBA6B19004ACCB1 /* Models.swift */,
+				F304E7D42CBA6AFB004ACCB1 /* PowerSettingsBlock.swift */,
+				F304E7D22CBA6ADF004ACCB1 /* ConnectBlock.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		F315038B2C70890C00C0B13A /* GalleryPicker */ = {
@@ -446,6 +486,8 @@
 			children = (
 				F372FAB42CAFD12B0014B6EA /* OnboardingContentPage.swift */,
 				F372FAB52CAFD12B0014B6EA /* OnboardingViewController.swift */,
+				F304E7CE2CBA6A55004ACCB1 /* SubscriptionOptionView.swift */,
+				F304E7D02CBA6A68004ACCB1 /* OnboardingPageView.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -463,7 +505,7 @@
 			isa = PBXGroup;
 			children = (
 				F31CE0652CA9505700E9365C /* Core */,
-				F3BBB0112CA93D6E0067106C /* TVControlView.swift */,
+				F304E7D62CBA6B06004ACCB1 /* Views */,
 				F3BBB0132CA941F00067106C /* TVControlViewWrapper.swift */,
 				F372FAAA2CAFCDDB0014B6EA /* TVControlManager.swift */,
 				F372FAAB2CAFCDDB0014B6EA /* TVSelectionView.swift */,
@@ -478,16 +520,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8490DA772C66627F00F44433 /* Build configuration list for PBXNativeTarget "TVRemoteApp" */;
 			buildPhases = (
-				CEDA46B8D706A101544CDDA3 /* [CP] Check Pods Manifest.lock */,
-				84342B9D2C6A5BAE003E7EEA /* ShellScript */,
 				8490DA492C66627D00F44433 /* Sources */,
 				8490DA4A2C66627D00F44433 /* Frameworks */,
 				8490DA4B2C66627D00F44433 /* Resources */,
-				43F537910D122942F08D6358 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F304E7FB2CBA6F67004ACCB1 /* PBXTargetDependency */,
 			);
 			name = TVRemoteApp;
 			productName = TVRemoteApp;
@@ -566,6 +606,13 @@
 				vi,
 			);
 			mainGroup = 8490DA442C66627D00F44433;
+			packageReferences = (
+				F304E7E92CBA6EB3004ACCB1 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				F304E7F22CBA6F1D004ACCB1 /* XCRemoteSwiftPackageReference "RxDataSources" */,
+				F304E7F72CBA6F54004ACCB1 /* XCRemoteSwiftPackageReference "R" */,
+				F304E7FC2CBA6F8B004ACCB1 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				F304E7FF2CBA6FBC004ACCB1 /* XCRemoteSwiftPackageReference "AdaptySDK-iOS" */,
+			);
 			productRefGroup = 8490DA4E2C66627D00F44433 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -617,72 +664,14 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		43F537910D122942F08D6358 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TVRemoteApp/Pods-TVRemoteApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TVRemoteApp/Pods-TVRemoteApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TVRemoteApp/Pods-TVRemoteApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		84342B9D2C6A5BAE003E7EEA /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				$SRCROOT/R.generated.swift,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
-		};
-		CEDA46B8D706A101544CDDA3 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TVRemoteApp-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		8490DA492C66627D00F44433 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F304E7CF2CBA6A55004ACCB1 /* SubscriptionOptionView.swift in Sources */,
+				F304E7D12CBA6A68004ACCB1 /* OnboardingPageView.swift in Sources */,
+				F304E7DA2CBA6B30004ACCB1 /* NavButton.swift in Sources */,
 				846FCA182C78E61100B198B0 /* NetworkConnection.swift in Sources */,
 				8490DA552C66627D00F44433 /* FirstViewController.swift in Sources */,
 				F315039C2C70B4E300C0B13A /* DocumentsViewerController.swift in Sources */,
@@ -690,32 +679,39 @@
 				F372FAB32CAFCF2E0014B6EA /* PurchaseService.swift in Sources */,
 				F31503952C70A54F00C0B13A /* NetworkPermissionHelper.swift in Sources */,
 				F372FAAC2CAFCDDB0014B6EA /* TVControlManager.swift in Sources */,
+				F304E7DE2CBA6B5A004ACCB1 /* ChannelVolumeButton.swift in Sources */,
+				F304E7CC2CBA69E7004ACCB1 /* AdaptyConfig.swift in Sources */,
+				F304E7D32CBA6ADF004ACCB1 /* ConnectBlock.swift in Sources */,
 				F372FABB2CAFD12B0014B6EA /* OnboardingViewController.swift in Sources */,
 				84579FAB2C78C5DC0082E363 /* PhotoCastCollectionViewCell.swift in Sources */,
+				F304E7E22CBA6BA8004ACCB1 /* ThreeDButtonStyle.swift in Sources */,
+				F304E7D82CBA6B19004ACCB1 /* Models.swift in Sources */,
 				F3BBB0122CA93D730067106C /* TVControlView.swift in Sources */,
 				F31503932C709E7300C0B13A /* BaseViewController.swift in Sources */,
 				F343A65F2C95948D000258EE /* CustomToolbarView.swift in Sources */,
 				84579FB92C78DF630082E363 /* BottomSheetTipsPermitViewController.swift in Sources */,
 				F372FAAD2CAFCDDB0014B6EA /* TVSelectionView.swift in Sources */,
+				F304E7DC2CBA6B42004ACCB1 /* MediaButton.swift in Sources */,
 				F343A65D2C959464000258EE /* DocumentPickerController.swift in Sources */,
-				848240A92C666542007C6B9A /* Helpers.swift in Sources */,
+				848240A92C666542007C6B9A /* CommonHelpers.swift in Sources */,
 				84342BB72C6B559A003E7EEA /* AppReview.swift in Sources */,
 				F31503912C708A3100C0B13A /* PhotosViewController.swift in Sources */,
 				F343A64D2C9583D0000258EE /* TicTacToeModel.swift in Sources */,
 				84342BBC2C6BAE37003E7EEA /* SettingsViewController.swift in Sources */,
 				F31503992C70AC3300C0B13A /* WebViewController.swift in Sources */,
 				84579FB12C78CBDC0082E363 /* CircleProgressBarView.swift in Sources */,
+				F304E7E02CBA6B6B004ACCB1 /* AdditionalButton.swift in Sources */,
 				84342BB82C6B559A003E7EEA /* UIViewController.swift in Sources */,
 				8490DA512C66627D00F44433 /* AppDelegate.swift in Sources */,
 				8490DA532C66627D00F44433 /* SceneDelegate.swift in Sources */,
 				840AA79E2C90730400EA65A4 /* UIWindow+Additions.swift in Sources */,
 				F372FABD2CAFD12B0014B6EA /* SplashScreenViewController.swift in Sources */,
-				84342B9F2C6A5C01003E7EEA /* R.generated.swift in Sources */,
 				844CF87F2C6D2B01007CE780 /* Haptic.swift in Sources */,
+				F304E7D52CBA6AFB004ACCB1 /* PowerSettingsBlock.swift in Sources */,
 				F3BBB0142CA941F50067106C /* TVControlViewWrapper.swift in Sources */,
 				84579FB42C78DC3B0082E363 /* CastCollectionViewExtension.swift in Sources */,
 				F372FAA92CAFCDD10014B6EA /* BonjourScanner.swift in Sources */,
-				F372FAB22CAFCF2E0014B6EA /* Storage.swift in Sources */,
+				F372FAB22CAFCF2E0014B6EA /* UserDefaultsService.swift in Sources */,
 				F315039F2C70D56600C0B13A /* TipsSheetController.swift in Sources */,
 				84579FA92C78C5A00082E363 /* VideoCastCollectionViewCell.swift in Sources */,
 				F372FAAF2CAFCDEF0014B6EA /* TabBarViewController.swift in Sources */,
@@ -736,7 +732,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8490DA682C66627F00F44433 /* Screen_MirroringTests.swift in Sources */,
+				F304E7E42CBA6E63004ACCB1 /* TVRemoteAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -744,8 +740,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8490DA742C66627F00F44433 /* Screen_MirroringUITestsLaunchTests.swift in Sources */,
-				8490DA722C66627F00F44433 /* Screen_MirroringUITests.swift in Sources */,
+				F304E7E82CBA6E7F004ACCB1 /* TVRemoteAppUITestsLaunchTests.swift in Sources */,
+				F304E7E72CBA6E7B004ACCB1 /* TVRemoteAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -761,6 +757,10 @@
 			isa = PBXTargetDependency;
 			target = 8490DA4C2C66627D00F44433 /* TVRemoteApp */;
 			targetProxy = 8490DA6E2C66627F00F44433 /* PBXContainerItemProxy */;
+		};
+		F304E7FB2CBA6F67004ACCB1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = F304E7FA2CBA6F67004ACCB1 /* RswiftGenerateInternalResources */;
 		};
 /* End PBXTargetDependency section */
 
@@ -947,7 +947,6 @@
 		};
 		8490DA782C66627F00F44433 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 70E1A52582780BD823A1B051 /* Pods-TVRemoteApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -985,7 +984,6 @@
 		};
 		8490DA792C66627F00F44433 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D8AEBD29608BEB4BB1791C7B /* Pods-TVRemoteApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1129,6 +1127,102 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F304E7E92CBA6EB3004ACCB1 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.8.0;
+			};
+		};
+		F304E7F22CBA6F1D004ACCB1 /* XCRemoteSwiftPackageReference "RxDataSources" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxDataSources";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.2;
+			};
+		};
+		F304E7F72CBA6F54004ACCB1 /* XCRemoteSwiftPackageReference "R" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mac-cain13/R.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.7.0;
+			};
+		};
+		F304E7FC2CBA6F8B004ACCB1 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		F304E7FF2CBA6FBC004ACCB1 /* XCRemoteSwiftPackageReference "AdaptySDK-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adaptyteam/AdaptySDK-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F304E7EA2CBA6ED2004ACCB1 /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F304E7E92CBA6EB3004ACCB1 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+		F304E7EC2CBA6ED2004ACCB1 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F304E7E92CBA6EB3004ACCB1 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		F304E7EE2CBA6ED2004ACCB1 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F304E7E92CBA6EB3004ACCB1 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		F304E7F02CBA6ED2004ACCB1 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F304E7E92CBA6EB3004ACCB1 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		F304E7F32CBA6F1D004ACCB1 /* Differentiator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F304E7F22CBA6F1D004ACCB1 /* XCRemoteSwiftPackageReference "RxDataSources" */;
+			productName = Differentiator;
+		};
+		F304E7F52CBA6F1D004ACCB1 /* RxDataSources */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F304E7F22CBA6F1D004ACCB1 /* XCRemoteSwiftPackageReference "RxDataSources" */;
+			productName = RxDataSources;
+		};
+		F304E7F82CBA6F54004ACCB1 /* RswiftLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F304E7F72CBA6F54004ACCB1 /* XCRemoteSwiftPackageReference "R" */;
+			productName = RswiftLibrary;
+		};
+		F304E7FA2CBA6F67004ACCB1 /* RswiftGenerateInternalResources */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F304E7F72CBA6F54004ACCB1 /* XCRemoteSwiftPackageReference "R" */;
+			productName = "plugin:RswiftGenerateInternalResources";
+		};
+		F304E7FD2CBA6F8B004ACCB1 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F304E7FC2CBA6F8B004ACCB1 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		F304E8002CBA6FBC004ACCB1 /* Adapty */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F304E7FF2CBA6FBC004ACCB1 /* XCRemoteSwiftPackageReference "AdaptySDK-iOS" */;
+			productName = Adapty;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8490DA452C66627D00F44433 /* Project object */;
 }

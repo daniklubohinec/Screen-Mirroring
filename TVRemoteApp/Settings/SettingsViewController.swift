@@ -1,10 +1,3 @@
-//
-//  SettingsViewController.swift
-//  QR-Reader
-//
-//  Created by Liver Pauler on 08.01.24.
-//
-
 import UIKit
 import RxSwift
 import MessageUI

@@ -83,7 +83,8 @@ final class TipsSheetController: UIViewController {
     
     static func showActionSheet(
         tipsType: TipsType,
-        onViewController: UIViewController? = UIApplication.shared.windows.first(where: { $0.isKeyWindow })?.rootViewController) {
+        onViewController: UIViewController? = UIApplication.shared.windows.first(where: { $0.isKeyWindow })?.rootViewController
+    ) {
             
             guard let dialog = R.storyboard.tips.tipsVC() else { return }
             

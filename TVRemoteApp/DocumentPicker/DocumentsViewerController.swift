@@ -60,14 +60,14 @@ final class DocumentViewController: BaseViewController, QLPreviewControllerDataS
         if NetworkPermissionHelper.shared.isConnectedToWiFi() {
             if !AirPlayDeviceUtility.connected {
                 BottomSheetTipsPermitViewController.showActionSheet(
-                    mainImage: R.image.deviceMirroringSheetMainImage(),
+                    mainImage: R.image.mainScreen.deviceMirroringIcon(),
                     titleText: R.string.localizable.choose_Device(),
                     subtitleText: R.string.localizable.same_WiFi_Network_Message(),
                     firstAction: (
                         action: { [weak self] in
                             self?.openAirplayMenu()
                         },
-                        image: R.image.openAirPlaySheetButtonImage(),
+                        image: R.image.mainScreen.openAirPlaySheetButtonImage(),
                         title: R.string.localizable.open_AirPlay()
                     
                     )
@@ -75,7 +75,7 @@ final class DocumentViewController: BaseViewController, QLPreviewControllerDataS
             }
         } else {
             BottomSheetTipsPermitViewController.showActionSheet(
-                mainImage: R.image.notConnectedToInternetImage(),
+                mainImage: R.image.mainScreen.notConnectedToInternetImage(),
                 titleText: R.string.localizable.not_Connected_To_WiFi(),
                 subtitleText: R.string.localizable.same_WiFi_Network_Message(),
                 firstAction: (

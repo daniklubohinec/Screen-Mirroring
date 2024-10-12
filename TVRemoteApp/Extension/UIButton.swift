@@ -1,10 +1,3 @@
-//
-//  UIView.swift
-//  Screen-Mirroring
-//
-//  Created by Liver Pauler on 08.01.24.
-//
-
 import UIKit
 
 extension UIButton {
@@ -29,7 +22,7 @@ extension UIButton {
 }
 
 @IBDesignable
-class DashedView: UIButton {
+final class DashedView: UIButton {
     @IBInspectable var cornerRadius: CGFloat = 0 {
         didSet {
             layer.cornerRadius = cornerRadius

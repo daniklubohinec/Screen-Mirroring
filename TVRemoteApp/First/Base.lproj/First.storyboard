@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qtf-WX-Bdr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qtf-WX-Bdr">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -23,7 +24,7 @@
         <!--First View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="FirstViewController" customModule="Screen_Mirroring" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="FirstViewController" customModule="TVRemoteApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -44,12 +45,12 @@
                                     <constraint firstAttribute="width" constant="32" id="Rhf-yh-LMV"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="goToSettingsButton"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Main Screen/settings"/>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oEI-hq-Kmp">
                                 <rect key="frame" x="16" y="187" width="361" height="186"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mirroringConnectionStatus" translatesAutoresizingMaskIntoConstraints="NO" id="JPa-gu-vcG">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main Screen/mirroringConnectionStatus" translatesAutoresizingMaskIntoConstraints="NO" id="JPa-gu-vcG">
                                         <rect key="frame" x="136.66666666666666" y="16" width="88" height="88"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="88" id="Cj7-Vk-vFl"/>
@@ -166,7 +167,7 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="questionMarkButtonImage" translatesAutoresizingMaskIntoConstraints="NO" id="Sws-eD-zmu">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main Screen/faq" translatesAutoresizingMaskIntoConstraints="NO" id="Sws-eD-zmu">
                                         <rect key="frame" x="103.66666666666667" y="17" width="22" height="22"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="22" id="KPT-OW-Mbp"/>
@@ -227,7 +228,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="VideoCastCollectionViewCell" reuseIdentifier="videoCastId" id="VlU-Sx-qtB" customClass="VideoCastCollectionViewCell" customModule="Screen_Mirroring" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="VideoCastCollectionViewCell" reuseIdentifier="videoCastId" id="VlU-Sx-qtB" customClass="VideoCastCollectionViewCell" customModule="TVRemoteApp" customModuleProvider="target">
                                         <rect key="frame" x="16" y="0.0" width="199" height="205"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="WQ4-Y6-fvN">
@@ -238,12 +239,12 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="199" height="205"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" image="videoMirroringImage"/>
+                                                    <buttonConfiguration key="configuration" style="plain" image="Main Screen/video"/>
                                                 </button>
                                             </subviews>
                                         </collectionViewCellContentView>
                                     </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="PhotoCastCollectionViewCell" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="photoCastId" id="tUh-LG-W3m" customClass="PhotoCastCollectionViewCell" customModule="Screen_Mirroring" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="PhotoCastCollectionViewCell" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="photoCastId" id="tUh-LG-W3m" customClass="PhotoCastCollectionViewCell" customModule="TVRemoteApp" customModuleProvider="target">
                                         <rect key="frame" x="225" y="0.0" width="199" height="205"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="WCY-mP-GNO">
@@ -254,12 +255,12 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="199" height="205"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" image="photoMirroringImage"/>
+                                                    <buttonConfiguration key="configuration" style="plain" image="Main Screen/photo"/>
                                                 </button>
                                             </subviews>
                                         </collectionViewCellContentView>
                                     </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="WebCastCollectionViewCell" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="webCastId" id="Kqt-Nu-orn" customClass="WebCastCollectionViewCell" customModule="Screen_Mirroring" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="WebCastCollectionViewCell" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="webCastId" id="Kqt-Nu-orn" customClass="WebCastCollectionViewCell" customModule="TVRemoteApp" customModuleProvider="target">
                                         <rect key="frame" x="434" y="0.0" width="199" height="205"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="KrC-We-uYg">
@@ -270,12 +271,12 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="199" height="205"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" image="websiteMirroringImage"/>
+                                                    <buttonConfiguration key="configuration" style="plain" image="Main Screen/website"/>
                                                 </button>
                                             </subviews>
                                         </collectionViewCellContentView>
                                     </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="FilesCastCollectionViewCell" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="filesCastId" id="jcm-2t-5FN" customClass="FilesCastCollectionViewCell" customModule="Screen_Mirroring" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="FilesCastCollectionViewCell" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="filesCastId" id="jcm-2t-5FN" customClass="FilesCastCollectionViewCell" customModule="TVRemoteApp" customModuleProvider="target">
                                         <rect key="frame" x="643" y="0.0" width="199" height="205"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="tR0-bH-vc1">
@@ -286,7 +287,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="199" height="205"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" image="filesMirroringImage"/>
+                                                    <buttonConfiguration key="configuration" style="plain" image="Main Screen/files"/>
                                                 </button>
                                             </subviews>
                                         </collectionViewCellContentView>
@@ -304,7 +305,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KEe-Gd-HMd">
                                 <rect key="frame" x="0.0" y="187" width="393" height="582"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jNK-xU-qsa" customClass="CircularProgressView" customModule="Screen_Mirroring" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jNK-xU-qsa" customClass="CircularProgressView" customModule="TVRemoteApp" customModuleProvider="target">
                                         <rect key="frame" x="70" y="30" width="253" height="240"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m2t-2X-Z1J">
@@ -328,7 +329,7 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cpuUsageAnimationImage" translatesAutoresizingMaskIntoConstraints="NO" id="zWf-qF-qsg">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main Screen/cpuUsageAnimation" translatesAutoresizingMaskIntoConstraints="NO" id="zWf-qF-qsg">
                                         <rect key="frame" x="0.0" y="290" width="393" height="174"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="174" id="zPy-nz-Qp1"/>
@@ -415,7 +416,7 @@
         <!--Settings-->
         <scene sceneID="yQ7-I5-znS">
             <objects>
-                <viewController storyboardIdentifier="SettingsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="XKT-Lp-soC" customClass="SettingsViewController" customModule="Screen_Mirroring" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="XKT-Lp-soC" customClass="SettingsViewController" customModule="TVRemoteApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cGc-SL-ylX">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -492,7 +493,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sw8-e8-OiB">
                                         <rect key="frame" x="0.0" y="0.0" width="361" height="44"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rateAppStoreImage" translatesAutoresizingMaskIntoConstraints="NO" id="EKh-z3-k4r">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Settings Screen/rate" translatesAutoresizingMaskIntoConstraints="NO" id="EKh-z3-k4r">
                                                 <rect key="frame" x="20" y="8" width="28" height="28"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="28" id="Y1M-xR-tAI"/>
@@ -505,7 +506,7 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="createArrowImage" translatesAutoresizingMaskIntoConstraints="NO" id="vZz-e0-qU9">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Settings Screen/arrow" translatesAutoresizingMaskIntoConstraints="NO" id="vZz-e0-qU9">
                                                 <rect key="frame" x="317" y="10" width="24" height="24"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="24" id="Pr1-sq-mvo"/>
@@ -549,7 +550,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IrJ-mw-qWv">
                                         <rect key="frame" x="0.0" y="43.999999999999986" width="361" height="44"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shareSelfAppImage" translatesAutoresizingMaskIntoConstraints="NO" id="1Zd-NF-Boq">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Settings Screen/share" translatesAutoresizingMaskIntoConstraints="NO" id="1Zd-NF-Boq">
                                                 <rect key="frame" x="20" y="8" width="28" height="28"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="28" id="6Sh-lw-zDs"/>
@@ -562,7 +563,7 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="createArrowImage" translatesAutoresizingMaskIntoConstraints="NO" id="xqC-PL-15L">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Settings Screen/arrow" translatesAutoresizingMaskIntoConstraints="NO" id="xqC-PL-15L">
                                                 <rect key="frame" x="317" y="10" width="24" height="24"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="24" id="BBw-mA-e39"/>
@@ -611,33 +612,33 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="cph-xd-3d4">
-                                <rect key="frame" x="16" y="238.33333333333337" width="361" height="132"/>
+                                <rect key="frame" x="16" y="238.33333333333337" width="361" height="176"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xIP-2F-o1e">
                                         <rect key="frame" x="0.0" y="0.0" width="361" height="44"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="privacyPolicyLinkImage" translatesAutoresizingMaskIntoConstraints="NO" id="foT-c0-wnv">
-                                                <rect key="frame" x="20" y="2.6666666666666572" width="28" height="28"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Settings Screen/privacy" translatesAutoresizingMaskIntoConstraints="NO" id="foT-c0-wnv">
+                                                <rect key="frame" x="20" y="8" width="28" height="28"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="28" id="6Oh-dq-AA6"/>
                                                     <constraint firstAttribute="width" constant="28" id="zsh-Zc-a6c"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Privacy Policy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vr7-jj-qnI">
-                                                <rect key="frame" x="63" y="6.666666666666659" width="105" height="19.666666666666671"/>
+                                                <rect key="frame" x="63" y="12.333333333333316" width="105" height="19.666666666666671"/>
                                                 <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="16"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="createArrowImage" translatesAutoresizingMaskIntoConstraints="NO" id="0rq-h0-TcV">
-                                                <rect key="frame" x="317" y="4.6666666666666572" width="24" height="24"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Settings Screen/arrow" translatesAutoresizingMaskIntoConstraints="NO" id="0rq-h0-TcV">
+                                                <rect key="frame" x="317" y="10" width="24" height="24"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="24" id="cYi-QQ-EWO"/>
                                                     <constraint firstAttribute="height" constant="24" id="lwj-6g-ppM"/>
                                                 </constraints>
                                             </imageView>
                                             <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vIg-A2-0bU">
-                                                <rect key="frame" x="64" y="32.666666666666657" width="297" height="0.3333333333333357"/>
+                                                <rect key="frame" x="64" y="43.666666666666657" width="297" height="0.3333333333333357"/>
                                                 <color key="backgroundColor" name="с8E8E93"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="0.33000000000000002" id="xHj-Q8-y4e"/>
@@ -671,9 +672,9 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2CJ-Xy-M7M">
-                                        <rect key="frame" x="0.0" y="32.999999999999972" width="361" height="33"/>
+                                        <rect key="frame" x="0.0" y="43.999999999999972" width="361" height="44"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="termsOfUseLinkImage" translatesAutoresizingMaskIntoConstraints="NO" id="DMw-at-Hdh">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Settings Screen/terms" translatesAutoresizingMaskIntoConstraints="NO" id="DMw-at-Hdh">
                                                 <rect key="frame" x="20" y="8" width="28" height="28"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="28" id="Y9w-Nb-AGL"/>
@@ -686,7 +687,7 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="createArrowImage" translatesAutoresizingMaskIntoConstraints="NO" id="aGc-Jn-ec2">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Settings Screen/arrow" translatesAutoresizingMaskIntoConstraints="NO" id="aGc-Jn-ec2">
                                                 <rect key="frame" x="317" y="10" width="24" height="24"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="24" id="X9H-vr-5xR"/>
@@ -728,9 +729,9 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IhN-ui-vbU">
-                                        <rect key="frame" x="0.0" y="65.999999999999972" width="361" height="33"/>
+                                        <rect key="frame" x="0.0" y="87.999999999999972" width="361" height="44"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="contactUsLinkImage" translatesAutoresizingMaskIntoConstraints="NO" id="inq-5I-Yar">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Settings Screen/contact" translatesAutoresizingMaskIntoConstraints="NO" id="inq-5I-Yar">
                                                 <rect key="frame" x="20" y="8" width="28" height="28"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="28" id="LZs-I2-QCL"/>
@@ -743,7 +744,7 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="createArrowImage" translatesAutoresizingMaskIntoConstraints="NO" id="G8G-XH-ZCy">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Settings Screen/arrow" translatesAutoresizingMaskIntoConstraints="NO" id="G8G-XH-ZCy">
                                                 <rect key="frame" x="317" y="10" width="24" height="24"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="24" id="dkF-6F-biw"/>
@@ -785,7 +786,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ulU-Ix-0fE">
-                                        <rect key="frame" x="0.0" y="98.999999999999972" width="361" height="33"/>
+                                        <rect key="frame" x="0.0" y="131.99999999999997" width="361" height="44"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gamecontroller.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Why-rJ-eV9">
                                                 <rect key="frame" x="20" y="9.6666666666666625" width="28" height="25"/>
@@ -801,7 +802,7 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="createArrowImage" translatesAutoresizingMaskIntoConstraints="NO" id="vIH-6q-dkN">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Settings Screen/arrow" translatesAutoresizingMaskIntoConstraints="NO" id="vIH-6q-dkN">
                                                 <rect key="frame" x="317" y="10" width="24" height="24"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="24" id="6kL-U8-lMq"/>
@@ -867,7 +868,7 @@
                             <constraint firstItem="0nP-UO-dOv" firstAttribute="leading" secondItem="4BU-4Z-z55" secondAttribute="leading" constant="16" id="vDx-q5-Y8R"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Settings" image="settings" id="jxR-GD-ZWC"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="Tabs/settings" id="jxR-GD-ZWC"/>
                     <navigationItem key="navigationItem" title="Settings" id="yCA-Kv-pxl"/>
                     <connections>
                         <outlet property="contactUsBackView" destination="IhN-ui-vbU" id="93p-tZ-yXi"/>
@@ -902,7 +903,7 @@
         <scene sceneID="8nF-1e-TW1">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6qK-E1-Qny" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Cast" image="cast" id="iZG-vi-V8o"/>
+                    <tabBarItem key="tabBarItem" title="Cast" image="Tabs/cast" id="iZG-vi-V8o"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="s23-q5-vPj">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -924,7 +925,7 @@
         <!--Tab Bar View Controller-->
         <scene sceneID="FwS-0t-BGo">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Qtf-WX-Bdr" customClass="TabBarViewController" customModule="Screen_Mirroring" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Qtf-WX-Bdr" customClass="TabBarViewController" customModule="TVRemoteApp" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="qt4-f3-nCf">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -945,27 +946,28 @@
     </scenes>
     <resources>
         <image name="Files" width="171" height="138"/>
+        <image name="Main Screen/cpuUsageAnimation" width="390" height="175"/>
+        <image name="Main Screen/faq" width="22" height="22"/>
+        <image name="Main Screen/files" width="199" height="205"/>
+        <image name="Main Screen/mirroringConnectionStatus" width="88" height="88"/>
+        <image name="Main Screen/photo" width="199" height="205"/>
+        <image name="Main Screen/settings" width="32" height="32"/>
+        <image name="Main Screen/video" width="199" height="205"/>
+        <image name="Main Screen/website" width="199" height="205"/>
         <image name="Photo" width="171" height="138"/>
+        <image name="Settings Screen/arrow" width="24" height="24"/>
+        <image name="Settings Screen/contact" width="28" height="28"/>
+        <image name="Settings Screen/privacy" width="28" height="28"/>
+        <image name="Settings Screen/rate" width="28" height="28"/>
+        <image name="Settings Screen/share" width="28" height="28"/>
+        <image name="Settings Screen/terms" width="28" height="28"/>
+        <image name="Tabs/cast" width="24" height="24"/>
+        <image name="Tabs/settings" width="24" height="24"/>
         <image name="Video" width="171" height="138"/>
         <image name="Web" width="171" height="138"/>
-        <image name="cast" width="24" height="24"/>
-        <image name="contactUsLinkImage" width="28" height="28"/>
-        <image name="cpuUsageAnimationImage" width="390" height="175"/>
-        <image name="createArrowImage" width="24" height="24"/>
-        <image name="filesMirroringImage" width="199" height="205"/>
+        <image name="createArrowImage" width="128" height="128"/>
         <image name="gamecontroller.fill" catalog="system" width="128" height="79"/>
-        <image name="goToSettingsButton" width="32" height="32"/>
-        <image name="mirroringConnectionStatus" width="88" height="88"/>
-        <image name="photoMirroringImage" width="199" height="205"/>
-        <image name="privacyPolicyLinkImage" width="28" height="28"/>
-        <image name="questionMarkButtonImage" width="22" height="22"/>
-        <image name="rateAppStoreImage" width="28" height="28"/>
         <image name="restorePurchasesImage" width="28" height="28"/>
-        <image name="settings" width="24" height="24"/>
-        <image name="shareSelfAppImage" width="28" height="28"/>
-        <image name="termsOfUseLinkImage" width="28" height="28"/>
-        <image name="videoMirroringImage" width="199" height="205"/>
-        <image name="websiteMirroringImage" width="199" height="205"/>
         <namedColor name="AccentColor">
             <color red="0.26666666666666666" green="0.47843137254901963" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

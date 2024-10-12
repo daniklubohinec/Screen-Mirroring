@@ -1,14 +1,8 @@
-//
-//  CircularProgressView.swift
-//  Screen-Mirroring
-//
-//  Created by Liver Pauler on 08.01.24.
-//
 import Foundation
 import UIKit
 import QuartzCore
 
-class CircularProgressView: UIView {
+final class CircularProgressView: UIView {
     
     private var progressLayer = CAShapeLayer()
     private var tracklayer = CAShapeLayer()

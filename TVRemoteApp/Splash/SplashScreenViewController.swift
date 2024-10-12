@@ -1,10 +1,3 @@
-//
-//  SplashScreenViewController.swift
-//  QR-Reader
-//
-//  Created by Danik Lubohinec on 26.07.24.
-//
-
 import UIKit
 import Combine
 
@@ -24,7 +17,7 @@ final class SplashScreenViewController: UIViewController {
                 }
                 onMain {
                     self.showMainViewController()
-                    if !Storage.shared.onboardingShown, !PurchaseService.shared.hasPremium {
+                    if !UserDefaultsService.shared.onboardingShown, !PurchaseService.shared.hasPremium {
                         self.showOnboarding()
                     } else {
                         self.unhideMain()

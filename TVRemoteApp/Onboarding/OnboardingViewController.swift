@@ -96,9 +96,9 @@ final class OnboardingViewController: UIViewController, UIScrollViewDelegate {
         let button = UIButton()
         let image: UIImage? = {
             if !review {
-                return UIImage(named: "hiddenCross")
+                return UIImage(named: "Onboarding Screen/secondCross")
             }
-            return UIImage(named: "crossMain")
+            return UIImage(named: "Onboarding Screen/closeMain")
         }()
         button.isHidden = !review
         button.setImage(image, for: .normal)
@@ -194,8 +194,8 @@ final class OnboardingViewController: UIViewController, UIScrollViewDelegate {
         setupScrollView()
         setupPageControl()
         setupContinueButton()
-        titleLabel.text = OnboardingPage.firstScreen.title
-        descriptionLabel.text = OnboardingPage.firstScreen.subtitle
+        titleLabel.text = OnboardingPage.first.title
+        descriptionLabel.text = OnboardingPage.first.subtitle
         
         pageControl.isHidden = review
         footer.isHidden = !(pages.count == 1)
@@ -215,11 +215,11 @@ final class OnboardingViewController: UIViewController, UIScrollViewDelegate {
             continueButtonTopLabelConstraint?.isActive = false
             closeButton.isHidden = false
             continueButtonTopViewConstraint?.isActive = true
-            updateContinueButton(page: .fourthScreen)
-            titleLabel.text = OnboardingPage.fourthScreen.title
+            updateContinueButton(page: .fourth)
+            titleLabel.text = OnboardingPage.fourth.title
         } else if !review, pages.count == 1 {
-            titleLabel.text = OnboardingPage.fourthScreen.title
-            descriptionLabel.text = OnboardingPage.fourthScreen.subtitle
+            titleLabel.text = OnboardingPage.fourth.title
+            descriptionLabel.text = OnboardingPage.fourth.subtitle
         }
     }
     
@@ -314,7 +314,7 @@ final class OnboardingViewController: UIViewController, UIScrollViewDelegate {
             pageControl.currentPage = currentPage + 1
             updateLabels(page: currentPage + 1)
         } else {
-            Storage.shared.onboardingShown = true
+            UserDefaultsService.shared.onboardingShown = true
             if let product = PurchaseService.shared.inAppPaywall?.products.first {
                 Task { [weak self] in
                     await PurchaseService.shared.makePurchase(product: product)
@@ -345,7 +345,7 @@ final class OnboardingViewController: UIViewController, UIScrollViewDelegate {
     }
     
     private func updateContinueButton(page: OnboardingPage) {
-        if page == .fourthScreen, review {
+        if page == .fourth, review {
             var configuration = continueButton.configuration
             guard let paywall = PurchaseService.shared.inAppPaywall else { return }
             configuration?.title = "\(paywall.config.purchaseTitle) \(paywall.config.priceDescription) \(paywall.products.first?.localizedPrice ?? "$6.99/week")"
@@ -385,13 +385,13 @@ final class OnboardingViewController: UIViewController, UIScrollViewDelegate {
         guard let page = OnboardingPage(rawValue: page) else { return }
         animateTextChange(for: titleLabel, newText: page.title)
         animateTextChange(for: descriptionLabel, newText: page.subtitle)
-        descriptionLabel.isHidden = page == .fourthScreen
-        subView.isHidden = page != .fourthScreen
+        descriptionLabel.isHidden = page == .fourth
+        subView.isHidden = page != .fourth
         
         remakeConstraint(page)
         
-        footer.isHidden = page != .fourthScreen
-        if !review, pageControl.numberOfPages == 2 || page == .fourthScreen {
+        footer.isHidden = page != .fourth
+        if !review, pageControl.numberOfPages == 2 || page == .fourth {
             subView.isHidden = true
             descriptionLabel.isHidden = false
             updateContinueButton(page: page)
@@ -402,9 +402,9 @@ final class OnboardingViewController: UIViewController, UIScrollViewDelegate {
             descriptionLabel.text = "\(paywall.config.descriptionSubtitle) \(paywall.products.first?.localizedPrice ?? "$6.99/week") \(paywall.config.descriptionPerWeek)"
         } else {
             updateContinueButton(page: page)
-            closeButton.isHidden = page != .fourthScreen
+            closeButton.isHidden = page != .fourth
         }
-        if page == .secondScreen, !requested, !review {
+        if page == .second, !requested, !review {
             requested = true
             AppReview().requestImmediately()
         }
@@ -413,10 +413,10 @@ final class OnboardingViewController: UIViewController, UIScrollViewDelegate {
     func remakeConstraint(_ page: OnboardingPage) {
         if review {
             pageControl.snp.remakeConstraints { make in
-                make.height.equalTo(page == .fourthScreen ? 44 : 0)
+                make.height.equalTo(page == .fourth ? 44 : 0)
             }
-            continueButtonTopLabelConstraint?.isActive = page != .fourthScreen
-            continueButtonTopViewConstraint?.isActive = page == .fourthScreen
+            continueButtonTopLabelConstraint?.isActive = page != .fourth
+            continueButtonTopViewConstraint?.isActive = page == .fourth
         }
     }
     
@@ -434,7 +434,7 @@ final class OnboardingViewController: UIViewController, UIScrollViewDelegate {
     @objc
     private func closeScreen() {
         HapticGenerator.shared.generateImpact()
-        Storage.shared.onboardingShown = true
+        UserDefaultsService.shared.onboardingShown = true
         completion?()
         dismiss(animated: true)
     }
@@ -453,96 +453,4 @@ final class OnboardingViewController: UIViewController, UIScrollViewDelegate {
         loadURLString("https://docs.google.com/document/d/1XWGMkuhwJndeEZbz1PzPgXvCBicTj9hMSVmQ6UmklOA/edit")
     }
     
-}
-
-final class OnboardingPageView: UIView {
-    
-    init(image: UIImage?, title: String, description: String) {
-        super.init(frame: .zero)
-        
-        let imageView = UIImageView(image: image)
-        imageView.contentMode = .scaleAspectFill
-        imageView.clipsToBounds = true
-        addSubview(imageView)
-        
-        imageView.snp.makeConstraints { make in
-            make.edges.equalToSuperview()
-        }
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-}
-
-final class SubscriptionOptionView: UIView {
-    private let checkmarkImageView: UIImageView = {
-        let imageView = UIImageView()
-        imageView.image = UIImage(systemName: "checkmark.circle.fill")
-        imageView.tintColor = .white
-        imageView.contentMode = .scaleAspectFit
-        return imageView
-    }()
-    
-    private let freeTrialLabel: UILabel = {
-        let label = UILabel()
-        if let paywall = PurchaseService.shared.inAppPaywall {
-            label.text = paywall.config.trial
-        }
-        label.font = R.font.interSemiBold(size: 16)
-        label.textColor = .white
-        return label
-    }()
-    
-    private let priceLabel: UILabel = {
-        let label = UILabel()
-        if let paywall = PurchaseService.shared.inAppPaywall {
-            label.text = "\(paywall.config.priceDescription) \(paywall.products.first?.localizedPrice ?? "$6.99/week")"
-        }
-        label.font = R.font.interRegular(size: 14)
-        label.textColor = .white
-        label.textAlignment = .right
-        return label
-    }()
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        setupView()
-    }
-    
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
-        setupView()
-    }
-    
-    private func setupView() {
-        backgroundColor = R.color.c1C1C1E()
-        layer.cornerRadius = 16
-        
-        addSubview(checkmarkImageView)
-        addSubview(freeTrialLabel)
-        addSubview(priceLabel)
-        
-        checkmarkImageView.snp.makeConstraints { make in
-            make.centerY.equalToSuperview()
-            make.leading.equalToSuperview().offset(18)
-            make.width.height.equalTo(20)
-        }
-        
-        freeTrialLabel.snp.makeConstraints { make in
-            make.centerY.equalToSuperview()
-            make.leading.equalTo(checkmarkImageView.snp.trailing).offset(8)
-        }
-        
-        priceLabel.snp.makeConstraints { make in
-            make.centerY.equalToSuperview()
-            make.trailing.equalToSuperview().offset(-16)
-            make.leading.equalTo(freeTrialLabel.snp.trailing).offset(8)
-        }
-    }
-    
-    func configure(with price: String, duration: String) {
-        priceLabel.text = price
-        freeTrialLabel.text = duration
-    }
 }

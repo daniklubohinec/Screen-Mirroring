@@ -1,16 +1,9 @@
-//
-//  FirstViewController.swift
-//  Screen-Mirroring
-//
-//  Created by Liver Pauler on 08.01.24.
-//
-
 import UIKit
 import RxSwift
 import AVKit
 import Photos
 
-class FirstViewController: UIViewController {
+final class FirstViewController: UIViewController {
     
     let disposeBag = DisposeBag()
     
@@ -106,7 +99,7 @@ class FirstViewController: UIViewController {
                 connectButtonTitle.text = R.string.localizable.active()
                 connectButtonSubtitle.text = device
                 connectBackView.backgroundColor = R.color.cBF5AF2()
-                connectImageView.image = R.image.mirroringConnectionStatusPink()
+                connectImageView.image = R.image.mainScreen.mirroringConnectionStatusPink()
                 howToTitle.text = R.string.localizable.how_To_Disconnect()
                 connected = true
                 if !isScreenMirroringActive() {
@@ -126,7 +119,7 @@ class FirstViewController: UIViewController {
                 connectButtonTitle.text = R.string.localizable.tap_To_Connect()
                 connectButtonSubtitle.text = R.string.localizable.tap_To_Connect_And_Choose_Device()
                 connectBackView.backgroundColor = R.color.accentColor()
-                connectImageView.image = R.image.mirroringConnectionStatus()
+                connectImageView.image = R.image.mainScreen.mirroringConnectionStatus()
                 howToTitle.text = R.string.localizable.how_To_Connect()
                 connected = false
             }
@@ -207,14 +200,14 @@ class FirstViewController: UIViewController {
                 completion?()
             } else {
                 BottomSheetTipsPermitViewController.showActionSheet(
-                    mainImage: R.image.deviceMirroringSheetMainImage(),
+                    mainImage: R.image.mainScreen.deviceMirroringIcon(),
                     titleText: R.string.localizable.choose_Device(),
                     subtitleText: R.string.localizable.same_WiFi_Network(),
                     firstAction: (
                         action: { [weak self] in
                             self?.routeView.showAirplayView()
                         },
-                        image: R.image.openAirPlaySheetButtonImage(),
+                        image: R.image.mainScreen.openAirPlaySheetButtonImage(),
                         title: R.string.localizable.open_AirPlay()
                         
                     )
@@ -222,7 +215,7 @@ class FirstViewController: UIViewController {
             }
         } else {
             BottomSheetTipsPermitViewController.showActionSheet(
-                mainImage: R.image.notConnectedToInternetImage(),
+                mainImage: R.image.mainScreen.notConnectedToInternetImage(),
                 titleText: R.string.localizable.not_Connected_To_WiFi(),
                 subtitleText: R.string.localizable.same_WiFi_Network_Message(),
                 firstAction: (
@@ -289,7 +282,7 @@ class FirstViewController: UIViewController {
                         self?.navigationController?.pushViewController(vc, animated: true)
                     } else {
                         BottomSheetTipsPermitViewController.showActionSheet(
-                            mainImage: R.image.accessPermitionSheetImage(),
+                            mainImage: R.image.mainScreen.galleryPermission(),
                             titleText: R.string.localizable.allow_Access_To_Photos(),
                             subtitleText: R.string.localizable.allow_Photos_Access_Message(),
                             firstAction: (

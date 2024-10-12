@@ -1,12 +1,6 @@
-//
-//  UIViewController.swift
-//  Screen-Mirroring
-//
-//  Created by Liver Pauler on 08.01.24.
-//
-
 import Foundation
 import RxSwift
+import UIKit
 
 extension UIViewController {
     func topViewController() -> UIViewController {
@@ -47,7 +41,7 @@ extension UIViewController {
 }
 
 func showPaywall(presenting: UIViewController) {
-    let vc = OnboardingViewController(pages: [.fourthScreen])
+    let vc = OnboardingViewController(pages: [.fourth])
     vc.modalPresentationStyle = .fullScreen
     presenting.present(vc, animated: true)
 }

@@ -2,11 +2,11 @@ import Foundation
 import RxSwift
 import RxRelay
 
-final public class Storage {
-    static let shared = Storage(userDefaults: .standard, encoder: JSONEncoder(), decoder: JSONDecoder())
+final public class UserDefaultsService {
+    static let shared = UserDefaultsService(userDefaults: .standard, encoder: JSONEncoder(), decoder: JSONDecoder())
     
     // MARK: - Private properties
-    private let queue = DispatchQueue(label: String(describing: Storage.self), qos: .utility)
+    private let queue = DispatchQueue(label: String(describing: UserDefaultsService.self), qos: .utility)
     private let userDefaults: UserDefaults
     private let encoder: JSONEncoder
     private let decoder: JSONDecoder
@@ -69,14 +69,14 @@ final public class Storage {
     }
 }
 
-extension Storage {
+extension UserDefaultsService {
     var onboardingShown: Bool {
         get {
-            let shown: Bool = Storage.shared.stored(at: "onboardingShown") ?? false
+            let shown: Bool = UserDefaultsService.shared.stored(at: "onboardingShown") ?? false
             return shown
         }
         set {
-            Storage.shared.store(value: newValue, at: "onboardingShown")
+            UserDefaultsService.shared.store(value: newValue, at: "onboardingShown")
         }
     }
 }
