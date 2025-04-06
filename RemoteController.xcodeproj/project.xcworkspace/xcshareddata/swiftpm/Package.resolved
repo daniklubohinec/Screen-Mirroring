@@ -1,0 +1,33 @@
+{
+  "originHash" : "03d8d4592987ef6a377c03a4533248c9a20baa2bf5011a64354a2186da3589e5",
+  "pins" : [
+    {
+      "identity" : "adaptysdk-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/adaptyteam/AdaptySDK-iOS",
+      "state" : {
+        "revision" : "15b1fb7c34250ba9a360f9ed8b452a81cc0d5a22",
+        "version" : "2.11.3"
+      }
+    },
+    {
+      "identity" : "rxswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ReactiveX/RxSwift",
+      "state" : {
+        "revision" : "c7c7d2cf50a3211fe2843f76869c698e4e417930",
+        "version" : "6.8.0"
+      }
+    },
+    {
+      "identity" : "snapkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SnapKit/SnapKit",
+      "state" : {
+        "revision" : "2842e6e84e82eb9a8dac0100ca90d9444b0307f4",
+        "version" : "5.7.1"
+      }
+    }
+  ],
+  "version" : 3
+}

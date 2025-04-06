@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sJv-8b-WTL">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--App Introduction View Controller-->
+        <scene sceneID="aEv-wA-MPv">
+            <objects>
+                <viewController storyboardIdentifier="AppIntroductionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="sJv-8b-WTL" customClass="AppIntroductionViewController" customModule="TVRemoteApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Hd-aC-ROt">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="djfsdfsdfsdf" translatesAutoresizingMaskIntoConstraints="NO" id="GPK-bA-Z2h">
+                                <rect key="frame" x="1.6666666666666572" y="160.66666666666663" width="390" height="531"/>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="eb6-Vd-XQG">
+                                <rect key="frame" x="178" y="755" width="37" height="37"/>
+                                <color key="color" name="с8E8E93"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="p54-ph-eXB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eb6-Vd-XQG" firstAttribute="centerX" secondItem="0Hd-aC-ROt" secondAttribute="centerX" id="1ZW-79-JPG"/>
+                            <constraint firstItem="GPK-bA-Z2h" firstAttribute="centerX" secondItem="0Hd-aC-ROt" secondAttribute="centerX" id="Wdk-PS-fqf"/>
+                            <constraint firstItem="p54-ph-eXB" firstAttribute="bottom" secondItem="eb6-Vd-XQG" secondAttribute="bottom" constant="26" id="dvO-bM-BbV"/>
+                            <constraint firstItem="GPK-bA-Z2h" firstAttribute="centerY" secondItem="0Hd-aC-ROt" secondAttribute="centerY" id="qUB-yG-onm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="indicator" destination="eb6-Vd-XQG" id="eBZ-GV-II9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KhJ-YZ-gjO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="djfsdfsdfsdf" width="390" height="531"/>
+        <namedColor name="с8E8E93">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
