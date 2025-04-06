@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GQw-wN-9CZ">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash Screen View Controller-->
+        <scene sceneID="CYQ-HI-zDk">
+            <objects>
+                <viewController id="GQw-wN-9CZ" customClass="SplashScreenViewController" customModule="TVRemoteApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MHd-4s-nOg">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreen_AppLogo" translatesAutoresizingMaskIntoConstraints="NO" id="2IT-Zr-VGf">
+                                <rect key="frame" x="1.6666666666666572" y="160.66666666666663" width="390" height="531"/>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="z78-Cq-cuY">
+                                <rect key="frame" x="182.66666666666666" y="764" width="28" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="3HD-LZ-sc1"/>
+                                    <constraint firstAttribute="width" constant="28" id="RWe-0p-TjB"/>
+                                </constraints>
+                                <color key="color" name="с8E8E93"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="D13-Yf-7fn"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="z78-Cq-cuY" firstAttribute="centerX" secondItem="MHd-4s-nOg" secondAttribute="centerX" id="Bbq-Pt-vPr"/>
+                            <constraint firstItem="2IT-Zr-VGf" firstAttribute="centerY" secondItem="MHd-4s-nOg" secondAttribute="centerY" id="J9Z-YK-Syb"/>
+                            <constraint firstItem="D13-Yf-7fn" firstAttribute="bottom" secondItem="z78-Cq-cuY" secondAttribute="bottom" constant="26" id="Nku-74-n6g"/>
+                            <constraint firstItem="2IT-Zr-VGf" firstAttribute="centerX" secondItem="MHd-4s-nOg" secondAttribute="centerX" id="fV6-H4-n7H"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="indicator" destination="z78-Cq-cuY" id="NRU-64-gCG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5qD-1C-6do" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LaunchScreen_AppLogo" width="390" height="531"/>
+        <namedColor name="с8E8E93">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

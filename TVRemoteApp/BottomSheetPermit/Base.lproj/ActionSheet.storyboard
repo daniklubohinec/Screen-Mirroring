@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-Medium.ttf">
+            <string>Inter-Medium</string>
+        </array>
+        <array key="Inter-Regular.ttf">
+            <string>Inter-Regular</string>
+        </array>
+        <array key="Inter-SemiBold.ttf">
+            <string>Inter-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Bottom Sheet Tips Permit View Controller-->
+        <scene sceneID="1fb-3R-BbC">
+            <objects>
+                <viewController storyboardIdentifier="ActionSheetViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Vov-g6-dxb" customClass="BottomSheetTipsPermitViewController" customModule="TVRemoteApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZCo-Sj-w2z">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="48Y-3L-GHz">
+                                <rect key="frame" x="0.0" y="-1000" width="393" height="1852"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kf9-sG-Fee">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1852"/>
+                                        <connections>
+                                            <action selector="close:" destination="Vov-g6-dxb" eventType="touchUpInside" id="Ggd-TF-p6k"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="kf9-sG-Fee" secondAttribute="bottom" id="5Y4-Gm-KcR"/>
+                                    <constraint firstItem="kf9-sG-Fee" firstAttribute="leading" secondItem="48Y-3L-GHz" secondAttribute="leading" id="9Ev-pA-kkx"/>
+                                    <constraint firstAttribute="trailing" secondItem="kf9-sG-Fee" secondAttribute="trailing" id="Cf5-gp-Lw9"/>
+                                    <constraint firstItem="kf9-sG-Fee" firstAttribute="top" secondItem="48Y-3L-GHz" secondAttribute="top" id="dYB-Sv-liY"/>
+                                </constraints>
+                            </view>
+                            <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iUU-rB-4TL">
+                                <rect key="frame" x="0.0" y="476.33333333333326" width="393" height="375.66666666666674"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main Screen/deviceMirroringIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Tf9-wd-aOt">
+                                        <rect key="frame" x="176.66666666666666" y="24" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="COJ-44-dXD"/>
+                                            <constraint firstAttribute="height" constant="40" id="LRB-SU-ryM"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="ruo-f7-GLJ">
+                                        <rect key="frame" x="16" y="76.000000000000057" width="361" height="95.666666666666686"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please choose the device you wish to connect to." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yRn-Oy-JKA">
+                                                <rect key="frame" x="0.0" y="0.0" width="361" height="53.333333333333336"/>
+                                                <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="22"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make sure your devices are connected to the same Wi-Fi network." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U66-fQ-QLX">
+                                                <rect key="frame" x="0.0" y="59.333333333333258" width="361" height="36.333333333333343"/>
+                                                <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="15"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="QaS-79-7k6">
+                                        <rect key="frame" x="16" y="195.66666666666669" width="361" height="138"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MzX-MM-UyK">
+                                                <rect key="frame" x="0.0" y="0.0" width="361" height="64"/>
+                                                <color key="backgroundColor" name="AccentColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="64" id="i6G-R4-Lag"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="18"/>
+                                                <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="8" maxY="0.0"/>
+                                                <state key="normal" title="Open AirPlay" image="Main Screen/openAirPlaySheetButtonImage">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZwW-M7-ftJ">
+                                                <rect key="frame" x="0.0" y="74" width="361" height="64"/>
+                                                <color key="backgroundColor" name="c767680o24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="64" id="FU5-7H-jnU"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="18"/>
+                                                <state key="normal" title="Cancel">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="c1C1C1E"/>
+                                <constraints>
+                                    <constraint firstItem="ruo-f7-GLJ" firstAttribute="leading" secondItem="iUU-rB-4TL" secondAttribute="leading" constant="16" id="Cvs-zG-pSX"/>
+                                    <constraint firstAttribute="trailing" secondItem="QaS-79-7k6" secondAttribute="trailing" constant="16" id="Hcu-O4-gPl"/>
+                                    <constraint firstItem="QaS-79-7k6" firstAttribute="top" secondItem="ruo-f7-GLJ" secondAttribute="bottom" constant="24" id="X42-K2-UDC"/>
+                                    <constraint firstItem="QaS-79-7k6" firstAttribute="leading" secondItem="iUU-rB-4TL" secondAttribute="leading" constant="16" id="YCQ-Ue-Hhb"/>
+                                    <constraint firstItem="ruo-f7-GLJ" firstAttribute="top" secondItem="Tf9-wd-aOt" secondAttribute="bottom" constant="12" id="aKb-xc-VLn"/>
+                                    <constraint firstItem="Tf9-wd-aOt" firstAttribute="centerX" secondItem="iUU-rB-4TL" secondAttribute="centerX" id="efG-aU-gKb"/>
+                                    <constraint firstItem="Tf9-wd-aOt" firstAttribute="top" secondItem="iUU-rB-4TL" secondAttribute="top" constant="24" id="gwm-rp-NJ1"/>
+                                    <constraint firstAttribute="trailing" secondItem="ruo-f7-GLJ" secondAttribute="trailing" constant="16" id="kkv-w9-eUX"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KrT-qV-S6n"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="48Y-3L-GHz" secondAttribute="bottom" id="44a-uA-lEG"/>
+                            <constraint firstItem="iUU-rB-4TL" firstAttribute="leading" secondItem="KrT-qV-S6n" secondAttribute="leading" id="5al-ng-Tb8"/>
+                            <constraint firstItem="48Y-3L-GHz" firstAttribute="trailing" secondItem="KrT-qV-S6n" secondAttribute="trailing" id="DNU-fr-nnS"/>
+                            <constraint firstItem="KrT-qV-S6n" firstAttribute="trailing" secondItem="iUU-rB-4TL" secondAttribute="trailing" id="ERb-FE-Yss"/>
+                            <constraint firstItem="KrT-qV-S6n" firstAttribute="bottom" secondItem="QaS-79-7k6" secondAttribute="bottom" constant="8" id="Qia-58-sq8"/>
+                            <constraint firstAttribute="bottom" secondItem="iUU-rB-4TL" secondAttribute="bottom" id="YVp-EE-Q5P"/>
+                            <constraint firstItem="48Y-3L-GHz" firstAttribute="top" secondItem="ZCo-Sj-w2z" secondAttribute="top" constant="-1000" id="crA-Nj-vJ8"/>
+                            <constraint firstItem="48Y-3L-GHz" firstAttribute="leading" secondItem="KrT-qV-S6n" secondAttribute="leading" id="i6c-yc-bEs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="background" destination="48Y-3L-GHz" id="fov-53-E3A"/>
+                        <outlet property="cancelButton" destination="ZwW-M7-ftJ" id="y67-3a-qLY"/>
+                        <outlet property="firstButton" destination="MzX-MM-UyK" id="gyN-lf-X8A"/>
+                        <outlet property="interfaceBackView" destination="iUU-rB-4TL" id="hwq-bk-mnp"/>
+                        <outlet property="mainImage" destination="Tf9-wd-aOt" id="iS3-Hg-ssI"/>
+                        <outlet property="subtitleLabel" destination="U66-fQ-QLX" id="utv-jt-eIH"/>
+                        <outlet property="titleLabel" destination="yRn-Oy-JKA" id="JkA-Oo-mpg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3vF-Zu-61b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3277.5700934579436" y="20.734341252699785"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Main Screen/deviceMirroringIcon" width="40" height="40"/>
+        <image name="Main Screen/openAirPlaySheetButtonImage" width="24" height="24"/>
+        <namedColor name="AccentColor">
+            <color red="0.26666666666666666" green="0.47843137254901963" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="c1C1C1E">
+            <color red="0.10980392156862745" green="0.10980392156862745" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="c767680o24">
+            <color red="0.46274509803921571" green="0.46274509803921571" blue="0.50196078431372548" alpha="0.23999999463558197" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

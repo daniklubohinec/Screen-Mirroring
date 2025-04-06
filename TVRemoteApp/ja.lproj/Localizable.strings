@@ -1,0 +1,150 @@
+/* Screen-Mirroring.xcodeproj/project.pbxproj */
+"CPU_Check_and_Mirroring" = "CPUチェックとミラーリング";
+"Local_Network_Usage_Description" = "Cast対応デバイスを見つけるためにローカルネットワークへのアクセスを有効にしてください。";
+"Photo_Library_Usage_Description" = "部屋の写真をアップロードするために写真へのアクセスを許可してください。";
+
+/* Screen-Mirroring/First/Base.lproj/First.storyboard */
+"Screen_Mirroring" = "画面ミラーリング";
+"Button" = "ボタン";
+"How_To_Connect" = "接続方法";
+"Feedback" = "フィードバック";
+"Mini_Game" = "ミニゲーム";
+"Files" = "ファイル";
+"Photo" = "写真";
+"Video" = "ビデオ";
+"Web" = "ウェブ";
+
+/* Screen-Mirroring/BottomSheetPermit/ActionSheet.storyboard */
+"Same_WiFi_Network_Message" = "デバイスが同じWi-Fiネットワークに接続されていることを確認してください。";
+
+/* Screen-Mirroring/TicTacToe/TicTacToeViewController.swift */
+"New_Game" = "新しいゲーム";
+"Cancel" = "キャンセル";
+"You_Win" = "あなたの勝ち！";
+"Congratulations" = "おめでとう！";
+"You_Won_The_Game" = "あなたはゲームに勝ちました！";
+"You_Lose" = "あなたの負け！";
+"Game_Over" = "ゲームオーバー";
+"Better_Luck_Next_Time" = "次回はもっと頑張って！";
+"Its_A_Draw" = "引き分けです！";
+"Its_A_Tie" = "同点です";
+"Game_Ended_In_Draw" = "ゲームは引き分けに終わりました。";
+"Game_Has_Ended" = "ゲームは終了しました。";
+
+/* Screen-Mirroring/TicTacToe/TicTacToeViewModel.swift */
+"Your_Turn" = "あなたの番";
+"AI_Is_Thinking" = "AIが考えています...";
+
+/* Screen-Mirroring/FirstViewController.swift */
+"Welcome_Title" = "ようこそ";
+"First_View_Controller_Message" = "これは最初のビューコントローラーです";
+
+/* Screen-Mirroring/SettingsViewController.swift */
+"Settings_Title" = "設定";
+"Settings_Message" = "ここで設定を調整してください";
+
+/* Screen-Mirroring/MediaViewController.swift */
+"Media_Title" = "メディア";
+"Media_Message" = "メディアファイルを参照";
+
+/* Screen-Mirroring/PhotosViewController.swift */
+"Photos_Title" = "写真";
+"Photos_Message" = "写真ギャラリーを表示";
+
+/* Screen-Mirroring/WebViewController.swift */
+"Web_Title" = "ウェブ";
+"Web_Message" = "ウェブを閲覧する";
+
+/* Screen-Mirroring/DocumentsViewerController.swift */
+"Documents_Title" = "ドキュメント";
+"Documents_Message" = "ドキュメントを表示する";
+
+/* Screen-Mirroring/TipsSheetController.swift */
+"Tips_Title" = "ヒント";
+"Tips_Message" = "いくつかのヒントを紹介します";
+
+/* Screen-Mirroring/BottomSheetTipsPermitViewController.swift */
+"Permission_Required_Title" = "権限が必要です";
+"Permission_Required_Message" = "必要な権限を付与してください";
+
+/* Screen-Mirroring/NetworkConnection.swift */
+"Network_Connection_Failed" = "ネットワーク接続に失敗しました";
+
+/* Screen-Mirroring/AuthorizationStatus.swift */
+"Authorization_Status_Updated" = "認証ステータスが更新されました";
+
+/* Screen-Mirroring/Helpers.swift */
+"Helper_Function_Executed" = "ヘルパー関数が実行されました";
+
+/* Screen-Mirroring/AppDelegate.swift */
+"App_Launched_Successfully" = "アプリが正常に起動しました";
+
+/* Screen-Mirroring/SceneDelegate.swift */
+"Scene_Delegate_Called" = "シーンデリゲートが呼び出されました";
+
+/* Screen-Mirroring/AlbumsViewController.swift */
+"Albums_Title" = "アルバム";
+"Albums_Message" = "アルバムを参照";
+
+/* Screen-Mirroring/NetworkPermissionHelper.swift */
+"Network_Permission_Granted" = "ネットワーク権限が付与されました";
+
+/* Screen-Mirroring/Debug.swift */
+"Debugging_Mode_Enabled" = "デバッグモードが有効です";
+
+/* Screen-Mirroring/Release.swift */
+"Release_Mode_Enabled" = "リリースモードが有効です";
+
+/* FirstViewController.swift */
+"Active" = "アクティブ";
+"How_To_Disconnect" = "切断方法";
+"Tap_To_Connect" = "タップして接続";
+"Tap_To_Connect_And_Choose_Device" = "タップして接続し、別のデバイスを選んでiPhoneとペアリングします。";
+"Open_AirPlay" = "AirPlayを開く";
+"Not_Connected_To_WiFi" = "iPhoneがWi-Fiネットワークに接続されていません";
+"Same_WiFi_Network_Message" = "iPhoneがCast対応デバイスと同じWi-Fiネットワークに接続されていることを確認してください。";
+"Turn_On_WiFi" = "Wi-Fiをオンにする";
+"Allow_Access_To_Photos" = "写真へのアクセスを許可";
+"Allow_Photos_Access_Message" = "メディアをキャストするには、iPhoneの設定でアプリの写真へのアクセスを許可してください。";
+"Go_To_Settings" = "設定に移動";
+"Choose_Device" = "接続したいデバイスを選択してください。";
+"Same_WiFi_Network" = "デバイスが同じWi-Fiネットワークに接続されていることを確認してください。";
+"CPU_Usage" = "CPUの使用状況は、アプリやシステムタスクによってプロセッサの電力がどの程度使用されているかを示します。使用量が高いとパフォーマンスが低下し、バッテリーが消耗しますが、使用量が低いと効率的な動作を示します。";
+
+/* TipsSheetController.swift */
+"How_To_Connect" = "接続方法";
+"How_To_Disconnect" = "切断方法";
+
+/* AlbumsViewController.swift */
+"Photo_Mirroring" = "写真のミラーリング";
+"Video_Mirroring" = "ビデオのミラーリング";
+
+/* MediaViewController.swift */
+"Photo_Mirroring" = "写真のミラーリング";
+"Video_Mirroring" = "ビデオのミラーリング";
+
+/* DocumentsViewerController.swift */
+"Document_Mirroring" = "ドキュメントのミラーリング";
+"Choose_Device" = "接続したいデバイスを選択してください。";
+"Same_WiFi_Network_Message" = "デバイスが同じWi-Fiネットワークに接続されていることを確認してください。";
+"Open_AirPlay" = "AirPlayを開く";
+"Not_Connected_To_WiFi" = "iPhoneがWi-Fiネットワークに接続されていません";
+"Same_WiFi_Network_Message" = "iPhoneがCast対応デバイスと同じWi-Fiネットワークに接続されていることを確認してください。";
+"Turn_On_WiFi" = "Wi-Fiをオンにする";
+
+/* WebViewController.swift */
+"Web_Mirroring" = "ウェブのミラーリング";
+
+/* SettingsViewController.swift */
+"Error" = "エラー";
+"Close" = "閉じる";
+"Email_Invalid" = "デバイスがメールを送信できません";
+"Rate_Us" = "評価する";
+"Share_App" = "アプリを共有";
+"Privacy_Policy" = "プライバシーポリシー";
+"Terms_Of_Use" = "利用規約";
+"Contact_Us" = "お問い合わせ";
+"Mini_Game" = "ミニゲーム";
+"Social" = "ソーシャル";
+"Feedback" = "フィードバック";
+"Settings_Title" = "設定";
